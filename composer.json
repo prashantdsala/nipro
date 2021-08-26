@@ -13,6 +13,11 @@
             "name": "qed42/qed42ds",
             "type": "vcs",
             "url": "https://github.com/qed42/qed42ds"
+        },
+        {
+            "name": "qed42/paragraphs_baseline",
+            "type": "vcs",
+            "url": "https://github.com/qed42/qed42ds"
         }
     ],
     "require": {
@@ -20,6 +25,12 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/paragraphs": "^1.12",
+        "drupal/classy_paragraphs": "^1.0@beta",
+        "drupal/layout_paragraphs": "^1",
+        "drupal/paragraphs_ee": "^1.7",
+        "drupal/paragraphs_features": "^1.11",
+        "drupal/paragraphs_previewer": "^1.5",
         "drupal/component_blocks": "^1.2",
         "drupal/components": "^2.4",
         "drupal/ds": "^3.13",
@@ -29,7 +40,8 @@
         "drush/drush": "^9.0||^10.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^2.4",
-        "qed42/qed42ds": "dev-main"
+        "qed42/qed42ds": "dev-main",
+        "qed42/paragraphs_baseline": "^1.0.0"
     },
     "conflict": {
         "drupal/drupal": "*"
