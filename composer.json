@@ -17,7 +17,7 @@
         {
             "name": "qed42/paragraphs_baseline",
             "type": "vcs",
-            "url": "https://github.com/qed42/qed42ds"
+            "url": "https://github.com/qed42/paragraphs_baseline"
         }
     ],
     "require": {
