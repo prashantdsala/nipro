@@ -86,7 +86,7 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^2.4",
         "qed42/qed42ds": "dev-main",
-        "qed42/paragraphs_baseline": "^1.0.0",
+        "qed42/paragraphs_baseline": "dev-main",
         "npm-asset/blazy": "^1.8",
         "npm-asset/slick-carousel": "^1.8",
         "npm-asset/shariff": "^3.1.1",
