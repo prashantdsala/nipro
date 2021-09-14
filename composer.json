@@ -85,6 +85,7 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/ui_patterns": "^1.2",
         "drupal/wingsuit_companion": "^1.0",
+        "drupal/imagemagick": "^3.2",
         "drupal/ckeditorheight": "^1.8",
         "drupal/ckeditor_media_embed": "^1.10",
         "drupal/codesnippet": "^1.7",
