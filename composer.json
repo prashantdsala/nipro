@@ -21,7 +21,7 @@
                 "source": {
                     "url": "https://github.com/spacedesignsystem/space.git",
                     "type": "git",
-                    "reference": "main"
+                    "reference": "1.0.2"
                 }
             }
         },
@@ -34,7 +34,7 @@
                 "source": {
                     "url": "https://github.com/spacedesignsystem/spaceds.git",
                     "type": "git",
-                    "reference": "main"
+                    "reference": "1.0.4"
                 }
             }
         },
@@ -47,7 +47,7 @@
                 "source": {
                     "url": "https://github.com/spacedesignsystem/space-profile.git",
                     "type": "git",
-                    "reference": "main"
+                    "reference": "1.0.1"
                 }
             }
         }
