@@ -16,12 +16,12 @@
             "type": "package",
             "package": {
                 "name": "qed42/space",
-                "version": "1.0.2",
+                "version": "1.0.13",
                 "type":"drupal-theme",
                 "source": {
                     "url": "https://github.com/spacedesignsystem/space.git",
                     "type": "git",
-                    "reference": "1.0.2"
+                    "reference": "1.0.13"
                 }
             }
         },
@@ -53,7 +53,7 @@
         }
     },
     "require": {
-        "qed42/space": "1.0.2",
+        "qed42/space": "1.0.13",
         "qed42/spaceds": "1.0.4",
         "qed42/space-profile": "1.0.1",
         "composer/installers": "^1.9",
@@ -185,7 +185,16 @@
         "politsin/jquery-ui-touch-punch": "^1.0"
     },
     "config": {
-        "process-timeout": 0
+        "process-timeout": 0,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
+            "drupal/console-extend-plugin": true,
+            "oomphinc/composer-installers-extender": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
