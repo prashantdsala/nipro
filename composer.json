@@ -16,12 +16,12 @@
             "type": "package",
             "package": {
                 "name": "qed42/space",
-                "version": "1.0.13",
+                "version": "1.0.14",
                 "type":"drupal-theme",
                 "source": {
                     "url": "https://github.com/spacedesignsystem/space.git",
                     "type": "git",
-                    "reference": "1.0.13"
+                    "reference": "1.0.14"
                 }
             }
         },
@@ -29,12 +29,12 @@
             "type": "package",
             "package": {
                 "name": "qed42/spaceds",
-                "version": "1.0.4",
+                "version": "1.0.5",
                 "type":"drupal-module",
                 "source": {
                     "url": "https://github.com/spacedesignsystem/spaceds.git",
                     "type": "git",
-                    "reference": "1.0.4"
+                    "reference": "1.0.5"
                 }
             }
         },
@@ -50,11 +50,24 @@
                     "reference": "1.0.1"
                 }
             }
+        },
+        "jquery-library": {
+            "type": "package",
+            "package": {
+                    "name": "furf/jquery-ui-touch-punch",
+                    "version": "dev-main",
+                    "type":"drupal-library",
+                    "source": {
+                            "url": "https://github.com/furf/jquery-ui-touch-punch.git",
+                            "type": "git",
+                            "reference": "master"
+                    }
+            }
         }
     },
     "require": {
-        "qed42/space": "1.0.13",
-        "qed42/spaceds": "1.0.4",
+        "qed42/space": "1.0.14",
+        "qed42/spaceds": "1.0.5",
         "qed42/space-profile": "1.0.1",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6.0",
@@ -133,7 +146,9 @@
         "drupal/menu_trail_by_path": "^1.3",
         "drupal/simple_sitemap": "^3.11",
         "drupal/sitemap": "^2.0@beta",
+        "drupal/search_api": "^1.21",
         "drupal/better_exposed_filters": "^5.0",
+        "drupal/search_api_autocomplete": "^1.5",
         "drupal/advagg": "^4.1",
         "drupal/address": "^1.9",
         "drupal/config_ignore": "^2.3",
@@ -176,13 +191,23 @@
         "drupal/views_block_filter_block": "^1.0",
         "drupal/yoast_seo": "^1.7",
         "drupal/password_policy": "^3.0",
-        "drupal/menu_item_extras": "2.x-dev@dev",
+        "drupal/menu_item_extras": "2.16",
         "drupal/viewsreference": "^1.7",
         "drupal/features": "^3.12",
         "drupal/svg_image": "^1.15",
         "drupal/simplenews": "^3.0@beta",
+        "drupal/search_autocomplete": "^2.0",
         "drupal/smtp": "^1.0",
-        "politsin/jquery-ui-touch-punch": "^1.0"
+        "politsin/jquery-ui-touch-punch": "^1.0",
+        "drupal/fivestar": "1.x-dev@dev",
+        "drupal/layout_custom_section_classes": "^1.0",
+        "drupal/layout_builder_component_attributes": "^2.0",
+        "furf/jquery-ui-touch-punch": "dev-main",
+        "drupal/blocktabs": "^1.0@beta",
+        "drupal/entity_reference_revisions": "1.x-dev@dev"
+    },
+    "require-dev": {
+        "drush/drush": "^11.0"
     },
     "config": {
         "process-timeout": 0,
@@ -192,6 +217,7 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
+            "acquia/blt": true,
             "drupal/console-extend-plugin": true,
             "oomphinc/composer-installers-extender": true
         }
@@ -216,8 +242,11 @@
                 "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
                 "Call to a member function delete() on null": "https://www.drupal.org/files/issues/2021-10-27/error-running-config-import-delete-on-null-3198715-8.patch",
                 "Fatal error on config form with translation enabled when config is missing": "https://www.drupal.org/files/issues/2019-09-26/core-typed_config_handle_missing_config-2925297-18.patch",
-		"TranslatableMarkup for Invalid Argument Exception: $string (Array) must be a string.": "https://www.drupal.org/files/issues/2021-07-30/2719553-42_0.patch"
-	    },
+				"TranslatableMarkup for Invalid Argument Exception: $string (Array) must be a string.": "https://www.drupal.org/files/issues/2021-07-30/2719553-42_0.patch",
+				"Layout Builder doesn't respect the view mode set in a hook_entity_view_mode_alter() implementation":"https://www.drupal.org/files/issues/2019-09-26/3083754-4.patch",
+				"MenuLinkContentAccessControlHandler does not allow 'view' access without admin permission": "https://git.drupalcode.org/project/drupal/-/merge_requests/339.patch",
+                "Drag-and-drop reordering doesn't work if the region content is nested": "https://www.drupal.org/files/issues/2021-02-01/3062742_10_0.patch"    
+                    },
             "drupal/layout_builder_st": {
                 "Argument 1 passed to Drupal\\layout_builder_st\\EventSubscriber\\ComponentPluginTranslate::isTranslation() must implement interface Drupal\\layout_builder\\SectionStorageInterface, null given": "https://www.drupal.org/files/issues/2019-07-24/isTranslation-null-given.patch",
                 "Inline block loading active block_content revision even if serialized block exists\n": "https://www.drupal.org/files/issues/2020-05-15/layout_builder_st-3067646-10.patch"
@@ -231,10 +260,20 @@
             },
             "drupal/ui_patterns": {
                 "Allow for Layout Builder sections to be given administrativ.": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/278.patch",
-                "Add quick edit": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/273.patch"
+                "Add quick edit": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/273.patch",
+                "PatternDefinitionField constructor to default label to name if label does not exist": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/351.patch"
             },
             "drupal/ds": {
                 "Undefined index type": "https://www.drupal.org/files/issues/2021-07-29/ds-undefined-index-type-3091319-14.patch"
+            },
+            "drupal/fivestar": {
+                "Remove 'fivestar_preview' theme function": "https://www.drupal.org/files/issues/2022-04-06/3273701_3.patch"
+            },
+            "drupal/layout_custom_section_classes": {
+                "Predefined custom classes and multi value section": "patches/layout_custom_section_classes/predefine_custom_classes_multivalue_custom_class_selection.patch"
+            },
+            "drupal/ui_patterns_views_style" : {
+                "Pattern settings is not available in the Views": "https://www.drupal.org/files/issues/2022-07-05/pattern-format-settings-3294280-2.patch"
             }
         },
         "composer-exit-on-patch-failure": true,

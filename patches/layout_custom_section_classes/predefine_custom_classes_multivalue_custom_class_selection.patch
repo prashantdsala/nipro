@@ -1,0 +1,262 @@
+diff --git a/layout_custom_section_classes.module b/layout_custom_section_classes.module
+index 0c5accd..b8434a0 100644
+--- a/layout_custom_section_classes.module
++++ b/layout_custom_section_classes.module
+@@ -3,13 +3,25 @@
+ use Drupal\Component\Utility\Xss;
+ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Component\Utility\Html;
++use Drupal\Core\Url;
++use Drupal\Core\Link;
+ 
+ /**
+  * Implements hook_preprocess_HOOK().
+  */
+ function layout_custom_section_classes_preprocess_layout(&$variables) {
+-  if (isset($variables['settings']['custom_classes']) && $variables['settings']['custom_classes'] !== '') {
+-    $variables["attributes"]["class"][] = $variables['settings']['custom_classes'];
++  $layout_settings = $variables['settings'];
++  if (isset($layout_settings['custom_classes']['layout_class']) && $layout_settings['custom_classes']['layout_class'] !== '') {
++    foreach ($layout_settings['custom_classes']['layout_class'] as $layout_class) {
++      $variables['attributes']['class'][] = $layout_class;
++      $variables['layout_class'][] = $layout_class;
++    }
++  }
++  if (isset($layout_settings['custom_classes']['layout_styling_class']) && $layout_settings['custom_classes']['layout_styling_class'] !== '') {
++    foreach ($layout_settings['custom_classes']['layout_styling_class'] as $layout_styling_class) {
++      $variables['attributes']['class'][] = $layout_styling_class;
++      $variables['layout_styling_class'][] = $layout_styling_class;
++    }
+   }
+ }
+ 
+@@ -21,11 +33,54 @@ function layout_custom_section_classes_form_layout_builder_configure_section_alt
+     $config = $formObject->getLayout()->getConfiguration();
+     $classes = $config['custom_classes'] ?? '';
+ 
+-    $form['layout_settings']['custom_classes'] = [
+-      '#type' => 'textfield',
+-      '#title' => t('Custom Classes'),
+-      '#default_value' => $classes ?? '',
++   // Add extra classes for the regions to have more control while theming.
++     $form['layout_custom_section_classes'] = [
++      '#group' => 'additional_settings',
++      '#type' => 'details',
++      '#title' => t('Custom classes'),
++      '#tree' => TRUE,
++      '#collapsible' => TRUE,
++      '#collapsed' => TRUE,
+     ];
++    $classes_access = (\Drupal::currentUser()->hasPermission('admin_classes'));
++    $classes_region_options = getClasses();
++    $layout_styles_options = getLayoutStyles();
++    if (!empty($classes_region_options)) {
++      $form['layout_custom_section_classes']['layout_class'] = [
++        '#type' => 'select',
++        '#multiple' => TRUE,
++        '#options' => $classes_region_options,
++        '#title' => t('Class for layout'),
++        '#default_value' => !empty($config['custom_classes']['layout_class']) ? $config['custom_classes']['layout_class'] : '',
++      ];
++      if(!empty($layout_styles_options)) {
++        $form['layout_custom_section_classes']['layout_styling_class'] = [
++          '#type' => 'select',
++          '#multiple' => TRUE,
++          '#options' => $layout_styles_options,
++          '#title' => t('Class for layout styling'),
++          '#default_value' => !empty($config['custom_classes']['layout_styling_class']) ? $config['custom_classes']['layout_styling_class'] : '',
++        ];
++      }
++     
++      if ($classes_access) {
++        $url = Url::fromRoute('layout_custom_section_classes.classes');
++        $destination = \Drupal::destination()->getAsArray();
++        $url->setOption('query', $destination);
++        $form['layout_custom_section_classes']['info'] = ['#markup' => Link::fromTextAndUrl(t('Manage region CSS classes'), $url)->toString()];
++      }
++    }
++    else {
++      if ($classes_access) {
++        $url = Url::fromRoute('layout_custom_section_classes.classes');
++        $destination = \Drupal::destination()->getAsArray();
++        $url->setOption('query', $destination);
++        $form['layout_custom_section_classes']['info'] = ['#markup' => '<p>' . t('You have not defined any CSS classes which can be used on regions.') . '</p><p>' .  Link::fromTextAndUrl(t('Manage region and field CSS classes'), $url)->toString() . '</p>'];
++      }
++      else {
++        $form['layout_custom_section_classes']['#access'] = FALSE;
++      }
++    }
+ 
+     // Our submit handler must execute before the default one, because the
+     // default handler stores the section & component data in the tempstore
+@@ -40,18 +95,61 @@ function _layout_custom_section_classes_submit_form(array &$form, FormStateInter
+     $config = [];
+   }
+ 
+-  $config['custom_classes'] = Xss::filter($form_state->getValue(['layout_settings', 'custom_classes']));
++  $config['custom_classes'] = $form_state->getValue('layout_custom_section_classes','layout_class');
++  $config['custom_classes'] = $form_state->getValue('layout_custom_section_classes','layout_styling_class');
++ 
++  $formObject->getLayout()->setConfiguration($config);
++}
+ 
+-  // Filter each class, ensuring it is formatted properly.
+-  if (!empty($config['custom_classes'])) {
+-    $classes = explode(' ', $config['custom_classes']);
++/**
++ * Utility function to return CSS classes.
++ */
++  function getClasses($name = 'region') {
++    static $classes = [];
+ 
+-    foreach ($classes as $key => $class) {
+-      $classes[$key] = Html::getClass($class);
++    if (!isset($classes[$name])) {
++      $classes[$name] = $region = [];
++      $region = \Drupal::config('layout_custom_section_classes.settings')->get('classes.' . $name);
++      $custom_classes = isset($region['regions'])? $region['regions']: '';
++      
++      if (!empty($custom_classes)) {
++        $classes[$name][''] = t('None');
++        foreach ($custom_classes as $value) {
++          $classes_splitted = explode("|", $value);
++          $key = trim($classes_splitted[0]);
++          $friendly_name = isset($classes_splitted[1]) ? trim($classes_splitted[1]) : $key;
++          $classes[$name][Html::escape($key)] = $friendly_name;
++        }
++      }
++      // Prevent the name from being changed.
++      $name_clone = $name;
++      \Drupal::moduleHandler()->alter('layout_custom_section_classes', $classes[$name], $name_clone);
+     }
+ 
+-    $config['custom_classes'] = implode(' ', $classes);
++    return $classes[$name];
+   }
+ 
+-  $formObject->getLayout()->setConfiguration($config);
+-}
++  function getLayoutStyles($name = 'region') {
++    static $classes = [];
++
++    if (!isset($classes[$name])) {
++      $classes[$name] = $layout_styles = [];
++      $layout_styles = \Drupal::config('layout_custom_section_classes.settings')->get('classes.' . $name);
++      $custom_classes = isset($layout_styles['layout_styles'])? $layout_styles['layout_styles']: '';
++      
++      if (!empty($custom_classes)) {
++        $classes[$name][''] = t('None');
++        foreach ($custom_classes as $value) {
++          $classes_splitted = explode("|", $value);
++          $key = trim($classes_splitted[0]);
++          $friendly_name = isset($classes_splitted[1]) ? trim($classes_splitted[1]) : $key;
++          $classes[$name][Html::escape($key)] = $friendly_name;
++        }
++      }
++      // Prevent the name from being changed.
++      $name_clone = $name;
++      \Drupal::moduleHandler()->alter('layout_custom_section_classes', $classes[$name], $name_clone);
++    }
++
++    return $classes[$name];
++  }
+diff --git a/layout_custom_section_classes.routing.yml b/layout_custom_section_classes.routing.yml
+new file mode 100644
+index 0000000..6561115
+--- /dev/null
++++ b/layout_custom_section_classes.routing.yml
+@@ -0,0 +1,7 @@
++layout_custom_section_classes.classes:
++  path: '/admin/structure/layout_custom_section_classes/classes'
++  defaults:
++    _form: '\Drupal\layout_custom_section_classes\Form\ClassesForm'
++    _title: 'Classes'
++  requirements:
++    _permission: 'access content'
+\ No newline at end of file
+diff --git a/src/Form/ClassesForm.php b/src/Form/ClassesForm.php
+new file mode 100644
+index 0000000..40e8207
+--- /dev/null
++++ b/src/Form/ClassesForm.php
+@@ -0,0 +1,80 @@
++<?php
++
++namespace Drupal\layout_custom_section_classes\Form;
++
++use Drupal\Core\Form\ConfigFormBase;
++use Drupal\Core\Form\FormStateInterface;
++
++/**
++ * Configures classes used by wrappers.
++ */
++class ClassesForm extends ConfigFormBase {
++
++  /**
++   * {@inheritdoc}
++   */
++  public function getFormId() {
++    return 'layout_custom_section_classes_form';
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function buildForm(array $form, FormStateInterface $form_state) {
++    $config = $this->config('layout_custom_section_classes.settings');
++    $classes = $implode_classes = $implode_layout_styles = [];
++    $classes = $config->get('classes.region');
++    if(!empty($classes['regions'])) {
++      $implode_classes = implode("\n", $classes['regions']);
++    }
++    if(!empty($classes['layout_styles'])) {
++      $implode_layout_styles = implode("\n", $classes['layout_styles']);
++    }
++    $form['regions'] = [
++      '#type' => 'textarea',
++      '#title' => $this->t('CSS classes for layouts'),
++      '#default_value' => $implode_classes,
++      '#description' => t('Configure CSS classes which you can add to regions on the "manage display" screens. Add multiple CSS classes line by line.<br />If you want to have a friendly name, separate class and friendly name by |, but this is not required. eg:<br /><em>class_name_1<br />class_name_2|Friendly name<br />class_name_3</em>'),
++    ];
++    $form['layout_styling_classes'] = [
++      '#type' => 'textarea',
++      '#title' => $this->t('CSS classes for layout styling'),
++      '#default_value' => $implode_layout_styles,
++      '#description' => t('Configure CSS classes which you can add to regions on the "manage display" screens. Add multiple CSS classes line by line.<br />If you want to have a friendly name, separate class and friendly name by |, but this is not required. eg:<br /><em>class_name_1<br />class_name_2|Friendly name<br />class_name_3</em>'),
++    ];
++
++    return parent::buildForm($form, $form_state);
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public function submitForm(array &$form, FormStateInterface $form_state) {
++    parent::submitForm($form, $form_state);
++
++    // Prepare region classes.
++    $region_classes = $layout_styling_classes = [];
++    $regions = $form_state->getValue('regions');
++    $layout_styling_classes = $form_state->getValue('layout_styling_classes');
++    if (!empty($regions)) {
++      $region_classes['regions'] = explode("\n", str_replace("\r", '', $form_state->getValue('regions')));
++    }
++    if (!empty($layout_styling_classes)) {
++      $region_classes['layout_styles'] = explode("\n", str_replace("\r", '', $form_state->getValue('layout_styling_classes')));
++    }
++
++    $config = $this->config('layout_custom_section_classes.settings');
++    $config->set('classes.region', $region_classes)
++      ->save();
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  protected function getEditableConfigNames() {
++    return [
++      'layout_custom_section_classes.settings',
++    ];
++  }
++
++}
