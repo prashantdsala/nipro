@@ -42,12 +42,12 @@
             "type": "package",
             "package": {
                 "name": "qed42/space-profile",
-                "version": "1.0.1",
+                "version": "1.0.2",
                 "type":"drupal-profile",
                 "source": {
                     "url": "https://github.com/spacedesignsystem/space-profile.git",
                     "type": "git",
-                    "reference": "1.0.1"
+                    "reference": "1.0.2"
                 }
             }
         },
@@ -68,7 +68,7 @@
     "require": {
         "qed42/space": "1.0.14",
         "qed42/spaceds": "1.0.5",
-        "qed42/space-profile": "1.0.1",
+        "qed42/space-profile": "1.0.2",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6.0",
         "oomphinc/composer-installers-extender": "^2.0",
