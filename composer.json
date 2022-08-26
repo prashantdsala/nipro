@@ -16,12 +16,12 @@
             "type": "package",
             "package": {
                 "name": "qed42/space",
-                "version": "1.0.14",
+                "version": "1.0.15",
                 "type":"drupal-theme",
                 "source": {
                     "url": "https://github.com/spacedesignsystem/space.git",
                     "type": "git",
-                    "reference": "1.0.14"
+                    "reference": "1.0.15"
                 }
             }
         },
@@ -38,6 +38,19 @@
                 }
             }
         },
+				"space_layout_builder": {
+					"type": "package",
+					"package": {
+						"name": "qed42/space_layout_builder",
+						"version": "1.0.1",
+						"type":"drupal-module",
+						"source": {
+							"url": "https://github.com/spacedesignsystem/space_layout_builder.git",
+							"type": "git",
+							"reference": "1.0.1"
+						}
+					}
+				},
         "qed42-profile": {
             "type": "package",
             "package": {
@@ -66,9 +79,10 @@
         }
     },
     "require": {
-        "qed42/space": "1.0.14",
+        "qed42/space": "^1.0",
         "qed42/spaceds": "1.0.5",
         "qed42/space-profile": "1.0.2",
+				"qed42/space_layout_builder": "^1.0",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6.0",
         "oomphinc/composer-installers-extender": "^2.0",
@@ -268,9 +282,6 @@
             },
             "drupal/fivestar": {
                 "Remove 'fivestar_preview' theme function": "https://www.drupal.org/files/issues/2022-04-06/3273701_3.patch"
-            },
-            "drupal/layout_custom_section_classes": {
-                "Predefined custom classes and multi value section": "patches/layout_custom_section_classes/predefine_custom_classes_multivalue_custom_class_selection.patch"
             },
             "drupal/ui_patterns_views_style" : {
                 "Pattern settings is not available in the Views": "https://www.drupal.org/files/issues/2022-07-05/pattern-format-settings-3294280-2.patch"
