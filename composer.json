@@ -13,76 +13,115 @@
             "url": "https://asset-packagist.org"
         },
         "qed42-theme":  {
-            "type": "package",
-            "package": {
-                "name": "qed42/space",
-                "version": "1.0.15",
-                "type":"drupal-theme",
-                "source": {
-                    "url": "https://github.com/spacedesignsystem/space.git",
-                    "type": "git",
-                    "reference": "1.0.15"
-                }
+          "type": "package",
+          "package": {
+            "name": "qed42/space",
+            "version": "1.0.17",
+            "type":"drupal-theme",
+            "source": {
+              "url": "https://github.com/spacedesignsystem/space.git",
+              "type": "git",
+              "reference": "1.0.17"
             }
+          }
         },
         "qed42-module": {
-            "type": "package",
-            "package": {
-                "name": "qed42/spaceds",
-                "version": "1.0.5",
-                "type":"drupal-module",
-                "source": {
-                    "url": "https://github.com/spacedesignsystem/spaceds.git",
-                    "type": "git",
-                    "reference": "1.0.5"
-                }
+          "type": "package",
+          "package": {
+            "name": "qed42/spaceds",
+            "version": "1.0.6",
+            "type":"drupal-module",
+            "source": {
+              "url": "https://github.com/spacedesignsystem/spaceds.git",
+              "type": "git",
+              "reference": "1.0.6"
             }
+          }
         },
 				"space_layout_builder": {
 					"type": "package",
 					"package": {
 						"name": "qed42/space_layout_builder",
-						"version": "1.0.1",
+						"version": "1.0.5",
 						"type":"drupal-module",
 						"source": {
 							"url": "https://github.com/spacedesignsystem/space_layout_builder.git",
+							"type": "git",
+							"reference": "1.0.5"
+						}
+					}
+				},
+        "space_layout_settings": {
+					"type": "package",
+					"package": {
+						"name": "qed42/space_layout_settings",
+						"version": "1.0.1",
+						"type":"drupal-module",
+						"source": {
+							"url": "https://github.com/spacedesignsystem/space_layout_settings.git",
 							"type": "git",
 							"reference": "1.0.1"
 						}
 					}
 				},
+				"space_component": {
+					"type": "package",
+					"package": {
+						"name": "qed42/space_component",
+						"version": "1.0.4",
+						"type":"drupal-module",
+						"source": {
+							"url": "https://github.com/spacedesignsystem/space-component.git",
+							"type": "git",
+							"reference": "1.0.4"
+						}
+					}
+				},
         "qed42-profile": {
-            "type": "package",
-            "package": {
-                "name": "qed42/space-profile",
-                "version": "1.0.5",
-                "type":"drupal-profile",
-                "source": {
-                    "url": "https://github.com/spacedesignsystem/space-profile.git",
-                    "type": "git",
-                    "reference": "1.0.5"
-                }
+          "type": "package",
+          "package": {
+            "name": "qed42/space-profile",
+            "version": "1.0.6",
+            "type":"drupal-profile",
+            "source": {
+              "url": "https://github.com/spacedesignsystem/space-profile.git",
+              "type": "git",
+              "reference": "1.0.6"
             }
+          }
+        },
+        "aos-library": {
+          "type": "package",
+          "package": {
+            "name": "michalsnik/aos",
+            "version": "dev-master",
+            "type":"drupal-library",
+            "source": {
+              "url": "https://github.com/michalsnik/aos.git",
+              "type": "git",
+              "reference": "master"
+            }
+          }
         },
         "jquery-library": {
-            "type": "package",
-            "package": {
-                    "name": "furf/jquery-ui-touch-punch",
-                    "version": "dev-main",
-                    "type":"drupal-library",
-                    "source": {
-                            "url": "https://github.com/furf/jquery-ui-touch-punch.git",
-                            "type": "git",
-                            "reference": "master"
-                    }
+          "type": "package",
+          "package": {
+            "name": "furf/jquery-ui-touch-punch",
+            "version": "dev-main",
+            "type":"drupal-library",
+            "source": {
+              "url": "https://github.com/furf/jquery-ui-touch-punch.git",
+              "type": "git",
+              "reference": "master"
             }
+          }
         }
     },
     "require": {
-        "qed42/space": "^1.0",
-        "qed42/spaceds": "1.0.5",
-        "qed42/space-profile": "^1.0",
-				"qed42/space_layout_builder": "^1.0",
+        "qed42/space": "1.0.17",
+        "qed42/spaceds": "1.0.6",
+        "qed42/space-profile": "1.0.6",
+				"qed42/space_layout_builder": "1.0.5",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6.0",
         "oomphinc/composer-installers-extender": "^2.0",
@@ -141,7 +180,7 @@
         "drupal/twig_vardumper": "^3.0",
         "drupal/media_library_form_element": "^2.0",
         "drupal/section_library": "^1.0",
-        "drupal/ui_patterns_settings": "^2.0",
+        "drupal/ui_patterns_settings": "^2.0@beta",
         "bower-asset/dropzone": "5.7.2",
         "drupal/media_bulk_upload": "^1.0@alpha",
         "drupal/section_library_reusable": "^1.0@beta",
@@ -218,7 +257,17 @@
         "drupal/layout_builder_component_attributes": "^2.0",
         "furf/jquery-ui-touch-punch": "dev-main",
         "drupal/blocktabs": "^1.0@beta",
-        "drupal/entity_reference_revisions": "1.x-dev@dev"
+        "drupal/entity_reference_revisions": "1.x-dev@dev",
+        "qed42/space_component": "1.0.4",
+        "qed42/space_layout_settings": "1.0.1",
+        "drupal/persistent_login": "^1.3",
+        "drupal/social_api": "^3.0",
+        "drupal/social_auth": "^3.0",
+        "drupal/social_auth_google": "^3.0@RC",
+        "drupal/social_auth_facebook": "^3.0",
+        "drupal/sendgrid_integration": "^2.0@beta",
+        "drupal/animate_on_scroll": "^1.0",
+        "michalsnik/aos": "dev-master"
     },
     "require-dev": {
         "drush/drush": "^11.0"
@@ -259,8 +308,9 @@
 				"TranslatableMarkup for Invalid Argument Exception: $string (Array) must be a string.": "https://www.drupal.org/files/issues/2021-07-30/2719553-42_0.patch",
 				"Layout Builder doesn't respect the view mode set in a hook_entity_view_mode_alter() implementation":"https://www.drupal.org/files/issues/2019-09-26/3083754-4.patch",
 				"MenuLinkContentAccessControlHandler does not allow 'view' access without admin permission": "https://git.drupalcode.org/project/drupal/-/merge_requests/339.patch",
-                "Drag-and-drop reordering doesn't work if the region content is nested": "https://www.drupal.org/files/issues/2021-02-01/3062742_10_0.patch"    
-                    },
+                "Drag-and-drop reordering doesn't work if the region content is nested": "https://www.drupal.org/files/issues/2021-02-01/3062742_10_0.patch",  
+                "Call to a member function getLabel() on null": "https://www.drupal.org/files/issues/2022-05-30/2985882-field-142.patch"        
+            },
             "drupal/layout_builder_st": {
                 "Argument 1 passed to Drupal\\layout_builder_st\\EventSubscriber\\ComponentPluginTranslate::isTranslation() must implement interface Drupal\\layout_builder\\SectionStorageInterface, null given": "https://www.drupal.org/files/issues/2019-07-24/isTranslation-null-given.patch",
                 "Inline block loading active block_content revision even if serialized block exists\n": "https://www.drupal.org/files/issues/2020-05-15/layout_builder_st-3067646-10.patch"
