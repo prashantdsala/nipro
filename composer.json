@@ -81,12 +81,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space-profile",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "type":"drupal-profile",
             "source": {
               "url": "https://github.com/spacedesignsystem/space-profile.git",
               "type": "git",
-              "reference": "1.0.6"
+              "reference": "1.0.7"
             }
           }
         },
@@ -120,7 +120,7 @@
     "require": {
         "qed42/space": "1.0.17",
         "qed42/spaceds": "1.0.6",
-        "qed42/space-profile": "1.0.6",
+        "qed42/space-profile": "1.0.7",
 				"qed42/space_layout_builder": "1.0.5",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6.0",
@@ -319,8 +319,7 @@
                 "#3228163: Add create or update logic.": "https://git.drupalcode.org/project/section_library/-/merge_requests/3.patch"
             },
             "drupal/drimage": {
-                "Stage file proxy": "https://git.drupalcode.org/project/drimage/-/merge_requests/1.patch",
-                "embeds in wysiwyg not displaying media": "https://www.drupal.org/files/issues/2020-09-06/3079190-8--show_img_in_media_embed.patch?X"
+                "Stage file proxy": "https://git.drupalcode.org/project/drimage/-/merge_requests/1.patch"
             },
             "drupal/ui_patterns": {
                 "Allow for Layout Builder sections to be given administrativ.": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/278.patch",
