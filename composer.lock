@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8cf0090695c112eb5f1265b981beaf3",
+    "content-hash": "6d6dd43fae30c88aa46191a7e2a6cb95",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -14197,16 +14197,6 @@
             "time": "2022-08-18T16:18:26+00:00"
         },
         {
-            "name": "michalsnik/aos",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/michalsnik/aos.git",
-                "reference": "master"
-            },
-            "type": "drupal-library"
-        },
-        {
             "name": "mkalkbrenner/php-htmldiff-advanced",
             "version": "0.0.8",
             "source": {
@@ -15237,61 +15227,71 @@
         },
         {
             "name": "qed42/space",
-            "version": "1.0.17",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space.git",
-                "reference": "1.0.17"
+                "reference": "2.0.0"
             },
             "type": "drupal-theme"
         },
         {
             "name": "qed42/space-profile",
-            "version": "1.0.7",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space-profile.git",
-                "reference": "1.0.7"
+                "reference": "2.0.0"
             },
             "type": "drupal-profile"
         },
         {
+            "name": "qed42/space_aos",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spacedesignsystem/space_aos.git",
+                "reference": "1.0.0"
+            },
+            "type": "drupal-module"
+        },
+        {
             "name": "qed42/space_component",
-            "version": "1.0.4",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space-component.git",
-                "reference": "1.0.4"
+                "reference": "2.0.0"
             },
             "type": "drupal-module"
         },
         {
             "name": "qed42/space_layout_builder",
-            "version": "1.0.5",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_layout_builder.git",
-                "reference": "1.0.5"
+                "reference": "1.0.8"
             },
             "type": "drupal-module"
         },
         {
             "name": "qed42/space_layout_settings",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_layout_settings.git",
-                "reference": "1.0.1"
+                "reference": "1.0.2"
             },
             "type": "drupal-module"
         },
         {
             "name": "qed42/spaceds",
-            "version": "1.0.6",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/spaceds.git",
-                "reference": "1.0.6"
+                "reference": "2.0.0"
             },
             "type": "drupal-module"
         },
@@ -19338,8 +19338,7 @@
         "drupal/blocktabs": 10,
         "drupal/entity_reference_revisions": 20,
         "drupal/social_auth_google": 5,
-        "drupal/sendgrid_integration": 10,
-        "michalsnik/aos": 20
+        "drupal/sendgrid_integration": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
