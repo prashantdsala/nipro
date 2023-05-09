@@ -307,7 +307,7 @@
                 "Fatal error on config form with translation enabled when config is missing": "https://www.drupal.org/files/issues/2019-09-26/core-typed_config_handle_missing_config-2925297-18.patch",
 				"TranslatableMarkup for Invalid Argument Exception: $string (Array) must be a string.": "https://www.drupal.org/files/issues/2021-07-30/2719553-42_0.patch",
 				"Layout Builder doesn't respect the view mode set in a hook_entity_view_mode_alter() implementation":"https://www.drupal.org/files/issues/2019-09-26/3083754-4.patch",
-				"MenuLinkContentAccessControlHandler does not allow 'view' access without admin permission": "https://git.drupalcode.org/project/drupal/-/merge_requests/339.patch",
+				"MenuLinkContentAccessControlHandler does not allow 'view' access without admin permission": "https://git.drupalcode.org/project/drupal/-/merge_requests/339.diff",
                 "Drag-and-drop reordering doesn't work if the region content is nested": "https://www.drupal.org/files/issues/2021-02-01/3062742_10_0.patch",  
                 "Call to a member function getLabel() on null": "https://www.drupal.org/files/issues/2022-05-30/2985882-field-142.patch"        
             },
