@@ -334,6 +334,12 @@
             },
             "drupal/ui_patterns_views_style" : {
                 "Pattern settings is not available in the Views": "https://www.drupal.org/files/issues/2022-07-05/pattern-format-settings-3294280-2.patch"
+            },
+            "drupal/layout_builder_modal": {
+              "Solved layout block translation issue": "https://www.drupal.org/files/issues/2020-10-21/3133695-7.patch"
+            },
+            "drupal/node_type_class": {
+              "PHP type error when saving content type": "https://www.drupal.org/files/issues/2019-12-18/Fix_interface_reference-3040389-3.patch"
             }
         },
         "composer-exit-on-patch-failure": true,
