@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bcc39e9c38df80ebcb7a8bf9aaaa93c",
+    "content-hash": "9b01fe19de8eaf1fc7b73aa4237f35d5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -15227,11 +15227,11 @@
         },
         {
             "name": "qed42/space",
-            "version": "2.0.0",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space.git",
-                "reference": "2.0.0"
+                "reference": "2.0.2"
             },
             "type": "drupal-theme"
         },
@@ -15247,41 +15247,81 @@
         },
         {
             "name": "qed42/space_aos",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_aos.git",
-                "reference": "1.0.0"
+                "reference": "1.0.1"
+            },
+            "type": "drupal-module"
+        },
+        {
+            "name": "qed42/space_assets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spacedesignsystem/space_assets.git",
+                "reference": "master"
             },
             "type": "drupal-module"
         },
         {
             "name": "qed42/space_component",
-            "version": "2.0.3",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space-component.git",
-                "reference": "2.0.3"
+                "reference": "2.0.5"
+            },
+            "type": "drupal-module"
+        },
+        {
+            "name": "qed42/space_content_review_system",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spacedesignsystem/space_content_review_system.git",
+                "reference": "master"
             },
             "type": "drupal-module"
         },
         {
             "name": "qed42/space_layout_builder",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_layout_builder.git",
-                "reference": "1.0.8"
+                "reference": "1.0.9"
+            },
+            "type": "drupal-module"
+        },
+        {
+            "name": "qed42/space_layout_custom_section",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spacedesignsystem/space-layout-custom-section.git",
+                "reference": "master"
             },
             "type": "drupal-module"
         },
         {
             "name": "qed42/space_layout_settings",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_layout_settings.git",
-                "reference": "1.0.2"
+                "reference": "1.0.3"
+            },
+            "type": "drupal-module"
+        },
+        {
+            "name": "qed42/space_media_library",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spacedesignsystem/space_media_library.git",
+                "reference": "master"
             },
             "type": "drupal-module"
         },
@@ -19338,7 +19378,10 @@
         "drupal/blocktabs": 10,
         "drupal/entity_reference_revisions": 20,
         "drupal/social_auth_google": 5,
-        "drupal/sendgrid_integration": 10
+        "drupal/sendgrid_integration": 10,
+        "qed42/space_assets": 20,
+        "qed42/space_media_library": 20,
+        "qed42/space_content_review_system": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
