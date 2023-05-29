@@ -38,45 +38,45 @@
             }
           }
         },
-				"space_layout_builder": {
-					"type": "package",
-					"package": {
-						"name": "qed42/space_layout_builder",
-						"version": "1.0.9",
-						"type":"drupal-module",
-						"source": {
-							"url": "https://github.com/spacedesignsystem/space_layout_builder.git",
-							"type": "git",
-							"reference": "1.0.9"
-						}
+        "space_layout_builder": {
+          "type": "package",
+          "package": {
+            "name": "qed42/space_layout_builder",
+            "version": "1.0.9",
+            "type":"drupal-module",
+            "source": {
+              "url": "https://github.com/spacedesignsystem/space_layout_builder.git",
+              "type": "git",
+              "reference": "1.0.9"
+            }
 					}
-				},
+        },
         "space_layout_settings": {
-					"type": "package",
-					"package": {
-						"name": "qed42/space_layout_settings",
-						"version": "1.0.3",
-						"type":"drupal-module",
-						"source": {
-							"url": "https://github.com/spacedesignsystem/space_layout_settings.git",
-							"type": "git",
-							"reference": "1.0.3"
-						}
-					}
-				},
-				"space_component": {
-					"type": "package",
-					"package": {
-						"name": "qed42/space_component",
-						"version": "2.0.5",
-						"type":"drupal-module",
-						"source": {
-							"url": "https://github.com/spacedesignsystem/space-component.git",
-							"type": "git",
-							"reference": "2.0.5"
-						}
-					}
-				},
+          "type": "package",
+          "package": {
+            "name": "qed42/space_layout_settings",
+            "version": "1.0.3",
+            "type":"drupal-module",
+            "source": {
+              "url": "https://github.com/spacedesignsystem/space_layout_settings.git",
+              "type": "git",
+              "reference": "1.0.3"
+            }
+          }
+        },
+        "space_component": {
+          "type": "package",
+          "package": {
+            "name": "qed42/space_component",
+            "version": "2.0.5",
+            "type":"drupal-module",
+            "source": {
+              "url": "https://github.com/spacedesignsystem/space-component.git",
+              "type": "git",
+              "reference": "2.0.5"
+            }
+          }
+        },
         "qed42-profile": {
           "type": "package",
           "package": {
@@ -130,7 +130,7 @@
           }
         },
         "space_content_review_system": {
-          "type": "package",
+          "type": "package", 
           "package": {
             "name": "qed42/space_content_review_system",
             "version": "dev-master",
