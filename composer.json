@@ -107,12 +107,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space_assets",
-            "version": "dev-master",
+            "version": "1.0",
             "type": "drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space_assets.git",
               "type": "git",
-              "reference": "master"
+              "reference": "1.0"
             }
           }
         },
@@ -120,12 +120,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space_media_library",
-            "version": "dev-master",
+            "version": "1.0",
             "type": "drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space_media_library.git",
               "type": "git",
-              "reference": "master"
+              "reference": "1.0"
             }
           }
         },
@@ -133,12 +133,12 @@
           "type": "package", 
           "package": {
             "name": "qed42/space_content_review_system",
-            "version": "dev-master",
+            "version": "1.0",
             "type": "drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space_content_review_system.git",
               "type": "git",
-              "reference": "master"
+              "reference": "1.0"
             }
           }
         },
@@ -146,12 +146,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space_layout_custom_section",
-            "version": "dev-master",
+            "version": "1.0",
             "type": "drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space-layout-custom-section.git",
               "type": "git",
-             "reference": "master"
+             "reference": "1.0"
             }
           }
         },
@@ -320,10 +320,10 @@
         "drupal/sendgrid_integration": "^2.0@beta",
         "drupal/animate_on_scroll": "^1.0",
         "qed42/space_aos": "^1.0",
-        "qed42/space_assets": "dev-master",
-        "qed42/space_media_library": "dev-master",
-        "qed42/space_content_review_system": "dev-master",
-        "qed42/space_layout_custom_section": "dev-master"
+        "qed42/space_assets": "^1.0",
+        "qed42/space_media_library": "^1.0",
+        "qed42/space_content_review_system": "^1.0",
+        "qed42/space_layout_custom_section": "^1.0"
     },
     "require-dev": {
         "drush/drush": "^11.0"

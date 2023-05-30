@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b01fe19de8eaf1fc7b73aa4237f35d5",
+    "content-hash": "4cedba5ef4a2889ae35ece084e71077b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -15257,11 +15257,11 @@
         },
         {
             "name": "qed42/space_assets",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_assets.git",
-                "reference": "master"
+                "reference": "1.0"
             },
             "type": "drupal-module"
         },
@@ -15277,11 +15277,11 @@
         },
         {
             "name": "qed42/space_content_review_system",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_content_review_system.git",
-                "reference": "master"
+                "reference": "1.0"
             },
             "type": "drupal-module"
         },
@@ -15297,11 +15297,11 @@
         },
         {
             "name": "qed42/space_layout_custom_section",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space-layout-custom-section.git",
-                "reference": "master"
+                "reference": "1.0"
             },
             "type": "drupal-module"
         },
@@ -15317,11 +15317,11 @@
         },
         {
             "name": "qed42/space_media_library",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space_media_library.git",
-                "reference": "master"
+                "reference": "1.0"
             },
             "type": "drupal-module"
         },
@@ -19378,10 +19378,7 @@
         "drupal/blocktabs": 10,
         "drupal/entity_reference_revisions": 20,
         "drupal/social_auth_google": 5,
-        "drupal/sendgrid_integration": 10,
-        "qed42/space_assets": 20,
-        "qed42/space_media_library": 20,
-        "qed42/space_content_review_system": 20
+        "drupal/sendgrid_integration": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
