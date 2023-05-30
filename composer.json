@@ -323,7 +323,8 @@
         "qed42/space_assets": "^1.0",
         "qed42/space_media_library": "^1.0",
         "qed42/space_content_review_system": "^1.0",
-        "qed42/space_layout_custom_section": "^1.0"
+        "qed42/space_layout_custom_section": "^1.0",
+        "drupal/media_directories": "2.0.2"
     },
     "require-dev": {
         "drush/drush": "^11.0"
