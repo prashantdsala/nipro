@@ -81,12 +81,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space-profile",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "type":"drupal-profile",
             "source": {
               "url": "https://github.com/spacedesignsystem/space-profile.git",
               "type": "git",
-              "reference": "2.0.0"
+              "reference": "2.0.1"
             }
           }
         },

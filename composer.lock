@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87ed41703c585a748be4a4491b4eac1a",
+    "content-hash": "a5998e8e7c424463952c1f51d7a87267",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -15524,11 +15524,11 @@
         },
         {
             "name": "qed42/space-profile",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space-profile.git",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "type": "drupal-profile"
         },
