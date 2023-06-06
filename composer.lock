@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8eb5edcf6b5808b3f6d5dd8c68403a7",
+    "content-hash": "c15a10aa5985712943420dbcb556fbdd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -15514,11 +15514,11 @@
         },
         {
             "name": "qed42/space",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spacedesignsystem/space.git",
-                "reference": "2.0.2"
+                "reference": "2.0.3"
             },
             "type": "drupal-theme"
         },

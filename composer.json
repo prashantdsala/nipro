@@ -16,12 +16,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "type":"drupal-theme",
             "source": {
               "url": "https://github.com/spacedesignsystem/space.git",
               "type": "git",
-              "reference": "2.0.2"
+              "reference": "2.0.3"
             }
           }
         },
