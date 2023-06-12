@@ -223,6 +223,7 @@
         "drupal/redirect": "^1.6",
         "drupal/schemata": "^1.0@beta",
         "drupal/node_type_class": "^2.0",
+        "drupal/node_revision_delete": "^1.0@RC",
         "drupal/shield": "^1.4",
         "drupal/simple_gmap": "^3.0",
         "drupal/pathauto": "^1.8",
