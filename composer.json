@@ -16,12 +16,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space",
-            "version": "2.0.2-beta",
+            "version": "2.0.3-beta",
             "type":"drupal-theme",
             "source": {
               "url": "https://github.com/spacedesignsystem/space.git",
               "type": "git",
-              "reference": "2.0.2-beta"
+              "reference": "2.0.3-beta"
             }
           }
         },
@@ -42,12 +42,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space_layout_builder",
-            "version": "1.0.9-beta",
+            "version": "1.0.10-beta",
             "type":"drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space_layout_builder.git",
               "type": "git",
-              "reference": "1.0.9-beta"
+              "reference": "1.0.10-beta"
             }
 					}
         },
@@ -68,12 +68,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space_component",
-            "version": "2.0.6-beta",
+            "version": "2.0.7-beta",
             "type":"drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space-component.git",
               "type": "git",
-              "reference": "2.0.6-beta"
+              "reference": "2.0.7-beta"
             }
           }
         },
@@ -81,12 +81,12 @@
           "type": "package",
           "package": {
             "name": "qed42/space-profile",
-            "version": "2.0.1-beta",
+            "version": "2.0.2-beta",
             "type":"drupal-profile",
             "source": {
               "url": "https://github.com/spacedesignsystem/space-profile.git",
               "type": "git",
-              "reference": "2.0.1-beta"
+              "reference": "2.0.2-beta"
             }
           }
         },
@@ -107,7 +107,7 @@
           "type": "package",
           "package": {
             "name": "qed42/space_assets",
-            "version": "1.0",
+            "version": "1.0-beta",
             "type": "drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space_assets.git",
@@ -124,19 +124,6 @@
             "type": "drupal-module",
             "source": {
               "url": "https://github.com/spacedesignsystem/space_media_library.git",
-              "type": "git",
-              "reference": "1.0"
-            }
-          }
-        },
-        "space_content_review_system": {
-          "type": "package", 
-          "package": {
-            "name": "qed42/space_content_review_system",
-            "version": "1.0",
-            "type": "drupal-module",
-            "source": {
-              "url": "https://github.com/spacedesignsystem/space_content_review_system.git",
               "type": "git",
               "reference": "1.0"
             }
@@ -321,9 +308,7 @@
         "drupal/sendgrid_integration": "^2.0@beta",
         "drupal/animate_on_scroll": "^1.0",
         "qed42/space_aos": "^1.0@beta",
-        "qed42/space_assets": "^1.0",
-        "qed42/space_media_library": "^1.0",
-        "qed42/space_content_review_system": "^1.0",
+        "qed42/space_assets": "^1.0@beta",
         "qed42/space_layout_custom_section": "^1.0",
         "drupal/media_directories": "2.0.2"
     },
