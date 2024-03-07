@@ -21,7 +21,7 @@
             "source": {
               "url": "https://github.com/spacedesignsystem/space.git",
               "type": "git",
-              "reference": "2.0.3-beta"
+              "reference": "space-d10"
             }
           }
         },
@@ -34,7 +34,7 @@
             "source": {
               "url": "https://github.com/spacedesignsystem/spaceds.git",
               "type": "git",
-              "reference": "2.0.0"
+              "reference": "space-d10"
             }
           }
         },
@@ -47,9 +47,9 @@
             "source": {
               "url": "https://github.com/spacedesignsystem/space_layout_builder.git",
               "type": "git",
-              "reference": "1.0.10-beta"
+              "reference": "space-d10"
             }
-					}
+                    }
         },
         "space_layout_settings": {
           "type": "package",
@@ -73,7 +73,7 @@
             "source": {
               "url": "https://github.com/spacedesignsystem/space-component.git",
               "type": "git",
-              "reference": "2.0.7-beta"
+              "reference": "space-d10"
             }
           }
         },
@@ -90,19 +90,6 @@
             }
           }
         },
-        "space_aos": {
-          "type": "package",
-          "package": {
-            "name": "qed42/space_aos",
-            "version": "1.0.1-beta",
-            "type":"drupal-module",
-            "source": {
-              "url": "https://github.com/spacedesignsystem/space_aos.git",
-              "type": "git",
-              "reference": "1.0.1-beta"
-            }
-          }
-        },
         "space_assets": {
           "type": "package",
           "package": {
@@ -112,7 +99,7 @@
             "source": {
               "url": "https://github.com/spacedesignsystem/space_assets.git",
               "type": "git",
-              "reference": "1.0"
+              "reference": "space-d10"
             }
           }
         },
@@ -125,7 +112,7 @@
             "source": {
               "url": "https://github.com/spacedesignsystem/space_media_library.git",
               "type": "git",
-              "reference": "1.0"
+              "reference": "space-d10"
             }
           }
         },
@@ -294,14 +281,16 @@
         "drupal/social_auth_facebook": "^3.0",
         "drupal/sendgrid_integration": "^2.0@beta",
         "drupal/animate_on_scroll": "^1.0",
-        "qed42/space_aos": "^1.0@beta",
         "qed42/space_assets": "^1.0@beta",
         "qed42/space_layout_custom_section": "^1.0",
         "drupal/media_directories": "^2.1@beta",
         "mglaman/composer-drupal-lenient": "^1.0",
         "drupal/node_type_class": "^2.0",
         "drupal/toolbar_anti_flicker": "^9.3",
-        "drupal/checklist_security": "1.0.x-dev"
+        "drupal/checklist_security": "1.0.x-dev",
+        "drupal/ds": "^3.19",
+        "drupal/quickedit": "^1.0",
+        "drupal/stable": "^2.0"
     },
     "require-dev": {
         "drush/drush": "^11.0"
