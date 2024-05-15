@@ -1,0 +1,48 @@
+uuid: e8fd15ca-741d-4c8e-9854-cc4043222ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.16x9
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_media_in_library
+    - media.type.image
+  module:
+    - drimage
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: Xylm6r36vnK_-LbI8ot_e-CJhr_R9tVeWZBvrWRAowY
+id: media.image.16x9
+targetEntityType: media
+bundle: image
+mode: 16x9
+content:
+  field_media_image:
+    type: drimage
+    label: hidden
+    settings:
+      image_link: ''
+      image_handling: aspect_ratio
+      aspect_ratio:
+        width: '16'
+        height: '9'
+      background:
+        attachment: scroll
+        position: 'center center'
+        size: cover
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

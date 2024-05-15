@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: leURr5RKL9oeWmoGJ0yVsgBis6XwhPjJhGbLmYSiIII
+mode: simple
+ignored_config_entities:
+  - social_auth_facebook.settings
+  - social_auth_google.settings
+  - system.site.page
+  - system.site.page.403
+  - system.site.page.404

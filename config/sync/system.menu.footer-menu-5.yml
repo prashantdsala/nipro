@@ -1,0 +1,15 @@
+uuid: 78f4660b-acb1-4d63-b192-87eaece65d87
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+_core:
+  default_config_hash: vczjZR5bCJ9aFBPAboRJca-vfenFFbwNu9A5z2ueWlw
+id: footer-menu-5
+label: 'Footer menu 5'
+description: ''
+locked: false

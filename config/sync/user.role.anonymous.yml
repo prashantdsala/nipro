@@ -1,0 +1,24 @@
+uuid: 7ab2b2be-76b0-4f56-b507-1b8e5deeb248
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: cOCRVmikIq_FWpdsvw4BUiaU4NDj4skr3KCsJMbu-hk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'use text format restricted_html'
+  - 'view media'

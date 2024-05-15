@@ -1,0 +1,17 @@
+uuid: 5fef98cf-7fb3-4e71-af04-943c7cebff74
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ayQhIvr1_jV0AHaIxdQvi7Eqv4SGn4aceXD1G97AtVA
+id: images
+label: Images
+media_types:
+  image: image
+  audio: 0
+  document: 0
+  remote_video: 0
+  video: 0
+form_mode: media_browser
+show_alt: null
+show_title: null

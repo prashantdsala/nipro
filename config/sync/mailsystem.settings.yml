@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: 6s2KL_9w_HiAi1gzMyaLTRXV4pedzmVAwAMBzz8V8lk
+theme: space
+defaults:
+  sender: sendgrid_integration
+  formatter: sendgrid_integration
+modules:
+  sendgrid_integration:
+    none:
+      sender: sendgrid_integration
+      formatter: sendgrid_integration

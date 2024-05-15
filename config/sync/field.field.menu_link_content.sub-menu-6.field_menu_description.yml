@@ -1,0 +1,23 @@
+uuid: 13e17a27-c6c1-4222-8f55-215a83e274e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_description
+    - system.menu.sub-menu-6
+  module:
+    - text
+_core:
+  default_config_hash: sbj9AcfY4k3B24fAHgGJyeJGNQa8OjyInfLZX_8r0ng
+id: menu_link_content.sub-menu-6.field_menu_description
+field_name: field_menu_description
+entity_type: menu_link_content
+bundle: sub-menu-6
+label: 'Menu description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

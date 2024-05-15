@@ -1,0 +1,42 @@
+uuid: e2020d49-5255-4891-a03f-aa29f0fe0e95
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_link
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - svg_image
+    - user
+_core:
+  default_config_hash: UMuYp5csh7kx4zvFt4nexw_wDgbe-dVkC1q6LrJZnkg
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_full_name: true
+  field_link: true
+  langcode: true
+  member_for: true
+  search_api_excerpt: true
+  simplenews: true

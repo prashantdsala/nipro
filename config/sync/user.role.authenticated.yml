@@ -1,0 +1,28 @@
+uuid: e555dd57-fafe-4df6-9fd8-cc02a484adeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - file
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: ttZW0U4hHo1hlX1gk8ca60t_z-WVhcpXyb54OKpwgAU
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'delete own files'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view media'

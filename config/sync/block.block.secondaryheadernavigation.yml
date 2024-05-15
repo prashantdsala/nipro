@@ -1,0 +1,27 @@
+uuid: 801da333-1a52-494b-9a9a-2747a0bb4ae2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-header-navigation
+  module:
+    - system
+  theme:
+    - space
+_core:
+  default_config_hash: IfPTkMQlerXWrK4zcLolUfzRmdS3EOn1rX0hxX4Fi-U
+id: secondaryheadernavigation
+theme: space
+region: secondary_header_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:secondary-header-navigation'
+settings:
+  id: 'system_menu_block:secondary-header-navigation'
+  label: 'Secondary header navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

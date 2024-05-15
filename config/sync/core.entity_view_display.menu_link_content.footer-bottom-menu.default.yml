@@ -1,0 +1,21 @@
+uuid: fecf1888-9656-4c3c-a647-792e4f04af2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-bottom-menu
+_core:
+  default_config_hash: wUqBlQCFIA8mjC0bWqDkoWqaE69r0oV2NQmsaWrdQMU
+id: menu_link_content.footer-bottom-menu.default
+targetEntityType: menu_link_content
+bundle: footer-bottom-menu
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
