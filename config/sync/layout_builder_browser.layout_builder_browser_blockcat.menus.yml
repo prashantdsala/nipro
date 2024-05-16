@@ -1,9 +1,0 @@
-uuid: 6c78f051-d17b-495b-ac15-264763d9a6eb
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 54tfhBOvDd1BBcKyNN0NC6Bx0ksOfUWGX59PUja6vUY
-id: menus
-label: 'Select a Menu'
-weight: null
