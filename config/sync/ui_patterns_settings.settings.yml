@@ -1,7 +1,0 @@
-_core:
-  default_config_hash: VdwvCgXx0xH0R5_TuXFCSPKHIxqR-zFuv5qkfAptJEc
-mapping:
-  block_content--field_banner_position: 'banner::position'
-  block_content--field_banner_type: 'cta_banner::cta_banner_variation'
-  block_content--field_banner_variation: 'cta_banner::cta_banner_variation'
-  block_content--field_banner_image_position: 'cta_banner::image_position'
