@@ -1,0 +1,21 @@
+uuid: 4b13a7d6-0c81-4522-b340-2550efe6a60c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: ukrkACUbLGyIJ4gooT0m5lK96DUk5LmSTxJKGOen6SA
+name: scale_560w
+label: scale_560w
+effects:
+  925e3ffe-7938-4105-8ed7-6190fcf0f64f:
+    uuid: 925e3ffe-7938-4105-8ed7-6190fcf0f64f
+    id: image_scale
+    weight: 1
+    data:
+      width: 560
+      height: null
+      upscale: false
+pipeline: __default__

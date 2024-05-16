@@ -1,0 +1,22 @@
+uuid: 97a50afd-3bb8-4af6-9744-2691bd0ce463
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oecd
+_core:
+  default_config_hash: wAkDY_tZSV12iGQPNRwMEG7WmZj556wL5dqa8WZX7gQ
+id: oecd_tabs
+theme: oecd
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

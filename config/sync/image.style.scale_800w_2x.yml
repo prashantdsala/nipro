@@ -1,0 +1,21 @@
+uuid: fb44d493-09c9-47db-b5cf-aebabdaaa241
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: cMdFHT6wTeN4PYMTHh69C1PI_FwBFxmdcZSuJla-x3Y
+name: scale_800w_2x
+label: 'scale_800w 2x'
+effects:
+  d0a9d34c-4b7f-426b-9ce8-c644fae3ef14:
+    uuid: d0a9d34c-4b7f-426b-9ce8-c644fae3ef14
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: false
+pipeline: __default__

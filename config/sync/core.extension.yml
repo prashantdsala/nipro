@@ -138,6 +138,7 @@ module:
   social_auth: 0
   social_auth_facebook: 0
   social_auth_google: 0
+  space_c_image_styles: 0
   space_c_landing_page: 0
   space_layout_builder: 0
   space_layout_settings: 0
@@ -179,4 +180,5 @@ theme:
   stable: 0
   gin: 0
   space: 0
+  oecd: 0
 profile: space_profile

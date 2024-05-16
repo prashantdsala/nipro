@@ -1,0 +1,21 @@
+uuid: ca66bdaf-3d08-49b0-9ae0-5a8e48eef3b0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: UvzpsQJjJULBdBtIbb63TVtrgthfK3y8yva6zGt-Tag
+name: scale_720w
+label: scale_720w
+effects:
+  ce5864dc-a656-4774-afa2-c2ab6af57246:
+    uuid: ce5864dc-a656-4774-afa2-c2ab6af57246
+    id: image_scale
+    weight: 1
+    data:
+      width: 720
+      height: null
+      upscale: false
+pipeline: __default__

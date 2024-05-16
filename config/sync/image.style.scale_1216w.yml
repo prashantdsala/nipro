@@ -1,0 +1,21 @@
+uuid: 9f7ef19a-173d-4f94-bed5-22a1c664faa9
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: I52DiHrBr8l5O2VE1fBwzmqWwndjcj9EoR7qkb5mgLw
+name: scale_1216w
+label: scale_1216w
+effects:
+  e4a145bc-d15f-49f5-8d59-5136f78ddda6:
+    uuid: e4a145bc-d15f-49f5-8d59-5136f78ddda6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1216
+      height: null
+      upscale: false
+pipeline: __default__

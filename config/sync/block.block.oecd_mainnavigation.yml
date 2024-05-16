@@ -1,0 +1,27 @@
+uuid: b08876ac-90ea-4ecc-a503-ac2f7510077f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - oecd
+_core:
+  default_config_hash: 78ch1XrmVG_De1NPu8VUbbq3sJq0IA6teVhxCNxe0_Y
+id: oecd_mainnavigation
+theme: oecd
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 73685d07-f182-4719-84a5-d7efd1194a78
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oecd
+_core:
+  default_config_hash: ax4AU4tV4-X9H6EYClcPC8a-uq5zWYDl5WcdgInSVSc
+id: oecd_breadcrumbs
+theme: oecd
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: visible
+  provider: system
+visibility: {  }

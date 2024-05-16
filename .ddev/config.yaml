@@ -14,7 +14,7 @@ database:
 hooks:
     post-start:
         - exec:
-            bash -l -c "sudo apt-get install -y nodejs && nvm install v20.9.0 && nvm alias default 20.9.0 && nvm use v20.9.0"
+            bash -l -c "sudo apt-get install -y nodejs && nvm install v20.11.0 && nvm alias default 20.11.0 && nvm use v20.11.0"
 use_dns_when_possible: true
 composer_version: ""
 web_environment: []

@@ -1,0 +1,21 @@
+uuid: 16d5f2e5-9106-440d-899d-64820b485220
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: oh_UXrVYmyd5vPGb4ugHW9LQkMx2AF5NMtV6vYIeTsI
+name: scale_280w
+label: scale_280w
+effects:
+  f489ccc7-21fd-4804-b217-fdeb30a6b8e5:
+    uuid: f489ccc7-21fd-4804-b217-fdeb30a6b8e5
+    id: image_scale
+    weight: 1
+    data:
+      width: 280
+      height: null
+      upscale: false
+pipeline: __default__

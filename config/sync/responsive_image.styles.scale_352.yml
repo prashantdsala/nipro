@@ -1,0 +1,51 @@
+uuid: 1e9ea2a2-9690-47f5-9850-1bc0965d6958
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scale_343w
+    - image.style.scale_343w_2x
+    - image.style.scale_352w
+    - image.style.scale_352w_2x
+  theme:
+    - oecd
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: Al2iRg8Um04ZRWEdpCCCvJc907cyli3lfyAp6DUlklk
+id: scale_352
+label: 'Scale 352'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w
+    breakpoint_id: oecd.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w_2x
+    breakpoint_id: oecd.large
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w
+    breakpoint_id: oecd.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w_2x
+    breakpoint_id: oecd.medium
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_343w
+    breakpoint_id: oecd.small
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_343w_2x
+    breakpoint_id: oecd.small
+    multiplier: 2x
+breakpoint_group: oecd
+fallback_image_style: scale_352w
