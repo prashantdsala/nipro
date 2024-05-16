@@ -1,0 +1,9 @@
+uuid: 69de6925-b336-4239-999f-1b9639df6b8e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9eJyzzTEqPfqL_Kpvvj8eLKDlclCvXmehjLyrRxlHDQ
+id: blocks
+label: 'Select a Block'
+weight: null

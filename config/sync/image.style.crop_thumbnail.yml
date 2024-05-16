@@ -1,0 +1,18 @@
+uuid: def4cb40-48e0-4bb0-8732-63b6e7859801
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: e0IqXOJLQdNUY386UiEArz9EfNPL57nlVlQJBLzecbw
+name: crop_thumbnail
+label: 'Crop thumbnail'
+effects:
+  8fc26706-68dc-4eb7-8121-33e3936ed55f:
+    uuid: ''
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false
+pipeline: __default__

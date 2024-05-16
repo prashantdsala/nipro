@@ -1,0 +1,56 @@
+uuid: 6d0034c8-4bae-4f1e-95d4-e43fc3f4a4ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.sub-menu-1.field_menu_description
+    - field.field.menu_link_content.sub-menu-1.field_sub_menu_icon
+    - system.menu.sub-menu-1
+  module:
+    - link_attributes
+    - menu_item_extras
+_core:
+  default_config_hash: Hgj8Fi8NL9tVbgA-bkGQxsYx0a2Js9NHZkTAb6v5w4M
+id: menu_link_content.sub-menu-1.default
+targetEntityType: menu_link_content
+bundle: sub-menu-1
+mode: default
+content:
+  field_menu_description:
+    type: string_textfield
+    weight: 22
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sub_menu_icon:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    type: menu_item_extras_view_mode_selector_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

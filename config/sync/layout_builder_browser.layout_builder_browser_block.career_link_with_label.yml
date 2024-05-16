@@ -1,0 +1,13 @@
+uuid: dbb80bf7-d5e6-42a7-af08-bd8ca545f865
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NKijNMDPSIyDFAKegNXyaprxqrD7ol61ac_-Pdj9h78
+id: career_link_with_label
+block_id: 'system_menu_block:career-link-with-label'
+category: menus
+label: 'Career link with label'
+image_path: /themes/contrib/space/images/lbb/career_link_with_label.svg
+image_alt: ''
+weight: -11

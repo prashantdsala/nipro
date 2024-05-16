@@ -1,0 +1,21 @@
+uuid: 575d5dd5-85f1-4d66-8f6b-82c167fb2a81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_sub_menu_icon
+    - system.menu.secondary-header-navigation
+_core:
+  default_config_hash: kXbG697bHUh0iATpjy2OtJZE-eiDBmbKnKMM8oUwdVs
+id: menu_link_content.secondary-header-navigation.field_sub_menu_icon
+field_name: field_sub_menu_icon
+entity_type: menu_link_content
+bundle: secondary-header-navigation
+label: 'Menu icon'
+description: 'Add icon name from the storybook icon list.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

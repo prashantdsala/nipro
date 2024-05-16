@@ -1,0 +1,21 @@
+uuid: 3fe132a2-4577-4031-a7cd-9e8ab0e3d6cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_description
+    - system.menu.sub-menu-3
+_core:
+  default_config_hash: zYS-5bOKC0MEOyQseHKjwatalSoCfIsM4MZQnVCaeH8
+id: menu_link_content.sub-menu-3.field_menu_description
+field_name: field_menu_description
+entity_type: menu_link_content
+bundle: sub-menu-3
+label: 'Menu description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

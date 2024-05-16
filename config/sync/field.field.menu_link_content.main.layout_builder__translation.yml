@@ -1,0 +1,23 @@
+uuid: 6ebcb33b-4587-42d9-85a6-7c03bc17c516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.layout_builder__translation
+    - system.menu.main
+  module:
+    - layout_builder_st
+_core:
+  default_config_hash: y8MhuBSE2featc2s3ElgMnaNirPFMNbkflchCvSnJEA
+id: menu_link_content.main.layout_builder__translation
+field_name: layout_builder__translation
+entity_type: menu_link_content
+bundle: main
+label: 'Layout Labels'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_translation

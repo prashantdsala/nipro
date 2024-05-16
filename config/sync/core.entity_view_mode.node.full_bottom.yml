@@ -1,0 +1,13 @@
+uuid: e4f2f8bf-21c7-4b48-8335-3abfabad84d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: yeBzDeMBNmrgr6p_EarckoiF02QrhMbTP7lzJHf0Ftw
+id: node.full_bottom
+label: 'Full bottom'
+description: ''
+targetEntityType: node
+cache: true

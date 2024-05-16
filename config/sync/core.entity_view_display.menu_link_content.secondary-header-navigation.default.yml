@@ -1,0 +1,30 @@
+uuid: 6aa9b11c-b609-4120-ba2f-ba839d6596be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.secondary-header-navigation.field_sub_menu_icon
+    - system.menu.secondary-header-navigation
+_core:
+  default_config_hash: Gr-UHPreYTW4WzNVF8jOprjAfwaD0BtgDyIm1w2c7s4
+id: menu_link_content.secondary-header-navigation.default
+targetEntityType: menu_link_content
+bundle: secondary-header-navigation
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sub_menu_icon:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

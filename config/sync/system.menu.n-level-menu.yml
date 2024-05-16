@@ -1,0 +1,15 @@
+uuid: 60ba3f3a-85ed-4341-8625-4ad4e824b395
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+_core:
+  default_config_hash: BKtkY9lMWXK0-iu1lBSA55piVkBSg2b5BWXPKcYGBN0
+id: n-level-menu
+label: 'N-level Menu'
+description: 'Dropdown Menu'
+locked: false

@@ -1,0 +1,13 @@
+uuid: d5b1900a-01ce-476d-a7cd-c953a6d69108
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xivskrlVwNARyOD6uhb8zTODnT_dbxi5wp2AINyOJUU
+id: contact_link_with_label
+block_id: 'system_menu_block:contact-link-with-label'
+category: menus
+label: 'Contact link with label'
+image_path: /themes/contrib/space/images/lbb/contact_link_with_label.svg
+image_alt: ''
+weight: -10

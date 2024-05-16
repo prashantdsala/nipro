@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: '-1U9LUYR9n5m8-mBO4qMcGlH8wzGCzX_71GRqRUc39o'
+langcode: en
+uuid: acc98984-be29-4fa4-a9cd-af1ddfdb80bf
+name: oecd
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

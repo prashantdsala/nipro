@@ -1,0 +1,22 @@
+uuid: 12419728-8772-4491-8632-bd2a399f0ae1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+    - text
+_core:
+  default_config_hash: bbPlRza2cHH8WmgqYa2fH9WM_N69FvDvcJfL3gpnI4Y
+id: menu_link_content.field_menu_description
+field_name: field_menu_description
+entity_type: menu_link_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

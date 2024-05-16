@@ -1,0 +1,24 @@
+uuid: b7f68eb3-0637-4f72-a265-1df97465696f
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_builder_st
+    - node
+  enforced:
+    module:
+      - space_c_landing_page
+_core:
+  default_config_hash: _XYBmeACdYwHbGSuol5_tpGOmKkQmoEcxU7JxQdmx0g
+id: node.layout_builder__translation
+field_name: layout_builder__translation
+entity_type: node
+type: layout_translation
+settings: {  }
+module: layout_builder_st
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
