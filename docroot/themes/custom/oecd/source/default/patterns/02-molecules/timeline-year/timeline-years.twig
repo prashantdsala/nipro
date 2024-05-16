@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * timeline-years
+ *
+ * See timeline-years.space.yaml for documentation.
+ */
+#}
+{# Defaults #}
+
+{# Template #}
+{% block timelineyears %}
+  {% for key, year in years %}
+    <div data-date="{{year.title}}" class="year_wrapper">
+      <span class="year-title">{{ year.title }}</span>
+      <span class="dots"></span>
+    </div>
+  {% endfor %} 
+{% endblock %}

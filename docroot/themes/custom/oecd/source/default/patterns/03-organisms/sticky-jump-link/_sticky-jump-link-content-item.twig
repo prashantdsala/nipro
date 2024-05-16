@@ -1,0 +1,23 @@
+{#
+  /**
+  * @file
+  * _sticky-jump-link-content-item
+  *
+  * See _sticky-jump-link.space.yaml for documentation.
+  */
+#}
+
+{# Template #}
+{% block sticky_jump_link_content_item_block %}
+  <div class="sticky-jump-link-row">
+    <div class="sticky-jump-link-row-inner">
+      {% for item in content_items %}
+        {% if loop.index == 1 %}
+          <article id="sticky-jump-link-{{ loop.index }}" class="sticky-jump-link-item active">{{ item }}</article>
+        {% else %}
+          <article id="sticky-jump-link-{{ loop.index }}" class="sticky-jump-link-item">{{ item }}</article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

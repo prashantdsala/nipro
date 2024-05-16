@@ -1,0 +1,67 @@
+social_media_navigation:
+  use: "@molecules/social-media-navigation/social-media-navigation.twig"
+  label: Social media navigation
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>A navigation component with default (vertical) and horizontal variations.</p>
+  fields:
+    link_url:
+      type: url
+      label: Menu URL
+      description: The action url of your button
+      preview: 'https://www.qed42.com/contact'
+    menu_title:
+      type: text
+      label: Menu title
+      description: The Menu option title.
+      preview: 'facebook'
+    icon:
+      type: text
+      label: Icon name
+      description: 'Icon beside menu title.'
+      preview: 'facebook'
+    items:
+      type: object
+      label: Navigation Items (Each navigation item object contains link properties)
+      multi_value_type: items
+      preview:
+        -
+          id: link
+          content: 'facebook'
+          url: 'https://qed42.com/services'
+          title_text: 'facebook'
+        -
+          id: link
+          content: 'twitter'
+          url: 'https://qed42.com/solutions'
+        -
+          id: link
+          content: 'github'
+          url: 'https://qed42.com/work'
+        -
+          id: link
+          content: 'linkedin'
+          url: 'https://qed42.com/blog'
+    on_scroll_animation:
+      type: select
+      label: On Scroll Animation
+      preview: 'fade-up'
+      options:
+        fade-up: Fade Up
+        fade-down: Fade Down
+        fade-left: Fade Left
+        fade-right: Fade Right
+    on_scroll_animation_delay:
+      type: text
+      label: On Scroll Animation Delay
+      preview: 1500
+  variants:
+    default:
+      label: Default
+  settings:
+    wrap_nav:
+      type: boolean
+      label: Wrap with nav Element (&lt;nav&gt;&lt;/nav&gt;)
+      default_value: false

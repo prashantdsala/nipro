@@ -1,0 +1,186 @@
+sticky_jump_link_content:
+  use: "@organisms/sticky-jump-link/_sticky-jump-link-content.twig"
+  namespace: 'Organisms/Sticky Jump link'
+  label: Sticky Jump link content
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc ul { margin-left: 30px; list-style: decimal; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>A sticky jump link is a component with multiple images, multiple contents, and a jump link at the top to navigate by clicking or scrolling inside the container.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To display multiple views with image & content under one section</li>
+        <li>To save vertical space on a page</li>
+        <li>To introduce an interactive element for users when scrolling</li>
+      </ul>
+    </div>
+  fields:
+    image:
+      type: pattern
+      label: Image
+      preview:
+        id: image_atom
+        variant: image
+        settings:
+          image_url: space-assets://images/where-to-use.png
+          style: scale_624w
+          default: false
+    heading:
+      type: pattern
+      label: Heading
+      description: 'The heading of the Sticky component.'
+      preview:
+        id: headline
+        variant: h3
+        settings:
+          tag_name: h3
+          headline: 'Heading'
+          font: displayMd-bold
+    sub_heading:
+      type: text
+      label: Sub heading
+      description: A short pre heading of Sticky component.
+      preview: 'Sub heading'
+    description:
+      type: text
+      label: Description
+      description: 'The description of the Sticky component.'
+    feature_items:
+      type: pattern
+      label: Features
+      description: List of features items.
+      multi_value_type: items
+      preview:
+        - id: features
+          fields:
+            icon: 'icon-primary-2x'
+            content: 'Maecenas ullamcorper dui et'
+        - id: features
+          fields:
+            icon: 'icon-primary-2x'
+            content: 'Nullam accumsan lorem in dui'
+        - id: features
+          fields:
+            icon: 'icon-primary-2x'
+            content: 'Praesent ut ligula non mi'
+        - id: features
+          fields:
+            icon: 'icon-primary-2x'
+            content: 'Etiam iaculis nunc ac metus'
+
+sticky_jump_link_tag_item:
+  use: "@organisms/sticky-jump-link/_sticky-jump-link-tag-item.twig"
+  namespace: 'Organisms/Sticky Jump link'
+  label: Sticky Jump link tag item
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc ul { margin-left: 30px; list-style: decimal; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>A sticky jump link is a component with multiple images, multiple contents, and a jump link at the top to navigate by clicking or scrolling inside the container.</p>
+      <ul>
+        <li>To display multiple views with image & content under one section</li>
+        <li>To save vertical space on a page</li>
+        <li>To introduce an interactive element for users when scrolling</li>
+      </ul>
+    </div>
+  fields:
+    tag_items:
+      type: pattern
+      label: Jump link tags
+      description: List of jump link tags.
+      multi_value_type: items
+      preview:
+        - id: jump_link_tags
+        - id: jump_link_tags
+        - id: jump_link_tags
+
+sticky_jump_link_content_item:
+  use: "@organisms/sticky-jump-link/_sticky-jump-link-content-item.twig"
+  namespace: 'Organisms/Sticky Jump link'
+  label: Sticky Jump link content item
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc ul { margin-left: 30px; list-style: decimal; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>A sticky jump link is a component with multiple images, multiple contents, and a jump link at the top to navigate by clicking or scrolling inside the container.</p>
+      <ul>
+        <li>To display multiple views with image & content under one section</li>
+        <li>To save vertical space on a page</li>
+        <li>To introduce an interactive element for users when scrolling</li>
+      </ul>
+    </div>
+  fields:
+    content_items:
+      type: pattern
+      label: Jump link content
+      description: 'List of jump link content.'
+      multi_value_type: items
+      preview: 
+        - id: sticky_jump_link_content
+        - id: sticky_jump_link_content
+        - id: sticky_jump_link_content
+
+sticky_jump_link:
+  use: "@organisms/sticky-jump-link/_sticky-jump-link.twig"
+  namespace: 'Organisms/Sticky Jump link'
+  label: Sticky Jump link
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc ul { margin-left: 30px; list-style: decimal; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>A sticky jump link is a component with multiple images, multiple contents, and a jump link at the top to navigate by clicking or scrolling inside the container.</p>
+      <ul>
+        <li>To display multiple views with image & content under one section</li>
+        <li>To save vertical space on a page</li>
+        <li>To introduce an interactive element for users when scrolling</li>
+      </ul>
+    </div>
+  fields:
+    tags:
+      type: pattern
+      label: Jump link tags
+      description: 'Tags.'
+      preview:
+        - id: sticky_jump_link_tag_item
+    items:
+      type: pattern
+      label: Jump link content
+      description: 'Content.'
+      preview: 
+        - id: sticky_jump_link_content_item
+  settings:
+    tags_alignment:
+      type: select
+      label: Tags alignment
+      description: 'Alignment of tags.'
+      default: center-align
+      options:
+        left-align: Left
+        right-align: Right
+        center-align: Center
+      preview: center-align
+    alignment:
+      type: select
+      label: Alignment
+      description: 'Alignment of image left of text OR right of text.'
+      required: true
+      default: left-align
+      options:
+        left-align: Image left of text
+        right-align: Image right of text

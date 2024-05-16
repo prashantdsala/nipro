@@ -1,0 +1,353 @@
+avatar_group:
+  use: "@molecules/avatar-group/avatar-group.twig"
+  label: Avatar Group
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>An avatar group represent a group of users, and their profile pictures.</p>
+  fields:
+    cells_1:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-1.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            icon: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-2.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-3.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-4.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-5.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-6.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-7.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white         
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-8.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-9.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-10.jpg"
+            image_style: xs-24-x-24
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white
+    cells_2:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-12.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            icon: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-13.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-14.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-15.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-16.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-17.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-18.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-19.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-20.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-21.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: ''
+            link: ''
+    cells_3:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-24.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            icon: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-25.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-26.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-27.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-28.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+            image_border: white
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-29.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-30.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-31.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-32.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''
+        -
+          id: avatar
+          variant: avatar_groups
+          settings:
+            image_url: "./images/avatar-33.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: ''
+            link: ''        
+    cells_4:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        -
+          id: avatar
+          variant: avatar_label
+          settings:
+            image_url: "./images/avatar-12.jpg"
+            image_style: sm-32-x-32
+            corner_style: rounded
+            full_name: 'Oliva Rhye'
+            link: 'oliva@space.com'
+            icon: ''
+        -
+          id: avatar
+          variant: avatar_label
+          settings:
+            image_url: "./images/avatar-12.jpg"
+            image_style: md-40-x-40
+            corner_style: rounded
+            full_name: 'Oliva Rhye'
+            link: 'oliva@space.com'
+        -
+          id: avatar
+          variant: avatar_label
+          settings:
+            image_url: "./images/avatar-35.jpg"
+            image_style: lg-48-x-48
+            corner_style: rounded
+            full_name: 'Oliva Rhye'
+            link: 'oliva@space.com'
+        -
+          id: avatar
+          variant: avatar_label
+          settings:
+            image_url: "./images/avatar-36.jpg"
+            image_style: xl-56-x-56
+            corner_style: rounded
+            full_name: 'Oliva Rhye'
+            link: 'oliva@space.com'     
+  variants:
+    avatar_groups:
+      label: Avatar Group
+    avatar_label:
+      label: Avatar Label Group
+      

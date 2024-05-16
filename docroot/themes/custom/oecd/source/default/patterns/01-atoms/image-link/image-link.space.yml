@@ -1,0 +1,35 @@
+image_link:
+  use: "@atoms/image-link/image-link.twig"
+  label: Image link
+  description:  >
+    <style>
+      .desc p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <div class="desc">
+      <p>An Image Link is used to add an image which can be interacted with, to navigate the users to a specific link or page.</p>
+    </div>
+  fields:
+    url:
+      type: text
+      label: Url
+      description: The action url of app.
+      preview: 'https://www.qed42.com/contact'
+    image:
+      type: pattern
+      label: Image
+      preview:
+        id: image_atom
+        variant: image
+        settings:
+          url: space-assets://images/avatar.png
+          style: 160x220_xs_sc
+  settings:
+    target:
+      type: select
+      label: Target
+      default_value: 'self'
+      options:
+        self: Self
+        blank: Blank
+        parent: Parent
+        top: Top

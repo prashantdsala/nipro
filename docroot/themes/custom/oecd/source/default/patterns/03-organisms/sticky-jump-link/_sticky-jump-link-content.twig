@@ -1,0 +1,48 @@
+{#
+  /**
+  * @file
+  * _sticky-jump-link-content
+  *
+  * See sticky-jump-link.space.yaml for documentation.
+  */
+#}
+
+{% block sticky_jump_link_content_block %}
+  <div class="item-in">
+    <div class="col image">
+      {{ image }}
+    </div>
+
+    <div class="col content">
+      <div class="content-inner">
+        {% if heading|render|striptags|trim is not empty %}
+          <div class="sticky-jump-link-heading">
+            {{ heading }}
+          </div>
+        {% endif %}
+
+        {% if sub_heading|render|striptags|trim is not empty %}
+          <div class="sticky-jump-link-subheading" tabindex='0'>
+            {{ sub_heading }}
+          </div>
+        {% endif %}
+
+        {% if description|render|striptags|trim is not empty %}
+          <div class="sticky-jump-link-description" tabindex='0'>
+            {{ description }}
+          </div>
+        {% endif %}
+
+        {% if feature_items|length > 0 %}
+          <div class="sticky-jump-link-checklist mt-48">
+            {% for item in feature_items %}
+              <div class="item-list mb-4">
+                {{ item }}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

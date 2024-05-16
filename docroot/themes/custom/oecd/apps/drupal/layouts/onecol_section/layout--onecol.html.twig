@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Theme override to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--onecol',
+    'layout-builder__layout'
+  ]
+%}
+{# Header Menu Animation #}
+{% set animation_type = settings.layout_header_menu_animation.animation_type %}
+{% set animation_duration = settings.layout_header_menu_animation.animation_duration|default(0) %}
+
+{% if content %}
+<div{{ attributes.addClass(classes).removeClass(layout_classes, layout_subheader_classes) }}>
+  <div{{ attributes.addClass(layout_classes, layout_subheader_classes, 'layout-wrapper').removeClass(layout_space_top, layout_space_bottom, layout_mobile_tablet, layout_background_colours, layout_extra_classes, classes)}}>
+    <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content') }} {% if animation_type is not empty and animation_type != 'None' %} data-aos="{{ animation_type }}" data-aos-duration="{{ animation_duration }}" {% endif %}>
+      <div class="inner">
+        {{ content.content }}
+      </div>
+    </div>
+  </div>
+</div>  
+{% endif %}

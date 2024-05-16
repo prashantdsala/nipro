@@ -1,0 +1,43 @@
+/* Tab title */
+
+.space-tab-title {
+  @apply w-full lg:w-auto md:min-w-[10rem] flex items-center justify-center font-secondary text-text-body cursor-pointer;
+
+  transition: all 0.3s ease 0s;
+
+  &.center-align {
+    @apply justify-center;
+  }
+
+  &.left-align {
+    @apply justify-start;
+  }
+
+  &.right-align {
+    @apply justify-end;
+  }
+
+  .tab-icon {
+    @apply mr-2;
+
+    svg {
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+
+.space-layout--tabs {
+  &.split-tab-title {
+    .space-tab-titles-wrapper {
+      .space-tab-titles {
+        .space-title-link {
+          @apply maxMd:w-2/4;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    @apply pt-[3.5rem];
+  }
+}

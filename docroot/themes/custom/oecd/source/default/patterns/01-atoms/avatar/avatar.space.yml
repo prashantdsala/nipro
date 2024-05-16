@@ -1,0 +1,76 @@
+avatar:
+  use: "@atoms/avatar/avatar.twig"
+  label: Avatar
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ol { list-style: decimal; margin-left: 30px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p class="title">Overview</p>
+      <p>An Avatar is a visual way to represent a person or brand in the product. They can display text, icons, or images.</p>
+      <p>Avatars are used on business apps, social networks, games. An avatar can represent an author, a user, a quoted person, a team member, etc.</p>
+      <p class="title">Uses</p>
+      <p>To visually represent a person, brand, or product</p>
+      <p class="title">Anotomy</p>
+      <img src="./images/avatar_anatomy.png" alt="avatar-anatomy">
+      <ol>
+        <li>Image or Initials</li>
+        <li>Name of Person or Brand</li>
+        <li>Supporting text</li>
+      </ol>
+    </div>
+  fields:
+    image:
+      type: pattern
+      label: Image
+      preview:
+        id: image_atom
+        variant: image
+        settings:
+          image_url: './images/avatar.png'
+    full_name:
+      type: text
+      label: Full name
+      description: The full name of the profile.
+      preview:
+        faker: name.findName
+    link:
+      type: pattern
+      label: Link
+      description: An optional link at the bottom of the avatar.
+      preview: 
+        id: link
+  variants:
+    avatar_groups:
+      label: Avatar Group
+    avatar_label:
+      label: Avatar Label Group
+  settings:
+    icon:
+      type: boolean
+      label: Icon
+      default_value: false
+    image_style: 
+      label: Image style
+      type: select
+      preview: lg-48-x-48
+      options:
+        xs-24-x-24: XS 24x24
+        sm-32-x-32: SM 32x32
+        md-40-x-40: MD 40x40
+        lg-48-x-48: LG 48x48
+        xl-56-x-56: XL 56x56
+        xxl-64-x-64: 2XL 64x64
+        xxxl-80-x-80: 3XL 80x80
+        xxxxl-96-x-96: 4XL 96x96
+        xxxxxl-160-x-160: 5XL 160x160  
+    corner_style:
+      type: select
+      label: Image style
+      description: Image with rounded corners.
+      preview: rounded
+      options:
+        rounded: Round

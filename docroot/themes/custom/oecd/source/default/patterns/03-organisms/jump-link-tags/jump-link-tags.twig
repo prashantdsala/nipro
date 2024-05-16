@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Jump link tags 
+ */
+#}
+
+{# Template #}
+{% block features_list_block %}
+  {% if content|render|striptags|trim is not empty %}
+    {{ content }}
+  {% endif %}
+{% endblock %}

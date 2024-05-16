@@ -1,0 +1,35 @@
+social_button_groups:
+  use: "@molecules/social-button-groups/social-button-groups.twig"
+  label: Social Button Groups
+  description: >
+    <style>
+      .desc p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>Social button group is a collection of two or more <a href="/?path=/docs/atoms-social-button--social-button"><u>social buttons</u></a> that present the option to the user to log in using a third-party account.</p>
+    </div>
+  fields:
+    social_buttons:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        -
+          id: social_button
+          fields:
+           text: 'Sign in with Google'
+          settings:
+            social_button_type: google
+        -
+          id: social_button
+          fields:
+           text: 'Sign in with Facebook'
+          settings:
+            social_button_type: facebook
+        -
+          id: social_button
+          fields:
+           text: 'Sign in with Apple'
+          settings:
+            social_button_type: apple

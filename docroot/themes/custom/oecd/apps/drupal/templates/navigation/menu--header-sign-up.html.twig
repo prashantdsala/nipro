@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ *
+ * Header Signup navigation menu.
+ */
+#}
+
+{% for item in items %}
+  {% include '@atoms/button/button.twig' with {
+    text: item.title,
+    url: item.url|render,
+    variant: 'primary',
+    size: 'large',
+    button_type: 'only_text'
+  } %}
+{% endfor %}

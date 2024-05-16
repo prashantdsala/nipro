@@ -1,0 +1,27 @@
+menu_item_secondary:
+  use: "@molecules/menu-item-secondary/menu-item-secondary.twig"
+  label: Menu item secondary
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>Menu Item is used in creating an actionable link or item in the mega menu. The mega menu may have multiple menu items to help users find what they’re looking for.</p>
+    </div>
+  fields:
+    menu_title:
+      type: text
+      label: Menu title
+      description: The Menu option title.
+      preview: 'Notifications'
+    link_url:
+      type: url
+      label: Menu URL
+      description: The action url of your button
+      preview: 'https://www.qed42.com/contact'
+    icon:
+      type: text
+      label: Icon name
+      description: 'Icon beside menu title.'
+      preview: 'box'

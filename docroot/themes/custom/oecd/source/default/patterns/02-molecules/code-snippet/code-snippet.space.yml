@@ -1,0 +1,44 @@
+code_snippet:
+  use: "@molecules/code-snippet/code-snippet.twig"
+  label: Code snippet
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { list-style-type: disc; margin-left: 30px; }
+      @media only screen and (max-width: 600px) { div > p:first-child { margin-top:0.5rem; } }
+    </style>
+    <div class="desc">
+      <p>Code snippets are strings or small blocks of reusable code that can be copied and inserted in a code file.</p>
+      <p>Formatted code can appear in a variety of contexts, increasing the legibility and contrasting it against default paragraph text.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>Use a code snippet to help the user copy strings of text easily, or if you want to call out key words for the user.</li>
+        <li>Code snippets are typically used in code documentation to help the user get started quickly.</li>
+        <li>Use inline code when you wish to highlight a short code snippet from the surrounding default text, such as when referencing variable names.</li>
+      </ul>
+    </div>
+  fields:
+    text:
+      type: text
+      label: Title
+      preview: |
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title></title>
+          </head>
+          <body>
+            <h1>SPACE is the Complete Team Collaboration Solution</h1>
+            <p>From automation of people processes to creating an engaged and driven culture.</p>
+          </body>
+        </html>
+  settings:
+    background:
+      type: select
+      label: Background
+      preview: dark
+      options:
+        light: Light
+        colour: Colour    
+        dark: Dark

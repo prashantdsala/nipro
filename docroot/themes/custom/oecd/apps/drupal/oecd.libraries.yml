@@ -1,0 +1,284 @@
+# Define OECD theme's library CSS and JS assets along with dependencies
+core:
+  css:
+    theme:
+      css/_drupal-styles.css: {}
+      /themes/custom/oecd/dist/app-drupal/tokens.css: {}
+      space-assets://typo.css: {}
+      space-assets://button.css: {}
+      space-assets://hamburger.css: {}
+      space-assets://breadcrumb.css: {}
+      space-assets://navigation.css: {}
+      space-assets://layout-builder.css: {}
+  js:
+    space-assets://vendors/alpine.js: {}
+    space-assets://behaviors/breadcrumb.js: {}
+  # see all in Drupal's `core/core.libraries.yml`
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+
+global-styling:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/once
+
+cta-banner:
+  css:
+    component:
+      space-assets://cta-banner.css: {}
+
+accordion:
+  css:
+    component:
+      space-assets://accordion.css: {}
+  js:
+    space-assets://behaviors/accordion.js: {}
+
+accordion-with-image:
+  css:
+    component:
+      space-assets://accordion-with-image.css: {}
+      space-assets://sticky-slider.css: {}
+  js:
+    space-assets://behaviors/accordion-with-image.js: {}
+
+social-button:
+  css:
+    component:
+      space-assets://social-button.css: {}
+  js:
+    space-assets://behaviors/social-button.js: {}
+
+header-styling:
+  css:
+    component:
+      space-assets://menu-item.css: {}
+      space-assets://mega-menu.css: {}
+      space-assets://header.css: {}
+      space-assets://sub-header.css: {}
+      space-assets://header-hamburger-menu-search.css: {}
+  js:
+    space-assets://behaviors/header.js: {}
+
+footer:
+  css:
+    component:
+      space-assets://footer.css: {}
+
+block-footer-text:
+  css:
+    component:
+      space-assets://block-footer-text.css: {}
+
+text:
+  css:
+    component:
+      space-assets://text.css: {}
+
+block-subscribe:
+  css:
+    component:
+      space-assets://subscribe.css: {}
+
+block-get-the-app:
+  css:
+    component:
+      space-assets://block-app.css: {}
+
+forms:
+  css:
+    component:
+      space-assets://forms.css: {}
+      space-assets://form-newsletter.css: {}
+
+footer-logo-content:
+  css:
+    component:
+      space-assets://footer-logo-content.css: {}
+
+footer-end-logo:
+  css:
+    component:
+      space-assets://footer-end-logo.css: {}
+
+slider:
+  css:
+    component:
+      space-assets://slider.css: {}
+      https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css: { type: external, minified: true }
+  js:
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js: { type: external, minified: true, attributes: { defer: true } }
+    space-assets://behaviors/slider.js: {}
+
+slick-slider:
+  css:
+    component:
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css: { type: external, minified: true }
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css: { type: external, minified: true }
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js: { type: external, minified: true, attributes: { defer: true } }
+
+testimonial_carousel:
+  css:
+    component:
+      space-assets://testimonial-carousel.css: {}
+
+timeline:
+  css:
+    component:
+      space-assets://timeline.css: {}
+  js:
+    space-assets://behaviors/timeline.js: {}
+
+hero-banner:
+  css:
+    component:
+      space-assets://hero-banner.css: {}
+
+block-banner-info:
+  css:
+    component:
+      space-assets://block-banner-info.css: {}
+
+login-signup-form:
+  css:
+    component:
+      space-assets://signup-and-login-form.css: {}
+  js:
+    space-assets://behaviors/signup-and-login-form.js: {}
+
+card:
+  css:
+    component:
+      space-assets://card.css: {}
+  js:
+    space-assets://behaviors/card.js: {}
+
+logo-grids:
+  css:
+    component:
+      space-assets://logo-grid.css: {}
+
+team-section:
+  css:
+    component:
+      space-assets://team-section.css: {}
+
+card-carousel:
+  css:
+    component:
+      space-assets://card-carousel.css: {}
+
+tabs:
+  css:
+    component:
+      space-assets://tabs.css: {}
+  js:
+    space-assets://behaviors/tabs.js: {}
+
+hero-banner-carousel:
+  css:
+    component:
+      space-assets://carousel-item.css: {}
+      space-assets://carousel.css: {}
+  js:
+    space-assets://behaviors/carousel-animation.js: {}
+
+avatar:
+  css:
+    component:
+      space-assets://avatar.css: {}
+
+badge:
+  css:
+    component:
+      space-assets://badge.css: {}
+
+stats-kpi:
+  css:
+    component:
+      space-assets://stats-kpi.css: {}
+  js:
+    space-assets://behaviors/stats-kpi.js: {}
+
+text-media:
+  css:
+    component:
+      space-assets://text-media.css: {}
+
+section-heading:
+  css:
+    component:
+      space-assets://section-heading.css: {}
+
+section-heading-animation:
+  js:
+    space-assets://behaviors/section-heading.js: {}
+
+contact-menu-link:
+  css:
+    component:
+      space-assets://contact-menu-link.css: {}
+
+notification-banner:
+  css:
+    component:
+      space-assets://notification-banner.css: {}
+  js:
+    space-assets://behaviors/notification-banner.js: {}
+
+breadcrumb:
+  css:
+    component:
+      space-assets://breadcrumb.css: {}
+  js:
+    space-assets://behaviors/breadcrumb.js: {}
+
+sidebar:
+  css:
+    component:
+      space-assets://sidebar.css: {}
+  js:
+    space-assets://behaviors/sidebar.js: {}
+
+button:
+  css:
+    component:
+      space-assets://button.css: {}
+
+sticky-component:
+  css:
+    component:
+      space-assets://sticky-content.css: {}
+      space-assets://sticky.css: {}
+      space-assets://sticky-slider.css: {}
+  js:
+    space-assets://behaviors/sticky.js: {}
+
+n-level-menu:
+  css:
+    component:
+      space-assets://n-level-menu.css: {}
+  js:
+    space-assets://behaviors/n-level-menu.js: {}
+
+sticky-jump-link:
+  css:
+    component:
+      space-assets://sticky-jump-link.css: {}
+  js:
+    space-assets://behaviors/sticky-jump-link.js: {}
+
+tab-title:
+  css:
+    component:
+      space-assets://tab-title.css: {}
+
+logo:
+  css:
+    component:
+      space-assets://logo.css: {}

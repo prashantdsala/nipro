@@ -1,0 +1,258 @@
+# Timeline
+timeline:
+  use: '@organisms/timeline/_timeline1.twig'
+  namespace: 'Organisms/Timeline'
+  label: Timeline 1
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc > p:first-child { margin-top:0.5rem; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <div class="desc">
+      <p>The Timeline component is used to tell an engaging story through UI, spread over a long time interval, using images and text. The timeline can be useful to illustrate the history of a product or company, the different achievements of an institution through time, or the evolution of an entity or product over time, among many other similar cases.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To tell a visual story through history</li>
+        <li>To show the evolution of a product or institution</li>
+        <li>To show the achievements of an institution over a period of time</li>
+      </ul>
+      <div class="note">
+        <img src="./images/info-icon.svg">
+        <p>The structure of the Timeline varies across different variants. They child elements used within the Timeline can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+      </div>
+    </div>
+  extends:
+    - timelinecard.fields
+  fields:
+    items:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        - id: timelinecard
+          fields:
+            date: 'APRIL 2021'
+            year: '2021'
+          settings:
+            card_layout: variation1
+        - id: timelinecard
+          fields:
+            date: 'APRIL 2022'
+            year: '2022'
+          settings:
+            card_layout: variation1
+        - id: timelinecard
+          fields:
+            date: 'APRIL 2022'
+            year: '2022'
+          settings:
+            card_layout: variation1
+        - id: timelinecard
+          fields:
+            date: 'APRIL 2023'
+            year: '2023'
+          settings:
+            card_layout: variation1
+    items_timeline_years:
+      type: pattern
+      label: Years
+      multi_value_type: items
+      preview:
+        - id: timeline_years
+
+timeline_two:
+  use: '@organisms/timeline/_timeline2.twig'
+  namespace: 'Organisms/Timeline'
+  label: Timeline 2
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc > p:first-child { margin-top:0.5rem; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <div class="desc">
+      <p>The Timeline component is used to tell an engaging story through UI, spread over a long time interval, using images and text. The timeline can be useful to illustrate the history of a product or company, the different achievements of an institution through time, or the evolution of an entity or product over time, among many other similar cases.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To tell a visual story through history</li>
+        <li>To show the evolution of a product or institution</li>
+        <li>To show the achievements of an institution over a period of time</li>
+      </ul>
+      <div class="note">
+        <img src="./images/info-icon.svg">
+        <p>The structure of the Timeline varies across different variants. They child elements used within the Timeline can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+      </div>
+    </div>
+  fields:
+    items:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        - id: timelinecard
+          fields:
+            date: '2021-04-21'
+            year: '2021'
+          settings:
+            card_layout: variation2
+        - id: timelinecard
+          fields:
+            date: '2022-05-22'
+            year: '2022'
+          settings:
+            card_layout: variation2
+        - id: timelinecard
+          fields:
+            date: '2023-06-21'
+            year: '2023'
+          settings:
+            card_layout: variation2
+        - id: timelinecard
+          fields:
+            date: '2024-09-21'
+            year: '2024'
+          settings:
+            card_layout: variation2
+        - id: timelinecard
+          fields:
+            date: '2025-09-21'
+            year: '2025'
+          settings:
+            card_layout: variation2
+    journey_text:
+      type: text
+      label: Timeline Journey
+      Preview: 'Our Journey through the Years'
+
+timeline_three:
+  use: '@organisms/timeline/_timeline3.twig'
+  namespace: 'Organisms/Timeline'
+  label: Timeline 3
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc > p:first-child { margin-top:0.5rem; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <div class="desc">
+      <p>The Timeline component is used to tell an engaging story through UI, spread over a long time interval, using images and text. The timeline can be useful to illustrate the history of a product or company, the different achievements of an institution through time, or the evolution of an entity or product over time, among many other similar cases.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To tell a visual story through history</li>
+        <li>To show the evolution of a product or institution</li>
+        <li>To show the achievements of an institution over a period of time</li>
+      </ul>
+      <div class="note">
+        <img src="./images/info-icon.svg">
+        <p>The structure of the Timeline varies across different variants. They child elements used within the Timeline can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+      </div>
+    </div>
+  fields:
+    items:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        - id: timelinecard
+          fields:
+            date: '2021-04-21'
+            year: '2021'
+          settings:
+            card_layout: variation3
+        - id: timelinecard
+          fields:
+            date: '2022-04-21'
+            year: '2022'
+          settings:
+            card_layout: variation3
+        - id: timelinecard
+          fields:
+            date: '2023-04-21'
+            year: '2023'
+          settings:
+            card_layout: variation3
+    journey_text:
+      type: text
+      label: Timeline Journey
+      Preview: 'Our Journey through the Years'
+    items_timeline_years:
+      type: pattern
+      label: Years
+      multi_value_type: items
+      preview:
+        - id: timeline_years
+
+timeline_four:
+  use: '@organisms/timeline/_timeline4.twig'
+  namespace: 'Organisms/Timeline'
+  label: Timeline 4
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc > p:first-child { margin-top:0.5rem; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <div class="desc">
+      <p>The Timeline component is used to tell an engaging story through UI, spread over a long time interval, using images and text. The timeline can be useful to illustrate the history of a product or company, the different achievements of an institution through time, or the evolution of an entity or product over time, among many other similar cases.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To tell a visual story through history</li>
+        <li>To show the evolution of a product or institution</li>
+        <li>To show the achievements of an institution over a period of time</li>
+      </ul>
+      <div class="note">
+        <img src="./images/info-icon.svg">
+        <p>The structure of the Timeline varies across different variants. They child elements used within the Timeline can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+      </div>
+    </div>
+  fields:
+    items:
+      type: pattern
+      label: Items
+      multi_value_type: items
+      preview:
+        - id: timelinecard
+          fields:
+            date: '2021-04-21'
+            year: '2021'
+          settings:
+            card_layout: variation4
+        - id: timelinecard
+          fields:
+            date: '2022-04-22'
+            year: '2022'
+          settings:
+            card_layout: variation4
+        - id: timelinecard
+          fields:
+            date: '2023-04-21'
+            year: '2023'
+          settings:
+            card_layout: variation4
+    journey_text:
+      type: text
+      label: Timeline Journey
+      Preview: 'Our Journey through the Years'
+    items_timeline_years:
+      type: pattern
+      label: Years
+      multi_value_type: items
+      preview:
+        - id: timeline_years

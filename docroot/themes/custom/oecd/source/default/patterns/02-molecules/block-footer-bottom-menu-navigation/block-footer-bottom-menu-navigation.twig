@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * block-footer-bottom-menu-navigation
+ *
+ * See block-footer-bottom-menu-navigation.space.yaml for documentation.
+ */
+#}
+
+{# Default #}
+{% set attributes = attributes|default(create_attribute()) %}
+{% set heading_id = attributes.id %}
+
+{# Classes #}
+{% set classes = [
+  'block-navigation',
+] %}
+
+{# Template #}
+{% block footer_bottom_menu_navigation_block %}
+  <div {{ attributes|without('role', 'aria-labelledby').addClass(classes) }} aria-labelledby="{{ heading_id }}" role="navigation">
+    {{ title_suffix }}
+    {% if content|render|trim is not empty %}
+      <div class="block-navigation-content">{{ content }}</div>
+    {% endif %}
+  </div>
+{% endblock %}

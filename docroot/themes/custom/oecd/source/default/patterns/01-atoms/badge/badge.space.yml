@@ -1,0 +1,56 @@
+badge:
+  use: "@atoms/badge/badge.twig"
+  label: Badge
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc div > p:first-child { margin-top:0.5rem; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc img { margin-left:auto; margin-right:auto; }
+    </style>
+    <div class="desc">
+    <p>Badges can be used as tags for the description of a subject. Badges are similar to Labels but one can click on badges to navigate to a different page</p>
+    <p>Uses</p>
+    <ul>
+      <li>To tag using keywords</li>
+      <li>To represent a clickable category on a card, banner, or other molecular component</li>
+    </ul>
+    </div>
+  fields:
+    text:
+      type: text
+      label: Text
+      preview: Label
+  configuration:
+    size:
+      text:
+        small: 'text-xs leading-5 py-1.5 px-2.5'
+        medium: 'text-sm leading-5 py-1.5 px-3'
+        large: 'text-sm leading-5 py-2 px-3.5'
+  settings:
+    size:
+      type: select
+      required: true
+      label: Size
+      preview: medium
+      options:
+        small: Small
+        medium: Medium
+        large: Large
+    icon:
+      type: select
+      required: true
+      label: Icon
+      description: Go with an icon alongside your text.
+      options:
+        xcross: Cross
+        plus-badge: Plus 
+    type:
+      type: select
+      required: true
+      preview: text-only
+      options: 
+        text-only: Text Only
+        text-plus-icon: Text + icon
+        only-icon: Only icon

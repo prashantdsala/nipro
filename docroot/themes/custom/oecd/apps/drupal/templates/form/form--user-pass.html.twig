@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+{{ attach_library('oecd/login-signup-form') }}
+
+<div class="px-4 lg:px-0 m-auto">
+  <form{{ attributes }}>
+    <div class="simple-and-social-login-form__logo text-center" tabindex='0'>
+      {% include "@atoms/logo/logo.twig" with { variant: "only_logo" } %}
+    </div>
+    <h2 class="signup-and-login-title mb-0 displayXs-semibold lg:displaySm-semibold text-2xl lg:text-3xl text-text-heading text-center leading-10" tabindex='0'>
+      {{ 'Forgot Password?'|t }}
+    </h2>
+    <h5 class="signup-and-login-subtitle textMd-medium text-text-body text-center mt-3 mb-8" tabindex='0'>
+      {{ 'No worries, we’ll send you reset instructions.'|t }}
+    </h5>
+    {{ children }}
+  </form>
+</div>

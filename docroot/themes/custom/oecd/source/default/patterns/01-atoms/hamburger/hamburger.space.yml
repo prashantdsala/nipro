@@ -1,0 +1,9 @@
+hamburger:
+  use: "@atoms/hamburger/hamburger.twig"
+  label: Hamburger
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>The Hamburger reveals a list actionable items that be useful to the user. The actionable items may include links, buttons, cards, banners, or other components as specified for UX requirements.</p>
+  visibility: storybook

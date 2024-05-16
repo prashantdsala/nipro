@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Sapce Tab title
+ *
+ * See tab-title.space.yaml for documentation.
+ */
+#}
+{{ attach_library('oecd/tab-title') }}
+
+{# Default #}
+{% set element = element|default('span') %}
+
+{# Classes #}
+{% set classes = ([
+  'space-tab-title',
+  title_alignment|render|striptags|trim|clean_class,
+  title|render|striptags|trim|lower|replace({' ': '-'}) ~ '-tab-link',
+] | sort | join(' ') | trim ) %}
+
+{% set attributes = attributes|default(create_attribute()).addClass(classes) %}
+
+{# Template #}
+{% block tab_title %}
+  <{{ element }} {{ attributes }}>
+    {% if title|render|striptags|trim is not empty %}
+      {% if icon|render|trim|striptags %}
+        <span class="tab-icon inline-block">
+          {% include "@atoms/svg/_svg--icon.twig" with {
+            icon: icon,
+            size: "h-5 w-5",
+          } only %}
+        </span>
+      {% endif %}
+      <span class="tab-title">{{ title }}</span>
+    {% endif %}
+  </{{ element }}>
+{% endblock %}

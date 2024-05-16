@@ -1,0 +1,48 @@
+timeline_cards:
+  use: "@molecules/timeline-cards/timeline-cards.twig"
+  label: Timeline cards
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>A timeline-year component with Horizontal variations.</p>
+  fields:
+    items:
+      type: pattern
+      label: Timeline multiple cards
+      preview: 
+       - id: timelinecard
+         fields:
+            year: '2022'
+            date: 'April 2022'
+       - id: timelinecard
+         fields:
+            year: '2022'
+            date: 'Aug 2022'
+
+timeline_vcards:
+  use: "@molecules/timeline-cards/timeline-vertical-cards.twig"
+  label: Timeline vertical cards
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>Timeline cards component with vertical variations.</p>
+  fields:
+    items:
+      type: pattern
+      label: Timeline multiple cards
+      preview: 
+        - 
+          id: timelinecard
+          fields:
+            year: '2022'
+            date: 'April 2022'
+          settings:
+            card_layout: variation2
+        - id: timelinecard
+          fields:
+            year: '2022'
+            date: 'Aug 2022'
+          settings:
+            card_layout: variation2

@@ -1,0 +1,41 @@
+timeline_year:
+  use: "@molecules/timeline-year/timeline-year.twig"
+  label: Timeline year
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>A timeline-year component.</p>
+  fields:
+    year:
+      type: text
+      label: timeline-year item
+      preview: '2021'
+
+timeline_years:
+  use: "@molecules/timeline-year/timeline-years.twig"
+  label: Timeline years
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>A timeline-years component with Horizontal variations.</p>
+  fields:
+    years:
+      type: object
+      label: Navigation Items (Each navigation item object contains link properties)
+      multi_value_type: items
+      preview:
+        -
+          id: link
+          title: '2021'
+          title_text: '2021'
+        -
+          id: link
+          title: '2022'
+          title_text: '2022'
+        -
+          id: link
+          title: '2023'
+          title_text: '2023'
+

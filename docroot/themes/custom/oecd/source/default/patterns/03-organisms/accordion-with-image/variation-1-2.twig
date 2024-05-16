@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * variation-1.2
+ *
+ * See accordion-with-image.space.yaml for documentation.
+ */
+#}
+{{ attach_library('oecd/accordion') }}
+{{ attach_library('oecd/accordion-with-image') }}
+
+{% set classes = ([
+  'accordion',
+  'accordion-with-image variation-1-2 ga-accordion-with-image-2 ga_space_component',
+] | sort | join(' ') | trim ) %}
+
+{% set attributes = attributes|default(create_attribute()).addClass(classes) %}
+
+{# TEMPLATE #}
+{% block accordion_variation_1_2_block %}
+	<div{{attributes}}>
+		<div class="accordion-intro">
+			{% if pre_heading|render|striptags|trim is not empty %}
+				<span class="accordion-intro-pre-heading textMd-bold">{{ pre_heading }}</span>
+			{% endif %}
+
+			{% if heading|render|striptags|trim is not empty %}
+				<div class="accordion-intro-heading">
+					{{ heading }}
+				</div>
+			{% endif %}
+		</div>
+
+		<div class="items-list">
+			{{ items }}
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,76 @@
+progress:
+  use: "@molecules/progress/progress.twig"
+  label: Progress
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px ; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul,ol { margin-left: 30px; }
+      .desc ul { list-style-type: disc; }
+      .desc ol { list-style: decimal; }
+      .desc div > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>A progress indicator is a visual representation of a user’s progress through a set of steps, guiding toward the completion of a specified process.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>Keeping the user informed of where they currently are within the process or task at hand will give them a sense of control.</li>
+        <li>Display the steps in order from left to right. Indicate to the user that they are performing a multistep process, and show the direction of movement. Allow the user to return to a previous step to review their data submission.</li>
+        <li>Use progress indicators to keep the user on track when completing a specific task. By dividing the end goal into smaller, sub-tasks, it increases the percentage of completeness as each task is completed.</li>
+      </ul>
+      <p class="title">Anatomy</p>
+      <img src="./images/progess_anatomy.png" alt="progess_anatomy">
+      <ol>
+        <li>Status Icon</li>
+        <li>Step Name</li>
+        <li>Supporting Text</li>
+        <li>Steps Connector</li>
+      </ol>
+    </div>
+  fields:
+    progress_items:
+      type: pattern
+      label: Progress Base Items
+      multi_value_type: items
+      description: Progress Icon with text
+      preview:
+        - id: progress_base
+          fields:
+            title: 'Your details'
+            desc: 'Name and email'
+          settings:
+            extra_classes: complete
+            icon_type: icon-primary-1x
+
+        - id: progress_base
+          fields:
+            title: 'Company details'
+            desc: 'Website and location'
+          settings:
+            extra_classes: complete
+            icon_type: icon-primary-1x
+
+        - id: progress_base
+          fields:
+            title: 'Invite your team'
+            desc: 'Start collaborating'
+          settings:
+            extra_classes: current
+            icon_type: circle
+
+        - id: progress_base
+          fields:
+            title: 'Add your socials'
+            desc: 'Automatic sharing'
+          settings:
+            extra_classes: incomplete
+            icon_type: circle
+  settings:
+    layout_type:
+      type: select
+      label: Layout
+      options:
+        vertical: Vertical
+        horizontal: Horizontal
+      preview: 'horizontal'
+      default: horizontal

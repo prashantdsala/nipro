@@ -1,0 +1,237 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+{{ attach_library('oecd/login-signup-form') }}
+
+{% set classes = ([
+  login_variation_options == "simple" ? "simplelogin-form ga-simplelogin-form px-4 lg:px-0 m-auto",
+  login_variation_options == "simple-social" ? "simple-and-social-login-form ga-simple-and-social-login-form px-4 lg:px-0 m-auto",
+  login_variation_options == "splitquote" ? "split-quote-form ga-split-quote-login-form flex flex-wrap lg:flex-nowrap",
+  login_variation_options == "splitimage" ? "split-image-form ga-split-image-login-form flex flex-wrap lg:flex-nowrap",
+
+]) | sort | join(' ') | trim %}
+
+{% set form_title = login_form_headline %}
+{% set form_subtitle = login_form_subheadline %}
+{% set google_signup_btn_status = login_using_google %}
+{% set facebook_signup_btn_status = login_using_facebook %}
+{% set apple_signup_btn_status = login_using_apple %}
+{% set copyright_splitcarousel = copyright_splitcarousel %}
+{% set splitimage_email = splitimage_email %}
+{% set google_signup_btn_text = 'Sign in with Google' %}
+{% set google_signup_btn_url = '/user/login/google'%}
+{% set facebook_signup_btn_text = 'Sign in with Facebook' %}
+{% set facebook_signup_btn_url = '/user/login/facebook'%}
+{% set signup_link_text = 'Sign up' %}
+{% set signup_link_url = '/user/register' %}
+{% set signup_link_label = 'Dont have an account?' %}
+
+{% if login_variation_options == 'simple' %}
+  <form{{ attributes.addClass(classes) }}>
+    <div class="simple-and-social-login-form__logo text-center" tabindex='0'>
+      {% include "@atoms/logo/logo.twig" with { variant: "only_logo" } %}
+    </div>
+    <h2 class="signup-and-login-title mb-0 displayXs-semibold lg:displaySm-semibold text-2xl lg:text-3xl text-text-heading text-center" tabindex='0'>
+      {{ form_title }}
+    </h2>
+    <h5 class="signup-and-login-subtitle textMd-medium text-text-body text-center mt-3 mb-8" tabindex='0'>
+      {{ form_subtitle }}
+    </h5>
+    {{ children }}
+    {{ forget_password_link }}
+     {% if google_signup_btn_status != 0 %}
+      <div class="simple-signup-form__social-btn w-full mt-4" tabindex='0'>
+        {% include "@atoms/social-button/social-button.twig" with {
+          "text": google_signup_btn_text,
+          "social_button_link": google_signup_btn_url,
+          "social_button_type": "google"
+        } %}
+      </div>
+    {% endif %}
+    <div class="simple-signup-form__signup-link-wrapper text-center mt-8" tabindex='0'>
+      <span class="signup-linklabel textSm-regular text-text-body">{{ signup_link_label }}</span>
+      {% include "@atoms/link/link.twig" with {
+        "content": signup_link_text,
+        "url": signup_link_url,
+        "title_text": signup_link_text,
+        "icon_size": "#"
+      } %}
+    </div>
+  </form>
+{% elseif login_variation_options == 'simple-social' %}
+    <form{{ attributes.addClass(classes) }}>
+    <div class="simple-and-social-login-form__logo text-center" tabindex='0'>
+      {% include "@atoms/logo/logo.twig" with { variant: "only_logo" } %}
+    </div>
+    <h2 class="signup-and-login-title mb-0 displayXs-semibold lg:displaySm-semibold text-2xl lg:text-3xl text-text-heading text-center" tabindex='0'>
+      {{ form_title }}
+    </h2>
+    <h5 class="signup-and-login-subtitle textMd-medium text-text-body text-center mt-3 mb-8" tabindex='0'>
+      {{ form_subtitle }}
+    </h5>
+    {{ children }}
+    {% if (google_signup_btn_status != 0) or (facebook_signup_btn_status != 0) or (apple_signup_btn_status != 0) %}
+      <div class="simple-and-social-login-form__seperator-wrapper my-6">
+        <span class="seperator-border mr-[0.625rem]"></span> OR <span class="seperator-border ml-[0.625rem]"></span>
+      </div>
+    {% endif %}
+    <div class="simple-and-social-login-form__btn-wrapper flex flex-wrap">
+    {% if google_signup_btn_status != 0 %}
+      <div class="simple-signup-form__social-btn w-full mb-3" tabindex='0'>
+        {% include "@atoms/social-button/social-button.twig" with {
+          "text": google_signup_btn_text,
+          "social_button_link": google_signup_btn_url,
+          "social_button_type": "google"
+        } %}
+      </div>
+    {% endif %}
+    {% if facebook_signup_btn_status != 0 %}
+      <div class="simple-signup-form__social-btn w-full mb-3" tabindex='0'>
+        {% include "@atoms/social-button/social-button.twig" with {
+          "text": facebook_signup_btn_text,
+          "social_button_link": facebook_signup_btn_url,
+          "social_button_type": "facebook"
+        } %}
+      </div>
+    {% endif %}
+    </div>
+    <div class="simple-and-social-login-form__signup-link-wrapper text-center mt-8" tabindex='0'>
+      <span class="signup-linklabel textSm-regular text-text-body">{{ signup_link_label }}</span>
+      {% include "@atoms/link/link.twig" with {
+        "content": signup_link_text,
+        "url": signup_link_url,
+        "title_text": signup_link_text,
+        "icon_size": "#"
+      } %}
+    </div>
+  </form>
+  {% elseif login_variation_options == 'splitquote' %}
+	<div class="split-quote-form flex flex-wrap lg:flex-nowrap h-auto">
+		<div class="split-quote-form__quote-wrapper bg-backgroundPrimary-primaryExtraDark hidden lg:block max-w-[50%]">
+			<div class="simplelogin-form_logo pl-8 pt-8 hidden" tabindex='0'>
+				{% include "@atoms/logo/logo.twig" with { variant: "logo_with_text_light" } %}
+			</div>
+			<div class="split-quote-form__carousel-wrapper lg:py-[20rem]">
+      {{ drupal_entity('block', 'splitquotelogincarousel') }}
+			</div>
+			<div class="split-quote-signup-copyright fixed bottom-0" tabindex='0'>
+				<p>{{ copyright_splitcarousel }}</p>
+			</div>
+		</div>
+
+		<div class="simplelogin-form_logo lg:hidden block w-full pl-4 pt-[3rem]" tabindex='0'>
+			{% include "@atoms/logo/logo.twig" with {} %}
+		</div>
+
+		<div class="split-quote-form__signupform lg:pt-[14rem]">
+    <form{{ attributes.addClass(classes) }}>
+			<div class="simplelogin-form px-4 lg:px-0">
+				<div class="simple-signup-form__logo text-left" tabindex='0'>
+					{% include "@atoms/logo/logo.twig" with { variant: "only_logo" } %}
+				</div>
+				<h2 class="signup-and-login-title mb-0 displayXs-semibold lg:displaySm-semibold text-2xl lg:text-3xl text-text-heading" tabindex='0'>
+					{{ form_title }}
+				</h2>
+				<h5 class="signup-and-login-subtitle textMd-medium text-text-body mt-3 mb-8" tabindex='0'>
+					{{ form_subtitle }}
+				</h5>
+				  {{ children }}
+					{{ forget_password_link }}
+
+          <div class="simplelogin-form__btn-wrapper flex flex-wrap flex-col-reverse">
+					<div class="simplelogin-form__social-btn w-full mt-4" tabindex='0'>
+						{% include "@atoms/social-button/social-button.twig" with {
+          "text": google_signup_btn_text,
+          "social_button_link": google_signup_btn_url,
+          "social_button_type": "google"
+        } %}
+					</div>
+				</div>
+        <div class="split-quote-form__signup-link-wrapper text-center mt-8" tabindex='0'>
+          <span class="signup-linklabel textSm-regular text-text-body">{{ signup_link_label }}</span>
+          {% include "@atoms/link/link.twig" with {
+            "content": signup_link_text,
+            "url": signup_link_url,
+            "title_text": signup_link_text,
+            "icon_size": "#"
+          } %}
+        </div>
+				</div>
+			</div>
+      </form>
+		</div>
+	</div>
+{% elseif login_variation_options == 'splitimage' %}
+
+	<div class="split-image-form flex flex-wrap lg:flex-nowrap">
+		<div class="split-image-form__signupform  relative">
+    <div class="simplelogin-form_logo pl-8 pt-8 hidden" tabindex='0'>
+				{% include "@atoms/logo/logo.twig" with { variant: "logo_with_text_dark" } %}
+			</div>
+    <form{{ attributes.addClass(classes) }} >
+			<div class="simplelogin-form px-4 lg:px-0 py-[10rem] md:py-[4rem] xl:py-[15rem]" >
+				<div class="simple-and-social-login-form__logo text-center" tabindex='0'>
+					{% include "@atoms/logo/logo.twig" with { variant: "only_logo" } %}
+				</div>
+				<h2 class="signup-and-login-title mb-0 displayXs-semibold lg:displaySm-semibold text-2xl lg:text-3xl text-text-heading text-center" tabindex='0'>
+					{{ form_title }}
+				</h2>
+				<h5 class="signup-and-login-subtitle textMd-medium text-text-body mt-3 mb-8 text-center" tabindex='0'>
+					{{ form_subtitle }}
+				</h5>
+				  {{children}}
+
+					{{ forget_password_link }}
+				<div class="simplelogin-form__btn-wrapper flex flex-wrap flex-col-reverse">
+        {% if google_signup_btn_status != 0 %}
+					<div class="simplelogin-form__social-btn w-full mt-4" tabindex='0'>
+						 {% include "@atoms/social-button/social-button.twig" with {
+                "text": google_signup_btn_text,
+                "social_button_link": google_signup_btn_url,
+                "social_button_type": "google"
+              } %}
+					</div>
+        {% endif %}
+				</div>
+				<div class="split-quote-form__signup-link-wrapper text-center mt-8" tabindex='0'>
+          <span class="signup-linklabel textSm-regular text-text-body">{{ signup_link_label }}</span>
+          {% include "@atoms/link/link.twig" with {
+            "content": signup_link_text,
+            "url": signup_link_url,
+            "title_text": signup_link_text,
+            "icon_size": "#"
+          } %}
+        </div>
+        </form>
+			</div>
+      <div class="split-image-footer-wrapper absolute bottom-0 flex justify-between items-center w-full">
+        <div class="split-quote-signup-copyright textSm-regular text-text-body" tabindex='0'>
+          <p>{{ copyright_splitcarousel }}</p>
+        </div>
+        <div class="split-image-email m-4 textSm-regular text-text-body" tabindex='0'>
+          {% include "@atoms/link/link.twig" with {
+            "url": "mailto:#{splitimage_email}",
+            "content": splitimage_email,
+            "text": splitimage_email,
+            "icon": 'mail',
+            "icon_position": 'left',
+          } only %}
+        </div>
+      </div>
+		</div>
+		<div class="split-image-form__right-wrapper hidden lg:block">
+			<div class="split-image-form__imagewrapper" tabindex='0'>
+        {{ drupal_entity('block', 'splitimagewithlogin') }}
+			</div>
+		</div>
+	</div>
+{% endif %}
