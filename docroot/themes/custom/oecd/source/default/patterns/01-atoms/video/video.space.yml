@@ -1,0 +1,17 @@
+video:
+  use: "@atoms/video/video.twig"
+  label: Video
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>Component for displaying self hosted videos.</p>
+  fields:
+    video:
+      type: text
+      label: The video field.
+      description: The video provided by Drupal.
+    src:
+      type: text
+      label: The video src.
+      preview: sample.mp4

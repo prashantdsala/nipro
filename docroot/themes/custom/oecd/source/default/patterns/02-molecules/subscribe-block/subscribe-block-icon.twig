@@ -1,0 +1,31 @@
+{{ attach_library('oecd/block-subscribe') }}
+
+{# Default #}
+{% set element = element|default('div') %}
+
+{# Classes #}
+{% set classes = ([
+  'subscribe__block subscribe__block--icon',
+] | sort | join(' ') | trim ) %}
+
+{% set aos_easing = 'ease-in' %}
+{% set attributes = attributes|default(create_attribute()).addClass(classes) %}
+
+{# Template #}
+{% block subscribe_block_with_icon %}
+  <{{ element }} {{ attributes }} data-aos={{ on_scroll_animation }} data-aos-delay={{ on_scroll_animation_delay }} data-aos-easing={{ aos_easing }} data-aos-offset="0">
+    {% if headline|render|striptags|trim is not empty %}
+      <div class="subscribe__block--title">
+        {{ headline }}
+      </div>
+    {% endif %}
+    {% if text|render|striptags|trim is not empty %}
+      <div class="subscribe__block--description text-defaultGray-500 mb-12" tabindex='0'>
+        {{ text }}
+      </div>
+    {% endif %}
+    <div class="subscribe__block--email-form">
+      {{ email_form }}
+    </div>
+  </{{ element }}>
+{% endblock %}

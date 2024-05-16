@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ *
+ * Footer logo and content block.
+ */
+#}
+
+{% include '@molecules/footer-logo-content/footer-logo-content.twig' with {
+  logo: content.field_footer_logo_image,
+  text: content.body,
+  on_scroll_animation_logo: content['#block_content'].field_on_scroll_animation.value,
+  on_scroll_animation_delay_logo: content['#block_content'].field_on_scroll_animation_delay.value,
+  on_scroll_animation_content: content['#block_content'].field_on_scroll_animation_descri.value,
+  on_scroll_animation_delay_content: content['#block_content'].field_osa_delay_content.value,
+} %}

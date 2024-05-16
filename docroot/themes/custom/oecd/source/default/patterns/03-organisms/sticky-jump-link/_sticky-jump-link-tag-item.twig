@@ -1,0 +1,19 @@
+{#
+  /**
+  * @file
+  * _sticky-jump-link-tag-item
+  *
+  * See _sticky-jump-link.space.yaml for documentation.
+  */
+#}
+
+{# Template #}
+{% block sticky_jump_link_tag_item_block %}
+  {% for tag in tag_items %}
+    {% if loop.index == 1 %}
+      <a href="#sticky-jump-link-{{ loop.index }}" class="textMd-regular sticky-tag-pills active" tabindex="0">{{ tag }}</a>
+    {% else %}
+      <a href="#sticky-jump-link-{{ loop.index }}" class="textMd-regular sticky-tag-pills" tabindex="0">{{ tag }}</a>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,90 @@
+stats_kpi:
+  use: "@molecules/stats-kpi/stats-kpi.twig"
+  label: Stats KPI
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul,ol { margin-left: 30px; }
+      .desc ul { list-style-type: disc; }
+      .desc ol { list-style: decimal; }
+      .desc img { margin-left:auto; margin-right:auto; }
+    </style>
+    <div class="desc">
+      <p>Stats and KPIs can be used to highlight data, information, fact, or achievement that adds to the credentials of a product or brand.</p>
+      <p>These are often used on marketing websites to make a particular USP stand out from the rest of the text content.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To display important numerical or statistical data</li>
+        <li>To highlight the USP or feature of a subject</li>
+      </ul>
+      <p class="title">Anatomy</p>
+      <img src="./images/stats_kpi_anatomy.png" alt="stats-kpi-anatomy">
+      <ol>
+        <li>Title</li>
+        <li>Supporting Text</li>
+      </ol>
+    </div>
+  fields:
+    icon:
+      type: text
+      label: Icon name
+      description: A short headline above the headline.
+      preview: 'icon-primary-light-circle-outline-4x'
+    keynumber:
+      type: pattern
+      label: Key number
+      preview:
+        id: headline
+        variant: h3
+        settings:
+          tag_name: h3
+          headline: '400+'
+          font: displayLG-semibold
+    subheading:
+      type: text
+      label: Sub headline
+      preview: 'Projects completed'
+    description:
+      type: text
+      label: Content
+      preview: '<p>We have helped build over 400 projects and have worked with some amazing companies.</p>'
+    link:
+      type: pattern
+      label: Link
+      description: An optional button at the bottom of the card.
+      preview:
+        id: button
+        variant: link
+        fields:
+          text: 'Learn more'
+        settings:
+          button_type: text_with_icon
+          icon: 'arrowRight'
+          icon_alignment: right
+          size: large
+  settings:
+    alignment:
+      type: select
+      label: Alignment
+      required: true
+      default: left
+      options:
+        left: Left
+        center: Center
+    layout_type:
+      type: select
+      label: Layout of the Stat
+      required: true
+      default: default
+      options:
+        default: Default
+        accentlineleft: Accent line left
+        accentlinetop: Accent line top
+        withbackground: With Background
+        withicon: With Icon
+    extra_classes:
+      type: textfield
+      label: Class names (multiple class names separated by space). Only applied when custom style enabled.
+      preview: ''

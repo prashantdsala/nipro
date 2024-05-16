@@ -1,0 +1,54 @@
+name: OECD
+type: theme
+description: A Theme for UIPatterns and Storybook.
+base theme: stable
+core_version_requirement: ^8 || ^9 || ^10
+libraries:
+  - oecd/global-styling
+  - oecd/core
+
+libraries-override:
+  layout_builder/twocol_section:
+    css:
+      theme:
+        layouts/twocol_section/twocol_section.css:  layouts/twocol_section/twocol_section.css
+  layout_builder/threecol_section:
+    css:
+      theme:
+        layouts/threecol_section/threecol_section.css: layouts/threecol_section/threecol_section.css
+  layout_builder/fourcol_section:
+    css:
+      theme:
+        layouts/fourcol_section/fourcol_section.css: layouts/fourcol_section/fourcol_section.css
+
+regions:
+  primary_menu: Primary menu
+  secondary_header_menu: Secondary header menu
+  search_block: Search
+  login_block: Login
+  sign_up_block: Sign Up
+  highlighted: Highlighted
+  language_switcher: Language switcher
+  breadcrumb: Breadcrumb
+  content: Content
+  left_sidebar: Left Sidebar
+  right_sidebar: Right Sidebar
+  footer_top_left: Footer top left
+  footer_top_right: Footer top right
+  footer_middle_left: Footer middle left
+  footer_middle_right: Footer middle right
+  footer_bottom_left: Footer bottom left
+  footer_bottom_right: Footer bottom right
+
+components:
+  namespaces:
+    atoms:
+      - ../../dist/app-drupal/atomic/patterns/01-atoms
+    molecules:
+      - ../../dist/app-drupal/atomic/patterns/02-molecules
+    organisms:
+      - ../../dist/app-drupal/atomic/patterns/03-organisms
+    templates:
+      - ../../dist/app-drupal/atomic/patterns/04-templates
+    oecdCustom:
+      - ../../dist/app-drupal/atomic/patterns/06-oecd-custom

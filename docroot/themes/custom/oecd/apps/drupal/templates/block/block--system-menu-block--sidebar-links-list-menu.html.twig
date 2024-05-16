@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ *
+ * System sidebar links list menu block.
+ */
+#}
+
+{% include '@molecules/block-navigation/block-navigation.twig' with {
+  heading: label,
+  content: content,
+  extra_classes: 'block-navigation-sidebar'
+} %}

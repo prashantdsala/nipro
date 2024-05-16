@@ -1,0 +1,67 @@
+{{ attach_library('oecd/slick-slider') }}
+{{ attach_library('oecd/timeline') }}
+
+{% set timeLine = [] %}
+{% set timeline_year_list = [] %}
+<div class="variation2 ga-timeline-variation-2 ga_space_component">
+	<div class="journey_text displayMd-bold text-text-heading relative md:sticky md:max-w-[24rem]">
+    {{ journey_text }}
+  </div>
+	<div id="timeline_wrapper">
+    <div class="timelineSlider">
+      {% for key, item in items %}
+        {% set year =
+          item.field_timeline_card_date|render|striptags|trim|date('Y')
+        %}
+        {% if year not in timeLine %}
+          {% set timeLine = timeLine|merge([year]) %}
+        {% endif %}
+        {% set timeline_year_list = timeline_year_list|merge([year]) %}
+      {% endfor %}
+      {% set yearWiseItemCount = [] %}
+      {% for key, item in timeLine %}
+        {% set year_count = 0 %}
+        {% for key_year_list, year in timeline_year_list %}
+          {% if year == item %}
+          {% set year_count = year_count + 1 %}
+          {% endif %}
+        {% endfor %}
+
+        {% set yearWiseItemCount = yearWiseItemCount|merge({(item):(year_count)}) %}
+
+      {% endfor %}
+      {% for key, yearwise in yearWiseItemCount %}
+      {% endfor %}
+      {% set prev_item = 0 %}
+      {% for key, item in items %}
+        {% set year_count = 0 %}
+        {% for key_year_list, year in timeline_year_list %}
+
+          {% if year == item.field_timeline_card_date|render|striptags|trim|date('Y') %}
+            {% set year_count = year_count + 1 %}
+          {% endif %}
+        {% endfor %}
+
+        {% set is_first = 1 %}
+        {% if year_count > 1 %}
+          {% if prev_item == 0 %}
+             <div class="year_wrapper ga-year-wrapper">
+              <div class="milestone group-milestone ga-timeline-year"><span class="date-year" tabindex="0">{{item.field_timeline_card_date|render|striptags|trim|date('Y')}}</span></div>
+              <div class="group_timeline">{{item}}
+          {% else %}
+            {{item}}
+          {% endif %}
+          {% set prev_item = 1 %}
+        {% else %}
+          {% if prev_item == 0 %}
+             <div class="year_wrapper ga-year-wrapper"> {{item}}</div>
+            {% else %}
+            </div> </div>
+           <div class="year_wrapper ga-year-wrapper"> {{item}}</div>
+          {% endif %}
+          {% set prev_item = 0 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

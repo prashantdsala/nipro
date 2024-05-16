@@ -1,0 +1,35 @@
+{{ attach_library('oecd/slick-slider') }}
+{{ attach_library('oecd/timeline') }}
+
+<div class="variation4 ga-timeline-variation-4 ga_space_component">
+  <div id="timeline_wrapper" class="relative">
+    <div class="journey_text journey_text_variation4 displayMd-bold text-text-heading relative md:fixed md:max-w-[24rem] md:top-[4.5rem]">
+      {{ journey_text }}
+    </div>
+    <div class="timelineSlider">
+      {% for key, item in items %}
+        {{ item }}
+      {% endfor %}
+    </div>
+
+    <div class="container md:absolute top-auto bottom-10 m-auto left-0 right-0">
+      <div class="timelineSliderNav drupalSlidenav">
+        {% for key, item in items %}
+          {% set year =
+            item.field_timeline_card_date|render|striptags|trim|date('Y')
+          %}
+
+          <div data-date="{{ year }}" class="year_wrapper">
+            <span class="year-title">{{ year }}</span>
+            <span class="dots"></span>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="timelineSliderNav storybookSlidenav">
+        {% for key, item in items_timeline_years %}
+          {{ item }}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

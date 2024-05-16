@@ -1,0 +1,359 @@
+form_input:
+  use: "@atoms/forms/_input.twig"
+  namespace: "Atoms/Forms"
+  label: Input
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <div class="desc">
+      <p>Like the name suggests, Input components feed input data from the user to the system and if applicable, present information based on the fed input. The structure of the <a href="/?path=/docs/atoms-input-input--input"><u>input can be found here.</u></a></p>
+    </div>
+  variants:
+    textfield:
+      label: Textfield
+      settings:
+        attributes: "type=\"text\" placeholder=\"Placeholder\""
+    password:
+      label: Password
+      settings:
+        attributes: "type=\"password\" placeholder=\"..........\""
+    submit:
+      label: Submit
+      settings:
+        attributes: "type=\"submit\" placeholder=\"Placeholder\""
+    email:
+      label: Email
+      settings:
+        attributes: "type=\"email\" placeholder=\"Email Address\""
+    file:
+      label: File
+      settings:
+        attributes: "type=\"file\""
+    tel:
+      label: Tel
+      settings:
+        attributes: "type=\"tel\" placeholder=\"Enter your phone number here\""
+    date:
+      label: Date
+      settings:
+        attributes: "type=\"date\""
+    checkbox:
+      label: Checkbox
+      settings:
+        attributes: "type=\"checkbox\""
+    radio:
+      label: Radio
+      settings:
+        attributes: "type=\"radio\""
+  settings:
+    attributes:
+      type: attributes
+      label: Attributes
+      preview: "value=\"input value\""
+    icon:
+      type: boolean
+      label: Icon
+      default_value: true
+  fields:
+    children:
+      type: pattern
+      label: Children
+  visibility: storybook
+
+form_label:
+  use: "@atoms/forms/_form-label.twig"
+  namespace: "Atoms/Forms"
+  label: Label
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc p:first-child { margin-bottom:1.5rem; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul, ol { margin-left: 30px; }
+      .desc ul { list-style-type: disc; }
+      .desc ol { list-style: decimal; }
+      .desc img { margin-left:auto; margin-right:auto; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>Use Labels to label, categorise, or organise items using keywords that describe them.</p>
+      <img src="./images/label.png" alt="label">
+      <p class="title">Uses</p>
+      <ul>
+        <li>Multiple or single tags can be used to categorise items.</li>
+        <li>Use short labels for easy scanning. Use two words only if necessary to describe the status and differentiate it from other tags.</li>
+        <li>Tags can also be used as filters in some cases where each tag houses a group of information or content that share its description.</li>
+      </ul>
+      <p class="title">Anatomy</p>
+      <img src="./images/label_anatomy.png" alt="label_anatomy">
+      <ol>
+        <li>Container</li>
+        <li>Label Text</li>
+        <li>‘x’ close icon</li>
+      </ol>
+    </div>
+  fields:
+    title:
+      type: text
+      label: Title
+      preview:
+        faker: lorem.word
+  visibility: storybook
+
+form_textarea:
+  use: "@atoms/forms/_textarea.twig"
+  namespace: "Atoms/Forms"
+  label: Textarea
+  settings:
+    wrapper_attributes:
+      type: attributes
+      label: Wrapper attributes
+    attributes:
+      type: attributes
+      label: Attributes
+  fields:
+    value:
+      type: text
+      label: Value
+      preview:
+        faker: lorem.sentence
+  visibility: storybook
+
+form_select:
+  use: "@atoms/forms/_select.twig"
+  namespace: "Atoms/Forms"
+  label: Select
+  description: >
+    <style>
+      .desc p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc p:first-child { margin-bottom:1.5rem; }
+    </style>
+    <div class="desc">
+      <p>Select is used on a form to let users select one option from a list of options. The structure of the <a href="/?path=/docs/atoms-dropdown-item-dropdown-item--dropdown-item"><u>Select can be found here.</u></a>
+      </p>
+    </div>
+  settings:
+    attributes:
+      type: attributes
+      label: Attributes
+  fields:
+    options:
+      type: object
+      label: Options
+      preview:
+        - label: Option 1
+          type: "option"
+          selected: true
+        - label: Option 2
+          type: "option"
+        - label: Option 3
+          type: "option"
+  visibility: storybook
+
+form_checkboxes:
+  use: "@atoms/forms/_checkboxes.twig"
+  namespace: "Atoms/Forms"
+  label: Checkboxes
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top: 1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { list-style-type: disc; margin-left: 30px; }
+      .desc p:first-child { margin-bottom:1.5rem; }
+      .desc > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>Checkbox on a form can be used to let users make one or multiple selections. The structure of the <a href="/themes/contrib/space/dist/app-storybook/?path=/docs/atoms-checkbox-checkbox--checkbox"><u>Checkbox can be found here.</u></a></p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To select categories that applicable to a form</li>
+      </ul>
+    </div>
+  settings:
+    attributes:
+      type: attributes
+      label: Attributes
+  fields:
+    children:
+      type: pattern
+      label: Children
+      preview:
+        - id: form_element
+          variant: "checkbox"
+          settings:
+            label_display: after
+        - id: form_element
+          variant: "checkbox"
+          settings:
+            label_display: after
+        - id: form_element
+          variant: "checkbox"
+          settings:
+            label_display: after
+  visibility: storybook
+
+form_radios:
+  use: "@atoms/forms/_radios.twig"
+  namespace: "Atoms/Forms"
+  label: Radios
+  description: >
+    <style>
+      .desc p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <div class="desc">
+      <p>Radio buttons allow users to select just one option from a set. It can also be used to turn an option on or off. The structure of <a href="/?path=/docs/atoms-radio-radio--radio"><u>Radio can be found here.</u></a></p>
+    </div>
+  settings:
+    attributes:
+      type: attributes
+      label: Attributes
+  fields:
+    children:
+      type: pattern
+      label: Children
+      preview:
+        - id: form_element
+          variant: "radio"
+        - id: form_element
+          variant: "radio"
+        - id: form_element
+          variant: "radio"
+  visibility: storybook
+
+form_element:
+  use: "@atoms/forms/_form-element.twig"
+  namespace: "Atoms/Forms"
+  label: Form element
+  description:  >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top: 1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { list-style-type: disc; margin-left: 30px; }
+    </style>
+    <div class="desc">
+      <p>Form elements can be used on a form to capture data input by the user.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>Textfield - To capture text-only data like name, address, designation, etc</li>
+        <li>Email - To capture e-mail addresses</li>
+        <li>File - To let users upload/attach a media file or document like JPGs, PNGs, PDFs, Docs, etc</li>
+        <li>Tel - To input the phone number by a user</li>
+        <li>Date - To capture date inputs.</li>
+        <li>Select - To let users select one option from a list of options</li>
+        <li>Submit - To let users submit the form.</li>
+      </ul>
+    </div>
+  variants:
+    textfield:
+      label: Textfield
+      fields:
+        children:
+          id: form_input
+          variant: "textfield"
+    email:
+      label: Email
+      fields:
+        children:
+          id: form_input
+          variant: "email"
+    file:
+      label: File
+      fields:
+        children:
+          id: form_input
+          variant: "file"
+    tel:
+      label: Tel
+      fields:
+        children:
+          id: form_input
+          variant: "tel"
+    date:
+      label: Date
+      fields:
+        children:
+          id: form_input
+          variant: "date"
+    checkbox:
+      label: Checkbox
+      fields:
+        children:
+          id: form_input
+          variant: "checkbox"
+    checkboxes:
+      label: Checkboxes
+      fields:
+        children:
+          id: form_checkboxes
+    radio:
+      label: Radio
+      settings:
+        label_display: after
+      fields:
+        children:
+          id: form_input
+          variant: "radio"
+    radios:
+      label: Radios
+      fields:
+        children:
+          id: form_radios
+    select:
+      label: Select
+      fields:
+        children:
+          id: form_select
+    submit:
+      label: Submit
+      fields:
+        children:
+          id: form_input
+          variant: "submit"
+
+  settings:
+    label_display:
+      type: select
+      label: Label display
+      default_value: before
+      options:
+        before: Before
+        after: After
+        invisible: Invisible
+        hidden: Hidden
+    description_display:
+      type: select
+      label: Description display
+      options:
+        before: Before
+        after: After
+        invisible: Invisible
+        hidden: Hidden
+    attributes:
+      type: attributes
+      label: Attributes
+  fields:
+    label:
+      type: pattern
+      label: Label
+      description: The form label.
+      preview:
+        id: form_label
+    description_text:
+      type: text
+      label: Description
+      description: The form description.
+      preview:
+        faker: lorem.sentence
+    errors:
+      type: text
+      label: Errors
+      description: The error message.
+    children:
+      type: pattern
+      label: Children
+      preview:
+        id: form_input
+        variant: "textfield"
+
+  visibility: storybook

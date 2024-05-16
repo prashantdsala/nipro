@@ -1,0 +1,810 @@
+simplelogin_form:
+  use: "@organisms/signup-and-login-form/_simplelogin-form.twig"
+  namespace: "Organisms/Login Form"
+  label: Simple Login form
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+    <p>Log-in allows already registered users to access their accounts. The log-in flow should be very simple and natural to minimise the efforts by a user</p>
+    <p class="title">Uses</p>
+    <ul>
+      <li>To let users log in to their account</li>
+    </ul>
+    <div class="note">
+      <img src="./images/info-icon.svg">
+      <p>The child components within the component vary across different variants. They can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+    </div>
+  fields:
+    form_title: 
+      type: text
+      label: Form title
+      preview: Login to your account
+    form_subtitle:
+      type: text
+      label: Form Subtitle 
+      preview: Welcome back! Please enter your details.
+    email_label: 
+      type: text
+      label: Email label
+      preview: Email*
+    password:
+      type: password
+      label: password
+      preview: Password*
+    checkbox_label:
+      type: checkbox
+      label: checkbox label
+      preview: Remember me
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    children2:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"email\" placeholder=\"Enter Email Address\""
+    children3:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "checkbox"
+    children4:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "password"
+          attributes: "type=\"password\" placeholder=\"Create password\""  
+    forget_password_link:
+      type: pattern
+      label: forget password link
+      preview: 
+        id: link
+        settings:
+          url: "#"
+          title_text: "forgot password"
+          content: "Forgot password"
+          icon_size: "#"
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Sign in
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    social_button_text:
+      type: text
+      label: Social button text.
+      preview: Sign in with Google  
+    social_button_link:
+      type: url
+      label: Social button link  
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Signup link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-signup-form-simple-signup-form--simple-signup-form"
+          title_text: "Sign up"
+          content: "Sign up"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Don't have an account?
+
+simple_and_sociallogin:
+  use: "@organisms/signup-and-login-form/_simple-and-social-login.twig"
+  namespace: "Organisms/Login Form"
+  label: Simple And Social Login
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+    <p>Log-in allows already registered users to access their accounts. The log-in flow should be very simple and natural to minimise the efforts by a user</p>
+    <p class="title">Uses</p>
+    <ul>
+      <li>To let users log in to their account</li>
+    </ul>
+    <div class="note">
+      <img src="./images/info-icon.svg">
+      <p>The child components within the component vary across different variants. They can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+    </div>
+  fields:
+    form_title: 
+      type: text
+      label: Form title
+      preview: Login to your account
+    form_subtitle:
+      type: text
+      label: Form Subtitle 
+      preview: Welcome back! Please enter your details.
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Continue with email
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Signup link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-signup-form-simple-signup-form--simple-signup-form"
+          title_text: "Sign up"
+          content: "Sign up"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Don't have an account?
+    social_buttons:
+      type: pattern
+      label: Social buttons
+      preview:
+        id: social_button_groups
+
+splitquote:
+  use: "@organisms/signup-and-login-form/_splitquote.twig"
+  namespace: "Organisms/Login Form"
+  label: Split Quote form
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+    <p>Log-in allows already registered users to access their accounts. The log-in flow should be very simple and natural to minimise the efforts by a user</p>
+    <p class="title">Uses</p>
+    <ul>
+      <li>To let users log in to their account</li>
+    </ul>
+    <div class="note">
+      <img src="./images/info-icon.svg">
+      <p>The child components within the component vary across different variants. They can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+    </div>
+  fields:
+    split_carousel:
+      type: pattern
+      label: split_carousel
+      preview:
+        - id: testimonial_carousel_login_logo_and_avatar
+    form_title: 
+      type: text
+      label: Form title
+      preview: Welcome back
+    form_subtitle:
+      type: text
+      label: Form Subtitle
+      preview: Welcome back! Please enter your details.
+    email_label: 
+      type: text
+      label: Email label
+      preview: Email*
+    password:
+      type: password
+      label: password
+      preview: Password*
+    checkbox_label:
+      type: checkbox
+      label: checkbox label
+      preview: Remember me
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    children2:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"email\" placeholder=\"Enter Email Address\""
+    children3:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "checkbox"
+    children4:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "password"
+          attributes: "type=\"password\" placeholder=\"Create password\"" 
+    forget_password_link:
+      type: pattern
+      label: forget password link
+      preview: 
+        id: link
+        settings:
+          url: "#"
+          title_text: "forgot password"
+          content: "Forgot password"
+          icon_size: "#"
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Sign in
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    social_button_text:
+      type: text
+      label: Social button text.
+      preview: Sign in with Google  
+    social_button_link:
+      type: url
+      label: Social button link  
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Signup link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-signup-form-simple-signup-form--simple-signup-form"
+          title_text: "Sign up"
+          content: "Sign up"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Don't have an account?
+    login_copyright: 
+      type: text
+      label: Copyright title
+      preview: '@space 2022'
+
+splitimage:
+  use: "@organisms/signup-and-login-form/_splitimage.twig"
+  namespace: "Organisms/Login form"
+  label: Split Image form
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { list-style: disc; margin-left: 30px; }
+      .desc div > p:first-child { margin-top:0.5rem; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <div class="desc">
+      <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+      <p>Log-in allows already registered users to access their accounts. The log-in flow should be very simple and natural to minimise the efforts by a user</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To let users log in to their account</li>
+      </ul>
+      <div class="note">
+        <img src="./images/info-icon.svg">
+        <p>The child components within the component vary across different variants. They can also be replaced with other atomic or molecular elements as per the UX requirements.</p>
+      </div>
+    </div>
+  fields:
+    split_image:
+      type: pattern
+      label: split image
+      preview:
+        - id: image_atom
+          variant: image
+          settings:
+            image_url:  "./images/section.jpg"
+    form_title: 
+      type: text
+      label: Form title
+      preview: Welcome back
+    form_subtitle:
+      type: text
+      label: Form Subtitle 
+      preview: Welcome back! Please enter your details.
+    email_label: 
+      type: text
+      label: Email label
+      preview: Email*
+    password:
+      type: password
+      label: password
+      preview: Password*
+    checkbox_label:
+      type: checkbox
+      label: checkbox label
+      preview: Remember me
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    children2:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"email\" placeholder=\"Enter Email Address\""
+    children3:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "checkbox"
+    children4:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "password"
+          attributes: "type=\"password\" placeholder=\"Create password\"" 
+    forget_password_link:
+      type: pattern
+      label: forget password link
+      preview: 
+        id: link
+        settings:
+          url: "#"
+          title_text: "forgot password"
+          content: "Forgot password"
+          icon_size: "#"
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Sign in
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    social_button_text:
+      type: text
+      label: Social button text.
+      preview: Sign in with Google  
+    social_button_link:
+      type: url
+      label: Social button link  
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Signup link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-signup-form-simple-signup-form--simple-signup-form"
+          title_text: "Sign up"
+          content: "Sign up"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Don't have an account?
+    login_copyright: 
+      type: text
+      label: Copyright title
+      preview: '@space 2022'
+
+# SIGN-UP
+simple_signup_form:
+  use: "@organisms/signup-and-login-form/_simple-signup.twig"
+  namespace: "Organisms/Signup Form"
+  label: Simple Signup form
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+    <p>Sign-up process is used to let a visitor register on a platform as a user using their contact details. Signing up may have different incentives for the user.</p>
+    <p>The process is fairly straightforward and simple to enable more conversions for the users.</p>
+    <p class="title">Uses</p>
+    <ul>
+      <li>To let new users sign-up and create an account on a platform</li>
+    </ul>
+    <div class="note">
+      <img src="./images/info-icon.svg">
+      <p>The child components within the carousel may vary across different variants. They can also be replaced with other atomic or molecular elements as required.</p>
+    </div>
+  fields:
+    form_title: 
+      type: text
+      label: Form title
+      preview: Create an account
+    form_subtitle:
+      type: text
+      label: Form Subtitle 
+      preview: Start your 30-day free trial.
+    user_name_label:
+      type: text
+      label: User name label
+      preview: Name*
+    email_label: 
+      type: text
+      label: Email label
+      preview: Email*
+    password:
+      type: password
+      label: password
+      preview: Password*
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    children2:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"email\" placeholder=\"Enter Email Address\""
+    children3:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "checkbox"
+    children5:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "password"
+          attributes: "type=\"password\" placeholder=\"Create passwords\""      
+    children4:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"text\" placeholder=\"Enter your name\""
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Get started
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    social_button_text:
+      type: text
+      label: Social button text.
+      preview: Sign in with Google  
+    social_button_link:
+      type: url
+      label: Social button link  
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Login link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-login-form-simple-login-form--simple-login-form"
+          title_text: "Login"
+          content: "Login"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Already have an account?
+
+simple_and_social_signup:
+  use: "@organisms/signup-and-login-form/_simple-and-social-signup.twig"
+  namespace: "Organisms/Signup Form"
+  label: Simple And Social Signup
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      ..desc note p { padding: 0; }
+    </style>
+    <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+    <p>Sign-up process is used to let a visitor register on a platform as a user using their contact details. Signing up may have different incentives for the user.</p>
+    <p>The process is fairly straightforward and simple to enable more conversions for the users.</p>
+    <p class="title">Uses</p>
+    <ul>
+      <li>To let new users sign-up and create an account on a platform</li>
+    </ul>
+    <div class="note">
+      <img src="./images/info-icon.svg">
+      <p>The child components within the carousel may vary across different variants. They can also be replaced with other atomic or molecular elements as required.</p>
+    </div>
+  fields:
+    form_title: 
+      type: text
+      label: Form title
+      preview: Create an account
+    form_subtitle:
+      type: text
+      label: Form Subtitle 
+      preview: Start your 30-day free trial.
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Get Started
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Signup link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-login-form-simple-login-form--simple-login-form"
+          title_text: "Get started"
+          content: "Log in"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Already have an account?
+    social_buttons:
+      type: pattern
+      label: Social buttons
+      preview:
+        id: social_button_groups      
+
+splitquote_signup:
+  use: "@organisms/signup-and-login-form/_splitquote-signup.twig"
+  namespace: "Organisms/Signup Form"
+  label: Split Quote Signup Carousel Form
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul { margin-left: 30px; list-style: disc; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+    <p>Sign-up process is used to let a visitor register on a platform as a user using their contact details. Signing up may have different incentives for the user.</p>
+    <p>The process is fairly straightforward and simple to enable more conversions for the users.</p>
+    <p class="title">Uses</p>
+    <ul>
+      <li>To let new users sign-up and create an account on a platform</li>
+    </ul>
+    <div class="note">
+      <img src="./images/info-icon.svg">
+      <p>The child components within the carousel may vary across different variants. They can also be replaced with other atomic or molecular elements as required.</p>
+    </div>
+  fields:
+    split_carousel:
+      type: pattern
+      label: split_carousel
+      preview:
+        - id: testimonial_carousel_login_logo_and_avatar
+    form_title: 
+      type: text
+      label: Form title
+      preview: Create an account
+    form_subtitle:
+      type: text
+      label: Form Subtitle 
+      preview: Start your 30-day free trial.
+    user_name_label:
+      type: text
+      label: User name label
+      preview: Name*
+    email_label: 
+      type: text
+      label: Email label
+      preview: Email*
+    password:
+      type: password
+      label: password
+      preview: Password*
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    children2:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"email\" placeholder=\"Enter Email Address\""
+    children3:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "checkbox"
+    children5:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "password"
+          attributes: "type=\"password\" placeholder=\"Create passwords\""      
+    children4:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"text\" placeholder=\"Enter your name\""
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Create account
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    social_button_text:
+      type: text
+      label: Social button text.
+      preview: Sign in with Google  
+    social_button_link:
+      type: url
+      label: Social button link  
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Login link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-login-form-simple-login-form--simple-login-form"
+          title_text: "Login"
+          content: "Login"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Already have an account?
+    signup_copyright: 
+      type: text
+      label: Copyright title
+      preview: '@space 2022'
+
+splitimage_signup:
+  use: "@organisms/signup-and-login-form/_splitimage-signup.twig"
+  namespace: "Organisms/Signup form"
+  label: Split Image form
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc ul,ol { margin-left: 30px; }
+      .desc ul { list-style: disc; }
+      .desc ol { list-style: decimal; margin-left: 30px; }
+      .desc > p:first-child { margin-top:0.5rem; }
+      .desc .note { background-color:#EDF8F4; gap:5px; display:flex; align-items:flex-start; padding: 10px 20px; border-radius: 5px; margin-top: 1.5rem; }
+      .desc .note img { margin-top:2px; filter: brightness(0.6); }
+      .desc .note p { padding: 0; }
+    </style>
+    <div class="desc">
+      <p>Log in & Sign-up is used on a platform when it has some extra features or functions for the users after logging in. Logging in also helps the businesses maintain the data of their users; subsequently making better business decisions.</p>
+      <p>Sign-up process is used to let a visitor register on a platform as a user using their contact details. Signing up may have different incentives for the user.</p>
+      <p>The process is fairly straightforward and simple to enable more conversions for the users.</p>
+      <p class="title">Uses</p>
+      <ul>
+        <li>To let new users sign-up and create an account on a platform</li>
+      </ul>
+      <div class="note">
+        <img src="./images/info-icon.svg">
+        <p>The child components within the carousel may vary across different variants. They can also be replaced with other atomic or molecular elements as required.</p>
+      </div>
+    </div>
+  fields:
+    split_image:
+      type: pattern
+      label: split image
+      preview:
+        - id: image_atom
+          variant: image
+          settings:
+            image_url:  "./images/signup-image.jpg"
+    form_title: 
+      type: text
+      label: Form title
+      preview: Create an account
+    form_subtitle:
+      type: text
+      label: Form Subtitle 
+      preview: Start your 30-day free trial.
+    user_name_label:
+      type: text
+      label: User name label
+      preview: Name*
+    email_label: 
+      type: text
+      label: Email label
+      preview: Email*
+    password:
+      type: password
+      label: password
+      preview: Password*
+    children1:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "email"
+    children2:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"email\" placeholder=\"Enter Email Address\""
+    children3:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "checkbox"
+    children5:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "password"
+          attributes: "type=\"password\" placeholder=\"Create passwords\""      
+    children4:
+      type: pattern
+      preview:
+        - id: form_input
+          variant: "textfield"
+          attributes: "type=\"text\" placeholder=\"Enter your name\""
+    signin_button_text: 
+      type: text
+      label: Sign-in btn text
+      preview: Create account
+    signin_url:
+      type: url
+      label: Signin button link
+      preview: "#"
+    social_button_text:
+      type: text
+      label: Social button text.
+      preview: Sign in with Google  
+    social_button_link:
+      type: url
+      label: Social button link  
+      preview: "#"
+    signup_link:
+      type: pattern
+      label: Login link
+      preview: 
+        id: link
+        settings:
+          url: "/themes/contrib/space/dist/app-storybook/?path=/story/organisms-login-form-simple-login-form--simple-login-form"
+          title_text: "Login"
+          content: "Login"
+          icon_size: "#" 
+    signup_label:
+      type: text
+      label: Signup link label 
+      preview: Already have an account?

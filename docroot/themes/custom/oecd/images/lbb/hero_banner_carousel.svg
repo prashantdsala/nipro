@@ -1,0 +1,29 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_78_1925)">
+<rect width="400" height="300" fill="white"/>
+<circle cx="47" cy="40" r="10" fill="#F2F2F2"/>
+<rect x="177" y="37" width="40" height="6" fill="#F2F2F2"/>
+<rect x="227" y="37" width="36" height="6" fill="#F2F2F2"/>
+<rect x="273" y="37" width="44" height="6" fill="#F2F2F2"/>
+<rect x="327" y="37" width="36" height="6" fill="#F2F2F2"/>
+<circle cx="184" cy="214" r="4" fill="#C2C2C2"/>
+<circle cx="200" cy="214" r="4" fill="#E0E0E0"/>
+<circle cx="216" cy="214" r="4" fill="#E0E0E0"/>
+<rect x="160" y="89" width="80" height="14" fill="#C2C2C2"/>
+<rect x="182" y="158" width="35" height="14" fill="#448EF7"/>
+<rect x="125" y="109" width="150" height="7" fill="#E0E0E0"/>
+<rect x="125" y="120" width="150" height="7" fill="#E0E0E0"/>
+<rect x="145" y="131" width="110" height="7" fill="#E0E0E0"/>
+<rect opacity="0.6" x="37" y="254" width="102" height="99" fill="#F2F2F2"/>
+<rect opacity="0.6" x="149" y="254" width="102" height="99" fill="#F2F2F2"/>
+<rect opacity="0.6" x="261" y="254" width="102" height="99" fill="#F2F2F2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37 125L43.364 118.636L44.7782 120.05L39.8284 125L44.7782 129.95L43.364 131.364L37 125Z" fill="#C2C2C2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M362.728 125L356.364 118.636L354.95 120.05L359.899 125L354.95 129.95L356.364 131.364L362.728 125Z" fill="#C2C2C2"/>
+</g>
+<rect x="0.5" y="0.5" width="399" height="299" stroke="#C2C2C2"/>
+<defs>
+<clipPath id="clip0_78_1925">
+<rect width="400" height="300" fill="white"/>
+</clipPath>
+</defs>
+</svg>

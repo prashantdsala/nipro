@@ -1,0 +1,29 @@
+tab_title:
+  use: "@molecules/tab-title/tab-title.twig"
+  label: Tab title
+  description: >
+    <style>
+      p { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px; }
+    </style>
+    <p>Tab title can be used with Tab section.</p>
+  fields:
+    icon:
+      type: text
+      label: Tab icon name
+      description: 'Icon beside tab title.'
+      preview: ''
+    title:
+      type: text
+      label: Tab title
+      description: 'The title of the tab.'
+      preview: 'Map'
+    title_alignment:
+      type: strings
+      label: Tab title alignment
+      description: 'Set title alignment to center, left or right etc.'
+      default: center_align
+      options:
+        center_align: Center
+        left_align: Left
+        right_align: Right
+      preview: center_align

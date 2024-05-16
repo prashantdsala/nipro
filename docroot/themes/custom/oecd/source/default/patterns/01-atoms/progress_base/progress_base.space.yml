@@ -1,0 +1,42 @@
+progress_base:
+  use: "@atoms/progress_base/progress_base.twig"
+  label: Progress (Base)
+  description: >
+    <style>
+      .desc p,li { padding: 3px 2px; font-size:16px; color: #37352F; line-height:24px;  }
+      .desc ol { margin-left: 30px; list-style: decimal; }
+      .desc .title { margin-top:1.5rem; font-size:20px; font-weight: 600; line-height:28px; }
+      .desc div > p:first-child { margin-top:0.5rem; }
+    </style>
+    <div class="desc">
+      <p>Progress (base) is used on <a href="/?path=/docs/molecules-progress--progress"><u>Progress</u></a> to represent a step in the overall journey.</p>
+      <p class="title">Anatomy</p>
+      <img src="./images/progress_base_anatomy.png" alt="progress_base_anatomy">
+      <ol>
+        <li>Status icon</li>
+        <li>Connector</li>
+        <li>Title</li>
+        <li>Supporting text</li>
+      </ol>
+    </div>
+  fields:
+    title:
+      type: text
+      label: Title
+      preview: 'Your details'
+    desc:
+      type: text
+      label: Description
+      preview: 'Please provide your name and email'
+  settings:
+    icon_type:
+      type: select
+      label: icon
+      options:
+        circle: Circle
+        icon-primary-1x: Tick
+      preview: circle
+    extra_classes:
+      type: textfield
+      label: Class names (multiple class names separated by space). Only applied when custom style enabled.
+      preview: ''

@@ -1,0 +1,394 @@
+/*======================
+ Timeline card
+=======================*/
+.timeline_card {
+  &.timelinevariation1 {
+    .headline {
+      @apply font-primaryBold text-2xl text-text-heading;
+      @apply mb-1 !important;
+    }
+  }
+
+  &.timelinevariation2 {
+    .headline {
+      @apply font-secondary text-lg text-text-heading;
+      @apply mb-1 !important;
+    }
+  }
+
+  &.timelinevariation3 {
+    .headline {
+      @apply font-secondary text-sm text-text-primaryMedium;
+      @apply mb-1 !important;
+    }
+
+    .backgroundImage {
+      @apply maxMd:relative maxMd:w-full maxMd:min-h-[9rem] maxMd:mb-10;
+      @apply h-full !important;
+
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+  }
+
+  &.timelinevariation4 {
+    .headline {
+      @apply font-secondary text-sm text-text-heading font-bold;
+      @apply mb-1 !important;
+    }
+  }
+}
+
+
+.variation1,
+.variation2 {
+  .slick-slide {
+    .group_timeline {
+      @apply flex !important;
+    }
+  }
+
+  #timeline_wrapper {
+    @apply bg-white pt-48 relative w-full;
+  }
+
+  .timelineSlider {
+    @apply mb-72;
+
+    .slick-slide {
+      @apply cursor-pointer;
+    }
+
+    .slick-track {
+      @apply flex items-center;
+    }
+  }
+
+  .timelineSliderNav {
+    .slick-list {
+      @apply flex pt-6;
+
+      .slick-slide {
+        @apply flex justify-center items-center text-center;
+      }
+    }
+
+    .slick-track {
+      @apply w-full mb-10 !important;
+    }
+  }
+}
+
+.variation1 {
+  #timeline_wrapper {
+    @apply pt-9;
+  }
+
+  .timelineSliderNav {
+    .slick-list {
+      @apply pt-0;
+    }
+
+    .slick-track {
+      @apply left-0 mb-0 !important;
+    }
+
+    .slick-slide {
+      @apply w-auto mr-8 md:mr-[4rem] !important;
+      
+      span.year-title {
+        @apply text-text-heading md:text-2xl md:leading-32;
+      }
+
+      .dots {
+        @apply hidden;
+      }
+
+      &.is-active {
+        span.year-title {
+          @apply font-primary text-text-primaryDark text-2xl md:text-6xl md:leading-72 font-bold;
+        }
+      }
+    }
+  }
+
+  .timelineSlider {
+    .slick-track {
+      @apply items-start top-5;
+    }
+
+    .slick-slide {
+      @apply maxMd:w-full !important;
+      
+      .timeline_card {  
+        @apply md:ml-0 md:mx-8 my-0 w-screen md:w-[17.5rem] !important;
+
+        .card_timeline {
+          picture {
+            img {
+              @apply maxLgMd:w-full !important;
+            }
+          }
+        }
+      }
+
+      &.slick-active.slick-current {
+        .timeline_card {
+          @apply w-[92vw] md:w-[27rem] lg:w-[37rem] !important;
+        }
+      }
+    }
+  }
+}
+
+.variation2 {
+  @apply grid grid-cols-1 md:grid-cols-[4fr,6fr] items-baseline md:border-t border-stroke-borderLight mb-30;
+
+  #timeline_wrapper {
+    @apply flex pt-0;
+  }
+
+  .timelineSlider {
+    @apply md:ml-[4.5rem] relative;
+
+    &:before {
+      @apply content-[''] absolute top-0 -left-10 bg-backgroundNeutral-neutralMedium h-full w-[0.0625rem] z-0;
+    }
+
+    .year_wrapper {
+      @apply relative mb-10;
+
+      &:first-child {
+        @apply mt-5;
+      }
+
+      .group-milestone {
+        @apply maxMd:hidden !important;
+      }
+
+      .milestone {
+        @apply top-0 text-4xl leading-44 font-bold text-text-heading pt-3 pb-1 maxMd:flex maxMd:justify-between maxMd:items-center maxMd:bg-white maxMd:z-10;
+
+        span {
+          @apply md:absolute md:-left-40;
+
+          &.date-year {
+            @apply maxMd:flex leading-none;
+
+            &:before {
+              @apply content-['\2022'] block h-6 w-6 rounded-3xl border-2 border-stroke-borderLight md:absolute top-1 left-0 md:left-[6.75rem] font-bold text-2xl leading-[1.4375rem] opacity-50 text-center z-50 maxMd:content-none;
+            }
+          }
+
+          &.date-month {
+            @apply font-secondary text-base bg-white text-text-body inline-block top-[3rem] min-w-[7rem]; 
+          }
+        }
+      }
+
+      &.active {
+        .milestone {
+          @apply sticky;
+
+          span {
+            &.date-year {
+              @apply pt-1;
+
+              &:before {
+                @apply border-2 opacity-100 border-primary-600;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .timeline_card {
+      &.media__card.large {
+        @apply max-w-[42rem] min-h-[1.5rem] h-auto;
+
+        .timeline-variation2 {
+          @apply w-full;
+
+          .right-section {
+            .card_timeline {
+              @apply mb-0;
+
+              .card_text {
+                p {
+                  @apply text-sm;
+                }
+              }
+            }
+
+            img {
+              @apply max-w-full maxSm:w-full maxSm:mx-auto md:max-w-[10rem] lg:max-w-[17.5rem];
+            }
+          }
+        }
+      }
+    }
+
+    .group_timeline {
+      .timeline_card {
+        @apply mb-10;
+      }
+      
+      .milestone .date-year {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+.journey_text_variation2 {
+  @apply text-text-heading relative md:absolute md:max-w-[10rem] lg:max-w-[17rem] xl:max-w-[24rem] md:h-full md:mt-4;
+
+  .headline {
+    @apply md:sticky top-6 maxMd:mb-0;
+  }
+}
+
+.contextual-region {
+  .journey_text_variation2 {
+    @apply md:absolute md:top-0;
+
+    .headline {
+      @apply top-20;
+    }
+  }
+}
+
+.variation3,
+.variation4 {
+  .timelineSliderNav {
+    @apply md:mx-32 maxMd:hidden;
+
+    &.storybookSlidenav {
+      @apply hidden !important;
+    }
+
+    &:before {
+      @apply content-[''] absolute bg-backgroundNeutral-neutralLight h-px w-full left-0 bottom-0;
+    }
+
+    .slick-list {
+      .slick-track {
+        @apply flex items-end;
+      }
+
+      .slick-slide {
+        @apply relative;
+
+        span.year-title {
+          @apply text-white font-secondary text-sm maxMd:text-text-heading maxMd:text-xl maxMd:text-center maxMd:w-full;
+        }
+
+        &.is-active {
+          span.year-title {
+            @apply inline-block md:pb-11 pl-2.5 border-0 md:border-l-2 border-solid border-white;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    @apply absolute -bottom-8 md:bottom-8 z-10;
+
+    &.prev-arrow {
+      @apply left-4 md:left-8 xl:left-[4rem] 2xl:left-[calc((100vw-96rem)/2)];
+    }
+
+    &.next-arrow {
+      @apply right-8 md:right-8 xl:right-[4rem] 2xl:right-[calc((100vw-96rem)/2)] maxMd:left-[5rem];
+    }
+  } 
+}
+
+.timeline-journey-text {
+  @apply lg:absolute left-0 right-0 maxLg:hidden top-4 md:top-[3rem];
+  @apply maxXl:mx-8 !important;
+
+  .headline {
+    @apply text-text-neutralMedium text-xs leading-20 max-w-[24rem] uppercase;
+  }
+
+  &.journey-text-variation4 {
+    .headline {
+      @apply text-text-body;
+    }
+  }
+}
+
+.journey_text {
+  @apply maxXl:mx-8 !important;
+  @apply text-text-neutralMedium text-xs leading-20 lg:absolute left-0 right-0 maxMd:hidden z-50;
+
+  &.journey-text-variation4 {
+    @apply text-text-body;
+  }
+}
+
+.variation4 {
+  .timelineSliderNav {
+    &:before {
+      @apply bg-backgroundNeutral-neutralExtraDark;
+    }
+
+    .slick-list {
+      .slick-slide {
+        span.year-title {
+          @apply text-text-heading maxMd:text-xl maxMd:text-center maxMd:w-full;
+        }
+
+        &.is-active {
+          span.year-title {
+            @apply md:border-l-2 border-solid border-defaultBlack-100 maxMd:pb-0;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    @apply bottom-[1.5rem];
+  }
+
+  .timelineSlider {
+    .slick-list {
+      .slick-slide {
+        .timeline_card  {
+          @apply py-11;
+
+          .right-section {
+            .card_timeline {
+              @apply md:min-h-[37.75rem] md:items-center flex maxMd:justify-center;
+            }
+          }
+        }
+      }
+    }
+  }
+}  
+
+.space-body {
+  .variation1,
+  .variation3,
+  .variation4 {
+    .timelineSliderNav {
+      &.storybookSlidenav{
+        @apply block !important;
+      }
+
+      &.drupalSlidenav {
+        @apply hidden;
+      }     
+    }
+  }
+}
+
+.timeline-main-wrapper {
+  @apply relative;
+}

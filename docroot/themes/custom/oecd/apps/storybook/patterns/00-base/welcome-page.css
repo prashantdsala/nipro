@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'TWKEverett-Medium';
+  src: url('../../fonts/TWKEverett-Medium.woff') format('opentype'),
+  url('../../fonts/TWKEverett-Medium.woff2') format('opentype');
+  font-weight: normal;
+  font-style: medium;
+}
+
+.welcome-wrapper {
+
+  .innerZoomElementWrapper {
+    @apply grid gap-3;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    div {
+
+      .space-wrapper {
+        @apply w-[10rem] rounded-[4px] items-center flex h-full border border-solid border-stroke-borderDefault;
+
+        a {
+          @apply p-0 block;
+
+          div {
+            @apply bg-white text-text-heading font-[Inter] h-full text-14 not-italic font-bold leading-5 p-4;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sbdocs-content {
+  .sbdocs-title {
+    @apply font-normal font-[TWKEverett-Medium];
+  } 
+}
+
+.sbdocs-subtitle {
+  @apply text-[#37352F] text-16 leading-6 pt-1 pb-1 pl-[2px] pr-[2px] !important;
+}
+
+.sbdocs-h2 {
+  @apply border-b-0 !important;
+}
+
+.welcome-head {
+  @apply mb-80;
+
+  h1 {
+    @apply text-[72px] leading-76 font-normal font-[TWKEverett-Medium] text-[#FF4700];
+  }
+
+  .head-desc {
+    @apply mb-48;
+  }
+
+  p {
+    @apply text-16 leading-6 font-normal;
+  }
+}

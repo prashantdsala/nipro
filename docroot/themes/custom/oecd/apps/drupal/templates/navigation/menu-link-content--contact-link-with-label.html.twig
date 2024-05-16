@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present a menu link entity entity.
+ *
+ * Available variables:
+ * - menu_link_content: Menu link entity.
+ * - show_item_link: Indicator for menu item link.
+ *
+ * @see template_preprocess_menu_link_content()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set menu_title = menu_link_content.getTitle() %}
+{% set link_url = menu_link_content.getUrlObject() %}
+{% set label = menu_link_content.fields['field_contact'].value %}
+
+{% include '@atoms/contact-menu-link/contact-menu-link.twig' with {
+	variant: 'only_link',
+	url: link_url|render,
+	title_text: menu_title,
+	link_label: label
+} %}
