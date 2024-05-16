@@ -1,9 +1,0 @@
-{#
-  Template for tab
-#}
-{% if is_active %}
-    {% set activeclass = "active" %}
-{% else %}
-    {% set activeclass = "" %}
-{% endif %}
-<li class="{{ activeclass }}">{{ link }}</li>
