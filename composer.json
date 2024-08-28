@@ -338,7 +338,8 @@
             "drupal/layout_builder_st": {
                 "Argument 1 passed to Drupal\\layout_builder_st\\EventSubscriber\\ComponentPluginTranslate::isTranslation() must implement interface Drupal\\layout_builder\\SectionStorageInterface, null given": "https://www.drupal.org/files/issues/2019-07-24/isTranslation-null-given.patch",
                 "Inline block loading active block_content revision even if serialized block exists\n": "https://www.drupal.org/files/issues/2020-05-15/layout_builder_st-3067646-10.patch",
-                "Call to a member function getConfig() on null in OverridesSectionStorage->handleTranslationAccess()": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/6.diff"
+                "Call to a member function getConfig() on null in OverridesSectionStorage->handleTranslationAccess()": "https://git.drupalcode.org/project/layout_builder_st/-/merge_requests/6.diff",
+                "Make translations compatible with Drupal 10": "https://www.drupal.org/files/issues/2024-05-23/3411037-contextual-links-removed-from-core.patch"
             },
             "drupal/section_library": {
                 "#3228163: Add create or update logic.": "https://www.drupal.org/files/issues/2022-12-09/section-library-3228163-10-refactored.patch"
