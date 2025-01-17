@@ -326,7 +326,7 @@
                 "Not all form elements can't use in vertical_tabs": "https://www.drupal.org/files/issues/2024-06-26/3122920_group_patch_reroll_for_10.3_19.patch",
                 "PHP message: Error: Call to a member function getEntityTypeId() on null (Layout Builder)": "https://www.drupal.org/files/issues/2020-08-05/3049332-inline-35.patch",
                 "Stream wrapper reference in JS library causes error in _locale_parse_js_file()": "https://www.drupal.org/files/issues/2020-05-08/2735717-28.patch",
-                "New non translatable field on translatable content throws error": "https://git.drupalcode.org/project/drupal/-/merge_requests/1105.diff",
+                "New non translatable field on translatable content throws error[https://www.drupal.org/project/drupal/issues/3025039]": "https://www.drupal.org/files/issues/2025-01-17/New-non-translatable-field-on-translatable-content-throws-error.patch",
                 "2869592 - Disabled update module shouldn't produce a status report warning": "https://git.drupalcode.org/project/drupal/-/merge_requests/8475.diff",
                 "Call to a member function delete() on null": "https://www.drupal.org/files/issues/2021-10-27/error-running-config-import-delete-on-null-3198715-8.patch",
                 "TranslatableMarkup for Invalid Argument Exception: $string (Array) must be a string.": "https://www.drupal.org/files/issues/2023-07-27/2719553-66.patch",
