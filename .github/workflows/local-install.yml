@@ -1,0 +1,38 @@
+name: Local install
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+      - space-d10
+
+jobs:
+  install_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup DDEV
+        uses: ddev/github-action-setup-ddev@v1
+      - run: ddev composer config -g github-oauth.github.com $PAT_TOKEN
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - run: ddev composer install
+      # - name: Read .nvmrc
+      #   run: echo "##[set-output name=NVMRC;]$(cat docroot/themes/custom/diabetespro/.nvmrc)"
+      #   id: nvm
+      - name: Use Node.js (.nvmrc)
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20.11.0
+      # - name: Install node packages.
+      #   run: cd docroot/themes/contrib/space && export NODE_OPTIONS=--openssl-legacy-provider && npm install --force
+      - name: Run Frontend setup
+        run: |
+          cd docroot/themes/contrib/space
+          export NODE_OPTIONS=--openssl-legacy-provider
+          npm install --force
+          npm run build:drupal
+      - run: ddev drush si space_profile -y
+

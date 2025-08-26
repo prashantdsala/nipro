@@ -1,0 +1,22 @@
+diff --git a/core/lib/Drupal/Core/Ajax/OpenOffCanvasDialogCommand.php b/core/lib/Drupal/Core/Ajax/OpenOffCanvasDialogCommand.php
+index a7aefb00..a7514c39 100644
+--- a/core/lib/Drupal/Core/Ajax/OpenOffCanvasDialogCommand.php
++++ b/core/lib/Drupal/Core/Ajax/OpenOffCanvasDialogCommand.php
+@@ -47,9 +47,14 @@ class OpenOffCanvasDialogCommand extends OpenDialogCommand {
+       $dialog_class = $dialog_options['dialogClass'];
+       unset($dialog_options['dialogClass']);
+     }
+-    if ($dialog_class) {
+-      $dialog_options['classes']['ui-dialog'] = $dialog_class . ' ' . "ui-dialog-off-canvas ui-dialog-position-$position";
+-    }
++    if (!empty($dialog_class)) {
++      // Convert array of classes to a space-separated string
++      if (is_array($dialog_class)) {
++        $dialog_class = implode(' ', $dialog_class);
++      }
++      $dialog_options['classes']['ui-dialog'] =
++        trim($dialog_class . ' ' . "ui-dialog-off-canvas ui-dialog-position-$position");
++    }    
+     else {
+       $dialog_options['classes']['ui-dialog'] = "ui-dialog-off-canvas ui-dialog-position-$position";
+     }

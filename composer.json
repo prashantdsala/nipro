@@ -1,0 +1,485 @@
+{
+    "name": "qed42/space-drupal",
+    "type": "project",
+    "description": "Starterkit for Drupal Space Development.",
+    "license": "GPL-2.0-or-later",
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "qed42-theme": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space",
+                "version": "dev-main",
+                "type": "drupal-theme",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        },
+        "qed42-module": {
+            "type": "package",
+            "package": {
+                "name": "qed42/spaceds",
+                "version": "dev-main",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/spaceds.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        },
+        "jquery-library": {
+            "type": "package",
+            "package": {
+                "name": "furf/jquery-ui-touch-punch",
+                "version": "dev-main",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/furf/jquery-ui-touch-punch.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "aos-library": {
+            "type": "package",
+            "package": {
+                "name": "michalsnik/aos",
+                "version": "dev-master",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/michalsnik/aos.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "space_layout_builder": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_layout_builder",
+                "version": "dev-main",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space_layout_builder.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        },
+        "space_component": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_component",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space-component.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        },
+        "space_layout_settings": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_layout_settings",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space_layout_settings.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "space_aos": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_aos",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space_aos.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        "space_assets": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_assets",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space_assets.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        },
+        "space_media_library": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_media_library",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space_media_library.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        },
+        "space_content_review_system": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_content_review_system",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space_content_review_system.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        },
+        "space_layout_custom_section": {
+            "type": "package",
+            "package": {
+                "name": "qed42/space_layout_custom_section",
+                "version": "dev-master",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/spacedesignsystem/space-layout-custom-section.git",
+                    "type": "git",
+                    "reference": "space-d11"
+                }
+            }
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "qed42/space_layout_builder": "dev-main",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.6.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "ext-dom": "*",
+        "bower-asset/dropzone": "5.7.2",
+        "furf/jquery-ui-touch-punch": "dev-main",
+        "qed42/space_component": "dev-master",
+        "qed42/space_aos": "dev-master",
+        "qed42/space_media_library": "dev-master",
+        "pelago/emogrifier": "^7.0",
+        "qed42/space_assets": "dev-master",
+        "mglaman/composer-drupal-lenient": "^1.0",
+        "drupal/core-recommended": "11.2.2",
+        "drupal/core-composer-scaffold": "11.2.2",
+        "drupal/core-project-message": "11.2.2",
+        "drupal/address": "^2.0",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/autologout": "^2.0",
+        "drupal/backup_migrate": "^5.1",
+        "drupal/better_exposed_filters": "^7.0",
+        "drupal/bg_image_formatter": "^1.18",
+        "drupal/block_class": "^4.0",
+        "drupal/block_field": "^1.0@RC",
+        "drupal/captcha": "^2.0",
+        "drupal/colorwidget": "1.0.x-dev@dev",
+        "drupal/component_blocks": "^1.0@dev",
+        "drupal/components": "^3.1",
+        "drupal/config_ignore": "^3.3",
+        "drupal/config_split": "^2.0",
+        "drupal/config_update": "^2.0@alpha",
+        "drupal/ctools": "^4.1",
+        "drupal/devel": "^5.4",
+        "drupal/diff": "^1.9",
+        "drupal/dropzonejs": "^2.11",
+        "drupal/ds": "^3.30",
+        "drupal/easy_responsive_images": "^1.5",
+        "drupal/editor_advanced_link": "^2.3",
+        "drupal/editor_file": "^2.1",
+        "drupal/encrypt": "^3.2",
+        "drupal/entity_reference_revisions": "^1.12",
+        "drupal/field_formatter_class": "^1.8",
+        "drupal/field_group": "^4.0",
+        "drupal/file_url": "^2.0@dev",
+        "drupal/fivestar": "^3.0@dev",
+        "drupal/focal_point": "^2.1",
+        "drupal/gin": "^5.0",
+        "drupal/google_analytics": "^4.0",
+        "drupal/google_tag": "^2.0",
+        "drupal/honeypot": "^2.2",
+        "drupal/image_widget_crop": "^3.0",
+        "drupal/imageapi_optimize": "^4.1@beta",
+        "drupal/imageapi_optimize_webp": "^2.1",
+        "drupal/inline_block_title_automatic": "^2.0",
+        "drupal/inline_entity_form": "^3.0@RC",
+        "drupal/jwt": "^3.0@dev",
+        "drupal/key": "^1.20",
+        "drupal/layout_builder_browser": "^1.8",
+        "drupal/layout_builder_component_attributes": "^2.2",
+        "drupal/layout_builder_modal": "^2.0",
+        "drupal/layout_builder_restrictions": "^3.0",
+        "drupal/layout_builder_save_and_edit": "^1.1",
+        "drupal/layout_custom_section_classes": "^2.0",
+        "drupal/layout_disable": "^2.0",
+        "drupal/layout_library": "^1.0@beta",
+        "drupal/link_attributes": "^2.1",
+        "drupal/linkit": "^7.0",
+        "drupal/login_history": "^2.0",
+        "drupal/media_bulk_upload": "^3.0",
+        "drupal/media_directories": "^2.2@beta",
+        "drupal/media_library_edit": "^3.0",
+        "drupal/media_library_form_element": "^2.1",
+        "drupal/media_responsive_thumbnail": "^2.0",
+        "drupal/menu_breadcrumb": "^2.0",
+        "drupal/menu_item_extras": "^3.1",
+        "drupal/menu_trail_by_path": "^2.2",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_source_csv": "^3.7",
+        "drupal/migrate_source_ui": "^1.4",
+        "drupal/migrate_tools": "^6.1",
+        "drupal/node_revision_delete": "^2.0",
+        "drupal/node_type_class": "^2.0",
+        "drupal/page_manager": "^4.0@RC",
+        "drupal/paragraphs": "^1.19",
+        "drupal/path_redirect_import": "^2.1",
+        "drupal/pathauto": "^1.13",
+        "drupal/persistent_login": "^2.2",
+        "drupal/real_aes": "^2.6",
+        "drupal/recaptcha": "^3.4",
+        "drupal/redirect": "^1.11",
+        "drupal/robotstxt": "^1.6",
+        "drupal/schema_metatag": "^3.0",
+        "drupal/schemata": "^1.0",
+        "drupal/search_api": "^1.38",
+        "drupal/search_api_autocomplete": "^1.10",
+        "drupal/search_autocomplete": "^4.0",
+        "drupal/seckit": "^2.0",
+        "drupal/section_library": "^1.2",
+        "drupal/section_library_reusable": "^1.0",
+        "drupal/security_review": "^3.1",
+        "drupal/sendgrid_integration": "^2.3",
+        "drupal/seo_checklist": "^5.2",
+        "drupal/shield": "^1.8",
+        "drupal/simple_gmap": "^4.0",
+        "drupal/simple_sitemap": "^4.2",
+        "drupal/simplenews": "^4.1",
+        "drupal/sitemap": "^2.0",
+        "drupal/smtp": "^1.4",
+        "drupal/social_api": "^4.0",
+        "drupal/social_auth": "^4.1",
+        "drupal/social_auth_facebook": "^4.0",
+        "drupal/social_auth_google": "^4.0",
+        "drupal/stage_file_proxy": "^3.1",
+        "drupal/structure_sync": "^2.0",
+        "drupal/svg_image": "^3.2",
+        "drupal/tfa": "^1.12",
+        "drupal/toolbar_anti_flicker": "^9.3",
+        "drupal/twig_tweak": "^3.4",
+        "drupal/ui_patterns": "^1.13",
+        "drupal/ui_patterns_extends": "^1.0@beta",
+        "drupal/ui_patterns_field_formatters": "^2.1",
+        "drupal/ui_patterns_layout_builder": "^1.3",
+        "drupal/ui_patterns_settings": "^2.4",
+        "drupal/ui_patterns_views_style": "^1.4",
+        "drupal/video_embed_field": "^3.0@beta",
+        "drupal/views_block_filter_block": "^2.1",
+        "drupal/viewsreference": "^2.0@beta",
+        "drupal/webform": "^6.3@beta",
+        "drupal/yoast_seo": "^2.2",
+        "drush/drush": "^13.6",
+        "drupal/layout_builder_st": "2.0.x-dev@dev",
+        "drupal/autosave_form": "^1.10",
+        "drupal/checklistapi": "^2.1",
+        "drupal/config_filter": "^2.7",
+        "drupal/jquery_ui_datepicker": "^2.1",
+        "drupal/jquery_ui_slider": "^2.1",
+        "drupal/jquery_ui_touch_punch": "^1.1",
+        "drupal/tour": "^2.0",
+        "drupal/tracker": "^1.1",
+        "drupal/ckeditor": "^1.0",
+        "drupal/features": "^3.14",
+        "drupal/features_ui": "^3.14",
+        "drupal/gin_lb": "^3.0@beta",
+        "drupal/advagg": "^5.0",
+        "drupal/twig_extensions": "^2.5",
+        "drupal/upgrade_status": "^4.3",
+        "drupal/blocktabs": "^1.0",
+        "drupal/menu_export": "^1.4",
+        "drupal/quickedit": "^1.0",
+        "drupal/super_login": "2.1.x-dev@dev",
+        "qed42/space_layout_settings": "dev-master",
+        "qed42/space_layout_custom_section": "dev-master",
+        "qed42/spaceds": "dev-main",
+        "qed42/space_content_review_system": "dev-master",
+        "qed42/space": "dev-main"
+    },
+    "config": {
+        "process-timeout": 0,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-vendor-hardening": true,
+            "oomphinc/composer-installers-extender": true,
+            "mglaman/composer-drupal-lenient": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Space\\": "blt/src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "patches": {
+            "drupal/lightning_layout": {
+                "Call to a member function uuid() on null when Layout Builder renders a Placeholder": "https://www.drupal.org/files/issues/2020-04-15/light_layout.patch"
+            },
+            "drupal/component_blocks": {
+                "3210538 - Not working with Settings Type url and token ": "https://git.drupalcode.org/project/component_blocks/-/merge_requests/2.patch"
+            },
+            "drupal/core": {
+                "Stream wrapper reference in JS library causes error in _locale_parse_js_file()": "https://www.drupal.org/files/issues/2020-05-08/2735717-28.patch",
+                "Call to a member function delete() on null": "https://www.drupal.org/files/issues/2021-10-27/error-running-config-import-delete-on-null-3198715-8.patch",
+				"Layout Builder doesn't respect the view mode set in a hook_entity_view_mode_alter() implementation":"https://www.drupal.org/files/issues/2019-09-26/3083754-4.patch",
+                "MenuLinkContentAccessControlHandler does not allow 'view' access without admin permission": "https://git.drupalcode.org/project/drupal/-/merge_requests/339.diff",
+                "strnatcasecmp(): Passing null to parameter #2 ($string2) of type string is deprecated": "https://www.drupal.org/files/issues/2022-11-17/3315678-11_0.patch",
+                "Notice: Uninitialized string offset: 0 in LibraryDiscoveryParser->buildByExtension()": "https://git.drupalcode.org/project/drupal/-/merge_requests/3491/diffs.patch",
+                "Ajax off canvas command warning": "./patches/core/open-off-canvas-dialog-command.patch"
+            },
+            "drupal/drimage": {
+                "Stage file proxy": "https://git.drupalcode.org/project/drimage/-/merge_requests/1.patch"
+            },
+            "drupal/ui_patterns": {
+                "Allow for Layout Builder sections to be given administrativ.": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/278.patch",
+                "Add quick edit": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/273.patch",
+                "PatternDefinitionField constructor to default label to name if label does not exist": "https://patch-diff.githubusercontent.com/raw/nuvoleweb/ui_patterns/pull/351.patch"
+            },
+            "drupal/abtestui": {
+                "ABTESTUI": "https://git.drupalcode.org/project/abtestui/-/merge_requests/1.patch"
+            },
+            "drupal/fivestar": {
+                "Relying on Entity Queries to check access by default is depre": "https://www.drupal.org/files/issues/2023-03-15/relyingOnEntityQuery-3348074-1.patch"
+            },
+            "drupal/toolbar_anti_flicker": {
+                "Drupal 10 compatibility": "https://www.drupal.org/files/issues/2023-06-14/toolbar-anti-flicker-d10-3299332_0.patch",
+                "Solved console error for $(...).once": "https://www.drupal.org/files/issues/2023-04-25/3356226-fix-jquery-once-3.patch"
+            },
+            "drupal/layout_builder_modal": {
+                "Solved layout block translation issue": "https://www.drupal.org/files/issues/2022-12-15/3133695-13.patch"
+            },
+            "drupal/imageapi_optimize_webp": {
+                "Call to undefined method GDToolkit::getResource()" : "https://www.drupal.org/files/issues/2025-02-21/imageapi_optimize_webp_v3_3504713.patch"
+            },
+            "drupal/blocktabs": {
+                "Automated Drupal 11 compatibility fixes for blocktabs": "https://www.drupal.org/files/issues/2024-03-16/blocktabs.8.x-1.0.rector.patch"
+            },
+            "drupal/colorwidget": {
+                "Automated Drupal 11 compatibility fixes for colorwidget": "https://www.drupal.org/files/issues/2024-03-16/colorwidget.1.0.x-dev.rector.patch"
+            },
+            "drupal/menu_export": {
+                "Automated Drupal 11 compatibility fixes for menu_export": "https://www.drupal.org/files/issues/2024-03-18/menu_export.8.x-1.4.rector.patch"
+            },
+            "drupal/node_type_class": {
+                "Automated Drupal 11 compatibility fixes for node_type_class": "https://www.drupal.org/files/issues/2025-02-12/3506074-1_0.patch"
+            },
+            "drupal/quickedit": {
+                "Automated Drupal 11 compatibility fixes for quickedit": "https://www.drupal.org/files/issues/2025-07-08/3434080-41.patch"
+            }
+        },
+        "composer-exit-on-patch-failure": true,
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "docroot/"
+            },
+            "file-mapping": {
+                "[web-root]/.htaccess": false,
+                "[web-root]/robots.txt": false,
+                "[web-root]/sites/services.yml": false,
+                "[web-root]/sites/development.services.yml": false,
+                "[web-root]/sites/default/settings.php": false
+            }
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "installer-types": [
+            "drupal-profile",
+            "drupal-module",
+            "drupal-core",
+            "drupal-library",
+            "bower-asset",
+            "npm-asset"
+        ],
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-lenient": {
+            "allowed-list": [
+                "drupal/toolbar_anti_flicker",
+                "drupal/simplenews",
+                "drupal/layout_builder_st",
+                "drupal/menu_export",
+                "drupal/blocktabs",
+                "drupal/custom_body_class",
+                "drupal/gin_lb",
+                "drupal/quickedit",
+                "drupal/super_login",
+                "drupal/menu_export",
+                "drupal/colorwidget",
+                "drupal/node_type_class",
+                "drupal/ckeditor",
+                "drupal/features",
+                "drupal/features_ui",
+                "drupal/advagg",
+                "drupal/gin_lb"
+            ]
+        }
+    },
+    "require-dev": {
+        "palantirnet/drupal-rector": "^0.21.0"
+    }
+}
