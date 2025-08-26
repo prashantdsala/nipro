@@ -40,7 +40,7 @@ docroot/sites/simpletest
 
 # Ignore SimpleTest multi-site environment.
 # simpletest
-
+docroot
 docroot/core
 docroot/modules/contrib
 docroot/profiles/contrib
