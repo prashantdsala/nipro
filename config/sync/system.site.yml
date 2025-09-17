@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: mRtaBSn3M7Iu-k0vNhrwKDNwcPM_80CwhUy2GZlQkV8
+langcode: en
+uuid: 1ef09cd13-9f05-4768-bb01-76daeb30cb2f
+name: 'Space Profile'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

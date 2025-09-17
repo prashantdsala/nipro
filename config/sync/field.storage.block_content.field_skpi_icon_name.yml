@@ -1,0 +1,24 @@
+uuid: f7ac7e7a-317e-4215-a958-eb74258f4885
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: 3KSmTAYU5Bgj01Io2fQrUi_FmlcxuuYaf1swMQ_vHZg
+id: block_content.field_skpi_icon_name
+field_name: field_skpi_icon_name
+entity_type: block_content
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

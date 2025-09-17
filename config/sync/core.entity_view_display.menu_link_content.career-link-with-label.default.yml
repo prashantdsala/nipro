@@ -1,0 +1,30 @@
+uuid: 153f3bcb-e445-430c-a3d6-db8517482cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.career-link-with-label.field_career_link_label
+    - system.menu.career-link-with-label
+_core:
+  default_config_hash: uEq6YN0ai2BLhrSwa2uLt8G5o1twtKp65A7J6325YuE
+id: menu_link_content.career-link-with-label.default
+targetEntityType: menu_link_content
+bundle: career-link-with-label
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_career_link_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

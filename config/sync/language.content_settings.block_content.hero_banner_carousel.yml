@@ -1,0 +1,16 @@
+uuid: 2b705a83-e38b-456f-a514-9e368f51ab40
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 7cq8eb7YGLHFam95rW3YFFAIBLLsLX-LGEb9oI8xzX4
+id: block_content.hero_banner_carousel
+target_entity_type_id: block_content
+target_bundle: hero_banner_carousel
+default_langcode: site_default
+language_alterable: false

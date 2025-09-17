@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: RGRCF4CypfJwaa1nTl8T-eK0TVEsIs9HjlWYia-OhC4
+langcode: en
+interval: 20000
+active_on:
+  content_entity_forms: true
+  config_entity_forms: false
+notification:
+  active: true
+  message: 'Saving draft...'
+  delay: 1000
+allowed_content_entity_types:
+  node:
+    bundles:
+      landing_page: landing_page
+      page: page
+      article: article

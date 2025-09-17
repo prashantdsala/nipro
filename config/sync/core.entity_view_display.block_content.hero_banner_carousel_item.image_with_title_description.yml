@@ -1,0 +1,348 @@
+uuid: fa2ef1fe-46e3-46c3-8c32-7287aad1e149
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item
+    - core.entity_view_mode.block_content.image_with_title_description
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_desc
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_headline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_image
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link1
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link2
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_preheadline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_video
+    - responsive_image.styles.scale_800
+  module:
+    - ds
+    - field_formatter_class
+    - layout_builder
+    - media_responsive_thumbnail
+    - text
+    - ui_patterns_field_formatters
+  enforced:
+    module:
+      - space_c_hero_banner
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  ds:
+    layout:
+      id: pattern_item_image_with_title_description
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: default
+    regions:
+      title:
+        - field_hcarousel_item_headline
+      description:
+        - field_hcarousel_item_desc
+      image:
+        - field_hcarousel_item_image
+_core:
+  default_config_hash: xrujmqbcUgsC6hzJaB8ePE5nf_1HUS-DOF3VHDkg6mA
+id: block_content.hero_banner_carousel_item.image_with_title_description
+targetEntityType: block_content
+bundle: hero_banner_carousel_item
+mode: image_with_title_description
+content:
+  field_hcarousel_item_desc:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: description
+  field_hcarousel_item_headline:
+    type: pattern_formatter
+    label: hidden
+    settings:
+      pattern: headline
+      pattern_mapping:
+        'field_properties:value':
+          destination: headline
+          weight: 0
+          plugin: field_properties
+          source: value
+      pattern_settings:
+        simple404:
+          alignment_type: left
+        textimage404:
+          image_type: large_image
+        accordion_item:
+          alignment: right
+          border: '1'
+          icon_collapsed: plusCircle
+          icon_expanded: minusCircle
+        avatar:
+          image_style: ''
+          corner_style: ''
+          icon: 0
+        badge:
+          size: small
+          icon: xcross
+          type: text-only
+        banner:
+          position: center_center
+          position_token: center_center
+        block_banner_info:
+          title_font_size: size-30
+          title_color: text-text-heading
+        block_footer_text:
+          title_font_size: size-96
+          title_color: text-text-heading
+          content_font_size: ''
+          content_color: ''
+        button:
+          button_state: ''
+          button_type: only_icon
+          size: small
+          icon: ''
+          icon_alignment: right
+          classes: ''
+          expanded: 0
+        pricingcard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        pricingfeaturedcard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        imagecard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        quicklinkcard_carousel:
+          carousel_layout: small-quicklink-card-carousel
+          autoplay: 0
+        featuredcard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        iconcard:
+          alignment: left
+          card_layout: withouticon
+          extra_classes: ''
+          full_box_link: 0
+        quicklinkcard:
+          card_layout: withoutbackground
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        featuredcard:
+          card_layout: horizontal
+          card_size: large
+          extra_classes: ''
+        pricingcard:
+          background: light
+          card_layout: withicon
+          extra_classes: ''
+        pricingfeaturedcard:
+          background: light
+          extra_classes: ''
+        peoplecard:
+          card_layout: testimony-with-avatar
+          card_size: medium
+          card_corner: ''
+          extra_classes: ''
+          full_box_link: 0
+        videocard:
+          alignment: vertical
+          card_layout: withcontainer
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        imagecard:
+          alignment: vertical
+          card_layout: withcontainer
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        testimonycard:
+          card_layout: large-avatar
+          alignment: center
+          extra_classes: ''
+          full_box_link: 0
+        project_card:
+          alignment: left
+          color: ''
+        our_blog_card:
+          alignment: left
+          color: ''
+        contact_menu_link:
+          target: ''
+          icon: ''
+        container:
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+        cta_banner:
+          cta_banner_type: type_1
+          cta_type: button
+          width: boxed-width
+          alignment: left-align
+          image_type: large-image
+        dropdown:
+          dropdown_list_type: ''
+          list_heading: ''
+          dropdown_button_type: ''
+        email_form:
+          icon: '1'
+        footer_end_logo_block:
+          position_fixed: '1'
+        footer:
+          colour: white
+          type: type-1
+        grid:
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+        primaryheader:
+          position: ''
+          hamburger_type: ''
+        secondaryheader:
+          position: ''
+        headline:
+          tag_name: h3
+          font: displayXL-regular
+          spacing_bottom: default
+          url:
+            input: ''
+        image_link:
+          target: self
+        image_atom:
+          image_url: ''
+          background_style: ''
+          corners: ''
+          style: ''
+          extra_classes: ''
+        job_item:
+          id:
+            input: ''
+          url:
+            input: ''
+        keyfact_item_with_icon:
+          imageiconurl: ''
+        link:
+          target: ''
+          icon: ''
+          icon_size: ''
+          icon_position: right
+          extra_classes: ''
+          custom_style: 0
+        logo_grid:
+          layout: columns-4
+        menu_item:
+          icon: checkCircle
+          target: ''
+        navigation:
+          font_size: text-base
+          color: text-text-body
+          wrap_nav: 0
+        notification:
+          size: ''
+          align: ''
+          background: ''
+          layout: ''
+        paragraph:
+          size: primary
+          text_alignment: left
+        section_heading:
+          alignment: left
+        section:
+          columns_width_1: equal
+          columns_width_2: equal
+          columns_width_3: equal
+          columns_width_4: equal
+          columns_width_5: equal
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          display_header_region: 0
+          equal_height: 0
+        slider:
+          slides_type: slide
+          arrows: '1'
+          counter: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+        social_button:
+          social_button_type: google
+        space_section:
+          alignment: left
+        stats_kpi:
+          alignment: left
+          layout_type: default
+          extra_classes: ''
+        table:
+          color: dark
+          strip: 0
+        testimonial_cards:
+          carousel_layout: small-testimonial-carousel
+        testimonial:
+          icon_color: primary
+          image_classes: ''
+        text_media:
+          alignment: default
+          layout_type: default-layout
+          extra_classes: ''
+        video_card:
+          url:
+            input: ''
+          title: ''
+          extra_classes: ''
+        blog_listing:
+          autoplay: 0
+        iconcard_carousel:
+          autoplay: 0
+        project_listing:
+          autoplay: 0
+        social_media_navigation:
+          wrap_nav: 0
+        testimonial_slider:
+          autoplay: 0
+      pattern_variant: h3
+      variants_token: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: title
+  field_hcarousel_item_image:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: scale_800
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 2
+    region: image
+hidden:
+  field_hcarousel_item_link1: true
+  field_hcarousel_item_link2: true
+  field_hcarousel_item_preheadline: true
+  field_hcarousel_item_video: true
+  langcode: true
+  search_api_excerpt: true

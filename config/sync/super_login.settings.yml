@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: XIpw5vYNBqDtDV7TY2T9t9Vop-q9jdk-STwBBFTnacM
+langcode: en
+super_login:
+  login_text: Email
+  forgot_pw_text: 'Forgot Password'
+  capslock_msg: 'Caps Lock On'
+  new_account_text: ''
+  login_title: ''
+  password_reset_title: ''
+  back_link: ''
+  messages: true
+  css: false
+  button_theme: true
+  placeholder: true
+  autofocus: true
+  login_type: 0
+  capslock: false
+  login_placeholder: 'Enter your email'
+  pass_placeholder: '**********'

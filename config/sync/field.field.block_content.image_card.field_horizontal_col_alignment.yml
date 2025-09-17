@@ -1,0 +1,28 @@
+uuid: 9fb2fcda-09c6-4f69-8eac-36b3d7323464
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - field.storage.block_content.field_horizontal_col_alignment
+  module:
+    - options
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: U47Na0Pf3-m47hrowy9QCNzPfsqvpfqfIbKglUvDpck
+id: block_content.image_card.field_horizontal_col_alignment
+field_name: field_horizontal_col_alignment
+entity_type: block_content
+bundle: image_card
+label: 'Horizontal column alignment'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: leftimage
+default_value_callback: ''
+settings: {  }
+field_type: list_string

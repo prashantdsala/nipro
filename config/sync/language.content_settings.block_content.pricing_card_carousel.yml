@@ -1,0 +1,16 @@
+uuid: 7106ea4a-6a48-40d9-b721-53e9a2201cd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card_carousel
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: Uxf6m2x-Cp1XHCS8h3ydXhNPfw3vxlDvAl06IBZms0I
+id: block_content.pricing_card_carousel
+target_entity_type_id: block_content
+target_bundle: pricing_card_carousel
+default_langcode: site_default
+language_alterable: false

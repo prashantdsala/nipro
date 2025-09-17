@@ -1,0 +1,16 @@
+uuid: a5a50dcc-50fb-451e-90fe-e2f0a6a53458
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: tOYGaiztgn615wjAUl8BxDzdFxgCR987rNfj_gaR3Ug
+id: block_content.image_card_horizontal_large
+label: 'Image Card - Horizontal Large'
+description: null
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,64 @@
+uuid: 4551042c-691c-41bd-8786-90b5292c3125
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.badge
+    - core.entity_view_mode.block_content.badge_medium_text_only
+    - field.field.block_content.badge.field_badge_headline
+  module:
+    - ds
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
+  enforced:
+    module:
+      - space_c_badge
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  layout_library:
+    enable: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts: {  }
+      restricted_categories: {  }
+      blacklisted_blocks: {  }
+      whitelisted_blocks: {  }
+  ds:
+    layout:
+      id: pattern_badge
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+          settings:
+            size: medium
+            icon: xcross
+            type: text-only
+    regions:
+      text:
+        - field_badge_headline
+_core:
+  default_config_hash: 9mwSgbpAEMGTCL-fJjmmiUngZsAZAXbVq0mN1svPor8
+id: block_content.badge.badge_medium_text_only
+targetEntityType: block_content
+bundle: badge
+mode: badge_medium_text_only
+content:
+  field_badge_headline:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: text
+hidden:
+  langcode: true
+  search_api_excerpt: true

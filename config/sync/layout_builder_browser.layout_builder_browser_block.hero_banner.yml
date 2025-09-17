@@ -1,0 +1,16 @@
+uuid: 56607579-0063-46c0-8f3f-3ed3ecb506d4
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: BKVI42YCSC8V7d6nVSGOWZwazmEXt4CR6v12n-oSh74
+id: hero_banner
+block_id: 'inline_block:hero_banner'
+category: blocks
+label: 'Hero Banner'
+image_path: /themes/contrib/space/images/lbb/hero_banner.svg
+image_alt: ''
+weight: -2

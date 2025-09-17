@@ -1,0 +1,21 @@
+uuid: 22e1a291-37e3-4303-87f2-448fb0e529c4
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: 2BxrRlLldGUSwDsmGf45tTgC4aAhK_UbzCba1Y_q4S8
+name: scale_384w_2x
+label: 'scale_384w 2x'
+effects:
+  d325e7be-18de-44b6-b318-e1971df09cbd:
+    uuid: d325e7be-18de-44b6-b318-e1971df09cbd
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false
+pipeline: __default__

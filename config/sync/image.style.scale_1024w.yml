@@ -1,0 +1,21 @@
+uuid: c4131467-6e73-4716-9083-8b7302e768fd
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: uYWz1cyqoHvvH_inlFzIPLtdvJGtef1_GAAyYUMB2IM
+name: scale_1024w
+label: scale_1024w
+effects:
+  b0c35dab-44d4-4c0b-a105-6a09c3ddbdb9:
+    uuid: b0c35dab-44d4-4c0b-a105-6a09c3ddbdb9
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: null
+      upscale: false
+pipeline: __default__

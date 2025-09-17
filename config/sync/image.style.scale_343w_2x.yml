@@ -1,0 +1,21 @@
+uuid: 9bc81f70-d18a-4fb5-a54e-a6aa5c06551c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: 28HCtOsSs3ieWPJ9pUf22VtupOXL7H7_syhqhmT6tlw
+name: scale_343w_2x
+label: 'scale_343w 2x'
+effects:
+  01ded91c-8178-41eb-a34f-1fd2d8ad89e2:
+    uuid: 01ded91c-8178-41eb-a34f-1fd2d8ad89e2
+    id: image_scale
+    weight: 1
+    data:
+      width: 686
+      height: null
+      upscale: true
+pipeline: __default__

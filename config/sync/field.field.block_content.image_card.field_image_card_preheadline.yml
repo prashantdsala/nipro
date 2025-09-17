@@ -1,0 +1,24 @@
+uuid: bfce3a9b-b464-4766-8839-e53e52d3dc11
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - field.storage.block_content.field_image_card_preheadline
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: AucguQOr7XFYqcJ5tz9Nkh-mHW_2NZhwrN6i-XD2_5M
+id: block_content.image_card.field_image_card_preheadline
+field_name: field_image_card_preheadline
+entity_type: block_content
+bundle: image_card
+label: Pre-headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

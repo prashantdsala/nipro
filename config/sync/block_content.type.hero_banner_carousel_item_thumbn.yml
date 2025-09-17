@@ -1,0 +1,13 @@
+uuid: 0041573b-2c9c-4180-9283-66330261e4f6
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: mhnpej3BoCJfL1jeOcR-P23DNfNuc7FviDUI98-FEfs
+id: hero_banner_carousel_item_thumbn
+label: 'Hero Banner Carousel Item - Thumbnail'
+revision: false
+description: 'Hero banner carousel thumbnail items.'

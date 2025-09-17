@@ -1,0 +1,24 @@
+uuid: 6229d614-45e7-43ed-8e61-3151da8c2b15
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - block_field
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: jviSy12inkYBOmRC-mIl5W9Rj-XXnVUjT1W5XJ_nQqc
+id: block_content.field_hbanner_subscription
+field_name: field_hbanner_subscription
+entity_type: block_content
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

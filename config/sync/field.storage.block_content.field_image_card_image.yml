@@ -1,0 +1,25 @@
+uuid: 1e131ff1-8000-4904-b4a1-836d101f74d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: p1TqxLNiSKiwe0rWvfkgu8cgFNDeUfYpoC451i2ISLs
+id: block_content.field_image_card_image
+field_name: field_image_card_image
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,34 @@
+uuid: 96f0541e-f2f2-45ed-a13c-3f3adc9754b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+  enforced:
+    module:
+      - block_content
+      - options
+      - space_c_card
+_core:
+  default_config_hash: 7n9uqY2gNpd4nzUCIDRT1etMqRdJz94nit0Ad8_qTC0
+id: block_content.field_horizontal_col_alignment
+field_name: field_horizontal_col_alignment
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: leftimage
+      label: 'Left image-Right text'
+    -
+      value: rightimage
+      label: 'Left text-Right image'
+  allowed_values_function: null
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,16 @@
+uuid: dba6d2d8-800b-4090-b6d1-b8be094875e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: FL5RxPL6HqBUsm2czV-cXIE6zB4aEIQ31Sn1xWXCRPs
+id: block_content.image_video_slideshow_main
+label: 'Image & Video slideshow - Main'
+description: null
+targetEntityType: block_content
+cache: true

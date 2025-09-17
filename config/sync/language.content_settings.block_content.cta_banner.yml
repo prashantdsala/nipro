@@ -1,0 +1,16 @@
+uuid: 24daad43-dce1-4270-a838-761757927d43
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_banner
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: ajTpL666j3V1y3A49VijQ6IwUutn8Ovgyi8ubmVtqL4
+id: block_content.cta_banner
+target_entity_type_id: block_content
+target_bundle: cta_banner
+default_langcode: site_default
+language_alterable: false

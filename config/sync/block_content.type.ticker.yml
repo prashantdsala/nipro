@@ -1,0 +1,13 @@
+uuid: a3653971-307e-4fb9-a7ed-a251db939004
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_ticker
+_core:
+  default_config_hash: sZuvuGCy8V3-jJvdlehepQQp6SayOEyCyUiHXoySMew
+id: ticker
+label: Ticker
+revision: false
+description: ''

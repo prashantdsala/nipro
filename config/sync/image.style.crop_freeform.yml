@@ -1,0 +1,21 @@
+uuid: b97a4666-b710-4f26-aa82-0612bbac137f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.freeform
+  module:
+    - crop
+_core:
+  default_config_hash: GocpD00p7eLt1vye2BjAfYcGb7zukfZVVK601J0SsqY
+name: crop_freeform
+label: 'Cropped: Freeform'
+effects:
+  2bbe0e57-7de3-4808-a92e-0baf94a864c2:
+    uuid: ''
+    id: crop_crop
+    weight: null
+    data:
+      crop_type: freeform
+      automatic_crop_provider: null
+pipeline: __default__

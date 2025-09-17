@@ -1,0 +1,66 @@
+uuid: 09d8382a-a609-439f-8230-dabfdb6dc110
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab_title
+    - field.field.block_content.tab_title.field_tab_icon_name
+    - field.field.block_content.tab_title.field_tab_title
+    - field.field.block_content.tab_title.field_tab_title_alignment
+  module:
+    - ds
+    - options
+  enforced:
+    module:
+      - space_c_tab_title
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_tab_title
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+    regions:
+      icon:
+        - field_tab_icon_name
+      title:
+        - field_tab_title
+      title_alignment:
+        - field_tab_title_alignment
+_core:
+  default_config_hash: tvMOpeePscrPJcFQDJ7utCzgV6QZydDl7ZKS8_rNVjA
+id: block_content.tab_title.default
+targetEntityType: block_content
+bundle: tab_title
+mode: default
+content:
+  field_tab_icon_name:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: icon
+  field_tab_title:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: title
+  field_tab_title_alignment:
+    type: list_key
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: title_alignment
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,16 @@
+uuid: d836619b-e56d-4641-9218-fdf512f837c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: wxAQqCCqyGtTXxI7fFdPLePo1tOPnNJ9SrugFsPo3JM
+id: block_content.hero_banner
+target_entity_type_id: block_content
+target_bundle: hero_banner
+default_langcode: site_default
+language_alterable: false

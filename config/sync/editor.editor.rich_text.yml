@@ -1,0 +1,35 @@
+uuid: ef1a09c0-3c63-45c3-b0bd-933e439805ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.rich_text
+  module:
+    - ckeditor5
+_core:
+  default_config_hash: YqDKze5Y6z5RNCAiEBrDjcYM-L-yz9ylnKo9sZUZ8mE
+format: rich_text
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - bulletedList
+      - numberedList
+      - blockQuote
+      - link
+      - subscript
+      - superscript
+  plugins: {  }
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null

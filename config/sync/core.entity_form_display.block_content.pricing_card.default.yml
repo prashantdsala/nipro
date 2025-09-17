@@ -1,0 +1,105 @@
+uuid: 87fdb80a-964d-4401-a111-b937fdd2dfcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card
+    - field.field.block_content.pricing_card.field_pc_icon_name
+    - field.field.block_content.pricing_card.field_pcard_badge
+    - field.field.block_content.pricing_card.field_pcard_description
+    - field.field.block_content.pricing_card.field_pcard_features
+    - field.field.block_content.pricing_card.field_pcard_features_description
+    - field.field.block_content.pricing_card.field_pcard_features_title
+    - field.field.block_content.pricing_card.field_pcard_headline
+    - field.field.block_content.pricing_card.field_pcard_link
+    - field.field.block_content.pricing_card.field_pcard_plan
+    - field.field.block_content.pricing_card.field_pcard_plan_package
+    - field.field.block_content.pricing_card.field_pcard_price
+  module:
+    - inline_entity_form
+    - link
+    - text
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: V7prZ_sRQdJbSrj9EGnRF09GlrLn24Jo9qU3cIxHxEA
+id: block_content.pricing_card.default
+targetEntityType: block_content
+bundle: pricing_card
+mode: default
+content:
+  field_pc_icon_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pcard_description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pcard_features:
+    type: inline_entity_form_complex
+    weight: 5
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_pcard_headline:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pcard_link:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_pcard_plan:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_pcard_badge: true
+  field_pcard_cta: true
+  field_pcard_features_description: true
+  field_pcard_features_title: true
+  field_pcard_plan_package: true
+  field_pcard_price: true
+  field_pcard_type: true
+  langcode: true

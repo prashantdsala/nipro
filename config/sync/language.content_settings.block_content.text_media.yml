@@ -1,0 +1,16 @@
+uuid: ccc3d18b-e164-43ee-ab44-1b4d069485d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: abLaErALPDEWzzzEEab7KGLws0g3Chho0k70jU0hxeQ
+id: block_content.text_media
+target_entity_type_id: block_content
+target_bundle: text_media
+default_langcode: site_default
+language_alterable: false

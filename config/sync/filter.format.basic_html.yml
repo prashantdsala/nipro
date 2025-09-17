@@ -1,0 +1,12 @@
+uuid: bb754a4e-6775-44b4-9df9-3eb4991dd50c
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+_core:
+  default_config_hash: brkE9pRPYuL6h47_ZVNviZO-5SmNMxwy-0YsbAohxU8
+name: 'Basic HTML'
+format: basic_html
+weight: 0
+filters: {  }

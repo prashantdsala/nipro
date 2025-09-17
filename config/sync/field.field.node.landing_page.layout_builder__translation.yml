@@ -1,0 +1,26 @@
+uuid: bfc0b8cb-5c91-48c7-92e2-d88f34eda78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__translation
+    - node.type.landing_page
+  module:
+    - layout_builder_st
+  enforced:
+    module:
+      - space_c_landing_page
+_core:
+  default_config_hash: NTJRKHycZM6al94d_eW_8oFtVkPeSAD01rRuve90lqg
+id: node.landing_page.layout_builder__translation
+field_name: layout_builder__translation
+entity_type: node
+bundle: landing_page
+label: 'Layout Labels'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_translation

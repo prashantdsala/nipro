@@ -1,0 +1,64 @@
+uuid: 57f0dda3-df90-4e1d-989a-8a2143321f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+    - core.entity_form_mode.block_content.text_media_images_only
+    - field.field.block_content.text_media.field_text_media_col_alignment
+    - field.field.block_content.text_media.field_text_media_description
+    - field.field.block_content.text_media.field_text_media_features
+    - field.field.block_content.text_media.field_text_media_headline
+    - field.field.block_content.text_media.field_text_media_image
+    - field.field.block_content.text_media.field_text_media_image_2
+    - field.field.block_content.text_media.field_text_media_link1
+    - field.field.block_content.text_media.field_text_media_link2
+    - field.field.block_content.text_media.field_text_media_out_of_box
+    - field.field.block_content.text_media.field_text_media_stats_kpi
+  module:
+    - media_library
+    - media_library_edit
+    - space_layout_settings
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: 73laGsU_7hdB5tNBugPqwaO7J6VbMxbnT26f-wy-6wE
+id: block_content.text_media.text_media_images_only
+targetEntityType: block_content
+bundle: text_media
+mode: text_media_images_only
+content:
+  field_text_media_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 592 (2x width 1184)<br> <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: '0'
+  field_text_media_image_2:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 592 (2x width 1184)<br> <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: '0'
+hidden:
+  field_text_media_col_alignment: true
+  field_text_media_description: true
+  field_text_media_features: true
+  field_text_media_headline: true
+  field_text_media_link1: true
+  field_text_media_link2: true
+  field_text_media_out_of_box: true
+  field_text_media_stats_kpi: true
+  info: true
+  langcode: true

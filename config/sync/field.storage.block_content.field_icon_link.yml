@@ -1,0 +1,24 @@
+uuid: 3c05d666-b06c-4ffb-8bd2-98f7cccc2947
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: nk8F58uTFgsfu6tUCAPy95YJHIp5E28tSeqz4d86twk
+id: block_content.field_icon_link
+field_name: field_icon_link
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

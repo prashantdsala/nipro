@@ -1,0 +1,14 @@
+uuid: 11fcb7b6-34ae-4e40-83c4-7ba6c3c82044
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tHa2X8un6REQgcr1meTmo8BQdxJ_0FfhNWh90szvOi4
+id: feedback
+label: 'Website feedback'
+recipients:
+  - admin@gmmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

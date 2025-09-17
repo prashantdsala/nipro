@@ -1,0 +1,60 @@
+uuid: db5b81b8-d2cc-49c0-aed2-03f0a91f6727
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ticker
+    - field.field.block_content.ticker.field_ticker_description
+    - field.field.block_content.ticker.field_ticker_headline
+    - field.field.block_content.ticker.field_ticker_link
+  module:
+    - layout_builder
+    - layout_library
+    - link
+    - text
+  enforced:
+    module:
+      - space_c_ticker
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  layout_library:
+    enable: false
+_core:
+  default_config_hash: rHru5SJR-hvAfm4yaysHeSvM__eGAoFlg6hYIfKxTFA
+id: block_content.ticker.default
+targetEntityType: block_content
+bundle: ticker
+mode: default
+content:
+  field_ticker_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_ticker_headline:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_ticker_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

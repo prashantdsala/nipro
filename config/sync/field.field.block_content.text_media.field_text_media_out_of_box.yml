@@ -1,0 +1,28 @@
+uuid: e9f4ad53-9520-41fb-b0df-e307640afeb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+    - field.storage.block_content.field_text_media_out_of_box
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: K8zUEevAPavzTYLkd9UBF8RMbF8KuZpwQkDtWkAUaR4
+id: block_content.text_media.field_text_media_out_of_box
+field_name: field_text_media_out_of_box
+entity_type: block_content
+bundle: text_media
+label: 'Out of box'
+description: 'Move the image section out of the box width or container width.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

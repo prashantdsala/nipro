@@ -1,0 +1,13 @@
+uuid: 893be76c-a886-42f8-8033-d5d9e2076c9c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: QKQ0jB-Eo1GTFYiwHK8ehpLfxEOIgs3TIod5pND-CkM
+id: cta_banner
+label: 'CTA Banner'
+revision: false
+description: ' A Call to Action (CTA) on a website is an instruction to the visitor in order to encourage them to take some kind of action. '

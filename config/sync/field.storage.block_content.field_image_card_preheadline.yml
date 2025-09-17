@@ -1,0 +1,26 @@
+uuid: cc45f05c-a9ec-49fe-9b25-26c0489e3b02
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: BnOS0DkSq4dqP2hml0I4-jdozk-0QBoUuZJPl-AFD7A
+id: block_content.field_image_card_preheadline
+field_name: field_image_card_preheadline
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

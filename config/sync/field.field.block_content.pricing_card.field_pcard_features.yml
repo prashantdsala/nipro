@@ -1,0 +1,34 @@
+uuid: 7f3a7ec5-6f25-4161-9e5d-22de26caf4b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.features
+    - block_content.type.pricing_card
+    - field.storage.block_content.field_pcard_features
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: nohHQCTNr3Lj_R9_fDTqQOE6QjgWcPN8JOjPeqWKf_o
+id: block_content.pricing_card.field_pcard_features
+field_name: field_pcard_features
+entity_type: block_content
+bundle: pricing_card
+label: 'Feature List'
+description: 'Feature items list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      features: features
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

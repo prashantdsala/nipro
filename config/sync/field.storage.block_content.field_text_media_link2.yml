@@ -1,0 +1,24 @@
+uuid: 597621e8-74e3-413b-9efd-bf3c3bbb2c14
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: fy3zBWRk1D-pOoZ7I2_0RuDjPWKoBdeC45kbsanWtDA
+id: block_content.field_text_media_link2
+field_name: field_text_media_link2
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

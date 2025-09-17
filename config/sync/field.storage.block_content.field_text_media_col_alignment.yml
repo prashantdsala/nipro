@@ -1,0 +1,35 @@
+uuid: a636b00f-681e-41b9-9b73-eedb1839c55c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: Gi7V7ItzELgab1a5eV8ApMR03E7qJz-YC0xkBrhjSp0
+id: block_content.field_text_media_col_alignment
+field_name: field_text_media_col_alignment
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: 'Left text-Right image'
+    -
+      value: leftimage
+      label: 'Left image-Right text'
+    -
+      value: stack
+      label: Stack
+  allowed_values_function: null
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

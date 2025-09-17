@@ -1,0 +1,16 @@
+uuid: 11d7ea19-c160-4dd4-9ecb-157fbe179bd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab_title
+  enforced:
+    module:
+      - space_c_tab_title
+_core:
+  default_config_hash: s2_FWD2wHtsD5x4hBipt_x94kwQqyvyAZpeugQ2Sl_c
+id: block_content.tab_title
+target_entity_type_id: block_content
+target_bundle: tab_title
+default_langcode: site_default
+language_alterable: false

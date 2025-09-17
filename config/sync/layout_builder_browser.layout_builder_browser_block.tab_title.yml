@@ -1,0 +1,16 @@
+uuid: 795d0cea-9696-4785-b631-ca40d4031d7b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_tab_title
+_core:
+  default_config_hash: UljR0LsBGdQsUzWOVtQO1t8DkZSjp_WroI7RgYsW9nk
+id: tab_title
+block_id: 'inline_block:tab_title'
+category: blocks
+label: 'Tab Title'
+image_path: ''
+image_alt: ''
+weight: -100

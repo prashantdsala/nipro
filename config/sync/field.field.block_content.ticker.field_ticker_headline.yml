@@ -1,0 +1,24 @@
+uuid: c9bd6664-aa15-4f57-a242-b520006b31d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ticker
+    - field.storage.block_content.field_ticker_headline
+  enforced:
+    module:
+      - space_c_ticker
+_core:
+  default_config_hash: SzoZ5LRjApvr1IISDSosFtlwhU3JYfBbfVOAaCcHOtY
+id: block_content.ticker.field_ticker_headline
+field_name: field_ticker_headline
+entity_type: block_content
+bundle: ticker
+label: Headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

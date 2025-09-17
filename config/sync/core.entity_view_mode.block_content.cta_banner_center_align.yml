@@ -1,0 +1,16 @@
+uuid: 58506737-fbea-40e0-8085-6f58e1ff3019
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: duWheKEmLA-x87ffY6a0NxTYhQrntDMfIe7oNkZ37uA
+id: block_content.cta_banner_center_align
+label: 'CTA banner - Center align'
+description: null
+targetEntityType: block_content
+cache: true

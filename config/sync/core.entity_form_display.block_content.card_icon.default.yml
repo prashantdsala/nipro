@@ -1,0 +1,59 @@
+uuid: e3f55365-20d6-4866-aace-ff2976919f19
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon
+    - field.field.block_content.card_icon.field_icon_description
+    - field.field.block_content.card_icon.field_icon_headline
+    - field.field.block_content.card_icon.field_icon_link
+    - field.field.block_content.card_icon.field_icon_name
+  module:
+    - link
+    - text
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: DmBjK7YDQXR0qzzjIpJsT_4BwhjMd61ZIXqkwBu2oWw
+id: block_content.card_icon.default
+targetEntityType: block_content
+bundle: card_icon
+mode: default
+content:
+  field_card_icon:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_headline:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  field_icon_name: true
+  info: true
+  langcode: true

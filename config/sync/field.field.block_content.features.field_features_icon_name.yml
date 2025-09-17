@@ -1,0 +1,26 @@
+uuid: 1921f849-776a-474b-b9e6-6e29d8eecf2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.features
+    - field.storage.block_content.field_features_icon_name
+  enforced:
+    module:
+      - space_c_features
+_core:
+  default_config_hash: vLnZ2MdfgTF134YbXywb5GtSOe71VHv7tGDZWbj0EBQ
+id: block_content.features.field_features_icon_name
+field_name: field_features_icon_name
+entity_type: block_content
+bundle: features
+label: 'Icon name'
+description: 'Add icon name from the storybook icons list.'
+required: false
+translatable: false
+default_value:
+  -
+    value: icon-primary-1x
+default_value_callback: ''
+settings: {  }
+field_type: string

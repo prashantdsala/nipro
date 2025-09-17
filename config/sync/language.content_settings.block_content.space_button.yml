@@ -1,0 +1,16 @@
+uuid: 58266f89-351f-4a0e-a996-bf1eda0e74de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.space_button
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: BrcZ0sAKRmTFsFJklsdgCkyDakAM1iXGDvRt2jhSLnA
+id: block_content.space_button
+target_entity_type_id: block_content
+target_bundle: space_button
+default_langcode: site_default
+language_alterable: false

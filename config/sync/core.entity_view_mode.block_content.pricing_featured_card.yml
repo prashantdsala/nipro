@@ -1,0 +1,16 @@
+uuid: 1d16ebac-9396-475d-92be-107ba19e3589
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: uqfG2489X2iC1hHgOPL7sCJeVGXz44PnDuiQSW-XdxY
+id: block_content.pricing_featured_card
+label: 'Pricing - featured card'
+description: null
+targetEntityType: block_content
+cache: true

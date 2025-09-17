@@ -1,0 +1,16 @@
+uuid: 81323272-9fa8-456a-8175-00d88cce9241
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: rYNgpdAdZkMGXz4Xe41PkC9CJ4t_j7EsFfQvjejgafY
+id: block_content.button_tertiary
+label: 'Button Tertiary'
+description: null
+targetEntityType: block_content
+cache: true

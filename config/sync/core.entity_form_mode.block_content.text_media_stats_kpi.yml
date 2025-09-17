@@ -1,0 +1,16 @@
+uuid: 175a26df-e2f4-4da5-bbf3-446752fc8d99
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: ggY1oh0-gQk6G77MbdmoihMK24-KoKKigFCX2j7Lb-A
+id: block_content.text_media_stats_kpi
+label: 'Text & Media - Stats/KPI'
+description: null
+targetEntityType: block_content
+cache: true

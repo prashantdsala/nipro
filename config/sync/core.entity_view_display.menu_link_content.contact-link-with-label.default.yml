@@ -1,0 +1,30 @@
+uuid: 2fdcafe6-e09a-40da-b986-cdaf7eb497a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.contact-link-with-label.field_contact
+    - system.menu.contact-link-with-label
+_core:
+  default_config_hash: SsAurjyCy81OKupR1LTz1jmOOww_vWGPEaXen26bEcU
+id: menu_link_content.contact-link-with-label.default
+targetEntityType: menu_link_content
+bundle: contact-link-with-label
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_contact:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

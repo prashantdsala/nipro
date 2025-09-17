@@ -1,0 +1,28 @@
+uuid: bde40041-4c08-4270-8f32-2d29b3457c37
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats_kpi
+    - field.storage.block_content.field_skpi_link
+  module:
+    - link
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: QqBXgscJ0zgDPIicG25v3pGpEfJuva9cl8gB1UVIqyU
+id: block_content.stats_kpi.field_skpi_link
+field_name: field_skpi_link
+entity_type: block_content
+bundle: stats_kpi
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

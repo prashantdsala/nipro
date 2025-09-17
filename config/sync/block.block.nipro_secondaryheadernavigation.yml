@@ -1,0 +1,27 @@
+uuid: 3fb79904-99d3-4092-8d90-441a66e76ece
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-header-navigation
+  module:
+    - system
+  theme:
+    - nipro
+_core:
+  default_config_hash: IfPTkMQlerXWrK4zcLolUfzRmdS3EOn1rX0hxX4Fi-U
+id: nipro_secondaryheadernavigation
+theme: nipro
+region: secondary_header_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:secondary-header-navigation'
+settings:
+  id: 'system_menu_block:secondary-header-navigation'
+  label: 'Secondary header navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

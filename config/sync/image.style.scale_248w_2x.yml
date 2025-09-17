@@ -1,0 +1,21 @@
+uuid: 5e25a11d-28c4-47c2-b4ea-326371e1d2a1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: ypNgrbiZumnCiLmYs8JrmWzI1BIh3yhqJWB2Kb1JaSw
+name: scale_248w_2x
+label: 'scale_248w 2x'
+effects:
+  4d3b42b2-67c6-4409-ac05-d3ec61da2d67:
+    uuid: 4d3b42b2-67c6-4409-ac05-d3ec61da2d67
+    id: image_scale
+    weight: 1
+    data:
+      width: 496
+      height: null
+      upscale: false
+pipeline: __default__

@@ -1,0 +1,86 @@
+uuid: 7b6d3bc2-ba42-49c7-8e3c-e6016adb6e86
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.avatar_label_group
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_link
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - ds
+    - layout_builder
+    - svg_image
+    - user
+  enforced:
+    module:
+      - space_c_image_card
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_avatar
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+          variant: avatar_label
+          settings:
+            icon: 0
+            image_style: lg-48-x-48
+            corner_style: rounded
+    regions:
+      image:
+        - user_picture
+      full_name:
+        - field_full_name
+      link:
+        - usermail
+    fields:
+      usermail:
+        plugin_id: usermail
+        weight: 2
+        label: hidden
+        formatter: default
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: LUZG0jr16eDQR_tEBTVCTTBB_ZWw4Aaklvio-tFEADs
+id: user.user.avatar_label_group
+targetEntityType: user
+bundle: user
+mode: avatar_label_group
+content:
+  field_full_name:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: full_name
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: image
+hidden:
+  field_link: true
+  langcode: true
+  member_for: true
+  search_api_excerpt: true
+  simplenews: true

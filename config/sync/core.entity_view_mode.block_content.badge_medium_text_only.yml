@@ -1,0 +1,16 @@
+uuid: 118d3e9f-d6b0-48d5-9c05-da7c27407338
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_badge
+_core:
+  default_config_hash: 5aJIZzphppY8jllcl6JtJG9m_NCUjq3T6Vh_egnOduY
+id: block_content.badge_medium_text_only
+label: 'Badge - medium + text only'
+description: null
+targetEntityType: block_content
+cache: true

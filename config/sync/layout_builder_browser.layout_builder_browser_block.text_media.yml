@@ -1,0 +1,16 @@
+uuid: 27bd1ad1-ffe1-46dd-a6a5-05acdfc2f047
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: zmeAdYtjV2vrAM387ItjXwoIXo0NEefWhU23aZUfyy8
+id: text_media
+block_id: 'inline_block:text_media'
+category: blocks
+label: 'Text & Media'
+image_path: /themes/contrib/space/images/lbb/text_and_media.svg
+image_alt: ''
+weight: 0

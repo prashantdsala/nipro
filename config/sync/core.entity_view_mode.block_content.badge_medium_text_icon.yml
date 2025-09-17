@@ -1,0 +1,16 @@
+uuid: 89a8d28e-962f-4d82-8254-34a266b68a7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_badge
+_core:
+  default_config_hash: FaLzmBjMdZa8E7xGEpNaanDB9cJ5JNfk0rxs3GDjp58
+id: block_content.badge_medium_text_icon
+label: 'Badge - medium + text + icon'
+description: null
+targetEntityType: block_content
+cache: true

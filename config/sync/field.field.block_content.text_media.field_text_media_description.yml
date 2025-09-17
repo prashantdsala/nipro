@@ -1,0 +1,27 @@
+uuid: 4326561b-fa63-4656-95b3-c88620d3c164
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+    - field.storage.block_content.field_text_media_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: YUxGyjCTLCpsgXbCMPwGsPG-2NgU2-Hd-b13032uLJU
+id: block_content.text_media.field_text_media_description
+field_name: field_text_media_description
+entity_type: block_content
+bundle: text_media
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

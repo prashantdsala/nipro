@@ -1,0 +1,51 @@
+uuid: 75c32b4a-349f-4476-9745-fead2f9c2625
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.card_tags
+  module:
+    - ds
+  enforced:
+    module:
+      - space_c_image_card
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_badge
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+          settings:
+            size: medium
+            icon: xcross
+            type: text-only
+    regions:
+      text:
+        - taxonomy_term_title
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          wrapper: ''
+          class: ''
+_core:
+  default_config_hash: WwHRTYETBFtNb2wY-HVECGR7wMO2IVYQ4ElB_9EQ0cw
+id: taxonomy_term.card_tags.default
+targetEntityType: taxonomy_term
+bundle: card_tags
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true

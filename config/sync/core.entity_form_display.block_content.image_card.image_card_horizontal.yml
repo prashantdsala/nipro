@@ -1,0 +1,121 @@
+uuid: 271ae078-0754-4ebe-a787-4a22a76c72a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - core.entity_form_mode.block_content.image_card_horizontal
+    - field.field.block_content.image_card.field_horizontal_col_alignment
+    - field.field.block_content.image_card.field_hover_on_image
+    - field.field.block_content.image_card.field_image_card_badge
+    - field.field.block_content.image_card.field_image_card_description
+    - field.field.block_content.image_card.field_image_card_headline
+    - field.field.block_content.image_card.field_image_card_image
+    - field.field.block_content.image_card.field_image_card_link
+    - field.field.block_content.image_card.field_image_card_preheadline
+    - field.field.block_content.image_card.field_image_card_user_details
+    - field.field.block_content.image_card.field_vertical_col_alignment
+  module:
+    - inline_entity_form
+    - link
+    - media_library
+    - media_library_edit
+    - space_layout_settings
+    - text
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: N5dEa2HjNU4tNKPm1cL1emvLxQB1TWcogVj5hxiVJgA
+id: block_content.image_card.image_card_horizontal
+targetEntityType: block_content
+bundle: image_card
+mode: image_card_horizontal
+content:
+  field_horizontal_col_alignment:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hover_on_image:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_image_card_badge:
+    type: inline_entity_form_complex
+    weight: 6
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_image_card_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_card_headline:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_card_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 280 (2x width 560)<br> <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: 0
+  field_image_card_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image_card_preheadline:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_card_user_details:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_vertical_col_alignment: true
+  info: true
+  langcode: true

@@ -1,0 +1,26 @@
+uuid: 8fd56b21-0cb9-468c-bfb6-0049ddbbb04c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card
+    - field.storage.block_content.field_pc_icon_name
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: dtDLgPBlIXFRGixhh9ad1sC9-V_RVeEUMD42GCkI9f4
+id: block_content.pricing_card.field_pc_icon_name
+field_name: field_pc_icon_name
+entity_type: block_content
+bundle: pricing_card
+label: 'Icon name'
+description: 'Use icon name from the storybook icons list.'
+required: false
+translatable: false
+default_value:
+  -
+    value: icon-primary-light-circle-outline-1x
+default_value_callback: ''
+settings: {  }
+field_type: string

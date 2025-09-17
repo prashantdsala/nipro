@@ -1,0 +1,16 @@
+uuid: 8177b68a-131b-48ff-b639-fea5a1b2eac6
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: oWCGTv98DY-lUB_vsytGuTOIqD7UN4JlkRwhBCU_EmI
+id: block_content.stats_kpi_centered_with_supportive_text
+label: 'Stats/KPI - Centered with supportive text'
+description: null
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,23 @@
+uuid: d37990bc-daeb-4c6f-98a1-f90528735e45
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+_core:
+  default_config_hash: Kpn9UKgwCPDJ1LvrSRGCF_5oDBkeLYNxyc7IGd1ijYs
+id: menu_link_content.field_career_link_label
+field_name: field_career_link_label
+entity_type: menu_link_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

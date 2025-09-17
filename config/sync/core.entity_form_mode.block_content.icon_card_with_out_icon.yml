@@ -1,0 +1,16 @@
+uuid: 5c31308e-035a-4674-8dc9-89d29dcee9fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: zzJjOm-b2oIimUhM4Od8H9zVE3E8yWeBkmB98YvFbcg
+id: block_content.icon_card_with_out_icon
+label: 'Icon card - with out icon'
+description: null
+targetEntityType: block_content
+cache: true

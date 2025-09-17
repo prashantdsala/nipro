@@ -1,0 +1,21 @@
+uuid: f6f8b1e8-2724-4bb0-9707-63ee874fb0ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_builder
+    - menu_link_content
+_core:
+  default_config_hash: 1TBD8Ra9nPQE9_Oq2QAFt9blkGpuUXMEj9cbdEiioII
+id: menu_link_content.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: menu_link_content
+type: layout_section
+settings: {  }
+module: layout_builder
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

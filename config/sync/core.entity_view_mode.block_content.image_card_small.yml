@@ -1,0 +1,16 @@
+uuid: f472999e-7f4b-468a-b31a-9fe464b25526
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: 6677fAjsN5WWDhQE8Z4-bDKGRZmxw_IqfB_8bIDKrL0
+id: block_content.image_card_small
+label: 'Image Card - Small'
+description: null
+targetEntityType: block_content
+cache: true

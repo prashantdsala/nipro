@@ -1,0 +1,26 @@
+uuid: c46c6170-ab9e-4105-8ada-6546a3d7f9cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: Q9oF0xQmlqLIvLmVmy1ndJP2SSEhl7EmBllU14m0HQE
+id: block_content.field_icon_headline
+field_name: field_icon_headline
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

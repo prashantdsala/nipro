@@ -1,0 +1,16 @@
+uuid: 8bcac320-8e14-4ea2-b673-00bfaa5888bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: e01k-QAwuCeNWO7CR-bJBptRKn65osDh7yhpGAXdKvc
+id: block_content.icon_card_with_icon
+label: 'Icon card - with icon'
+description: null
+targetEntityType: block_content
+cache: true

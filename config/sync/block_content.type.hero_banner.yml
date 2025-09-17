@@ -1,0 +1,13 @@
+uuid: 742d7555-41ae-46d3-bbd2-bfa0ac7e4e75
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: nfVXRoDNCGB0X1w8mnuB_dPvE7XNxo48EYgJuHSlod8
+id: hero_banner
+label: 'Hero Banner'
+revision: false
+description: 'The hero banner area is the area of the page between the navigation and the start of your content.'

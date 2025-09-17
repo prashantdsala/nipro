@@ -1,0 +1,16 @@
+uuid: 9c7ce6f3-1443-43f2-b8eb-58a0674a05c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 7_7j8gUOa9GKTk3rjNvhVArpRB2c4u3_gi47PLkkQgw
+id: block_content.images_video_with_description
+label: 'Images & Video with description'
+description: null
+targetEntityType: block_content
+cache: true

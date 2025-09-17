@@ -1,0 +1,13 @@
+uuid: b26a0c73-6a24-4f30-b598-d3415e5645b3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: gp7agUyg-p3KzJfjVOxwwxYXG0cnnt2OgH3ZnU7aooM
+id: card_icon
+label: 'Icon Card'
+revision: false
+description: 'Icon card can be used as a link to various important pages or content area.'

@@ -1,0 +1,16 @@
+uuid: 8c4fa986-c6a3-4077-a4c5-23f514094abe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_card_carousel
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: q9Atjk36ZvG2H2fU9KC0Ye_hFkW6L9XElrkA5U9tFUA
+id: block_content.icon_card_carousel
+target_entity_type_id: block_content
+target_bundle: icon_card_carousel
+default_langcode: site_default
+language_alterable: false

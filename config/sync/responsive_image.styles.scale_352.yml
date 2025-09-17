@@ -1,0 +1,51 @@
+uuid: b90dfa85-7809-459f-9c03-bba154df332b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scale_343w
+    - image.style.scale_343w_2x
+    - image.style.scale_352w
+    - image.style.scale_352w_2x
+  theme:
+    - space
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: Al2iRg8Um04ZRWEdpCCCvJc907cyli3lfyAp6DUlklk
+id: scale_352
+label: 'Scale 352'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w
+    breakpoint_id: space.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w_2x
+    breakpoint_id: space.large
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w
+    breakpoint_id: space.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_352w_2x
+    breakpoint_id: space.medium
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_343w
+    breakpoint_id: space.small
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_343w_2x
+    breakpoint_id: space.small
+    multiplier: 2x
+breakpoint_group: space
+fallback_image_style: scale_352w

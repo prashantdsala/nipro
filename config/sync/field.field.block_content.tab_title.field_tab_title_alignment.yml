@@ -1,0 +1,28 @@
+uuid: 2861ebbe-a0bb-4ab9-b995-cad9a88fa951
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab_title
+    - field.storage.block_content.field_tab_title_alignment
+  module:
+    - options
+  enforced:
+    module:
+      - space_c_tab_title
+_core:
+  default_config_hash: MfJEhG5tSGcFIxDABbn9M33JjHAnYP0edlyv711wFJE
+id: block_content.tab_title.field_tab_title_alignment
+field_name: field_tab_title_alignment
+entity_type: block_content
+bundle: tab_title
+label: 'Tab Title Alignment'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: center_align
+default_value_callback: ''
+settings: {  }
+field_type: list_string

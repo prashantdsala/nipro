@@ -1,0 +1,34 @@
+uuid: d63ee14e-ad62-4271-a59f-663bc96991f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item_thumbn
+    - field.storage.block_content.field_hcarousel_item_thumb_image
+    - media.type.image
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: aMDmkcTDosbf0p5Biu0P7k_lbs5kvkUcOPhcnMAUV7Y
+id: block_content.hero_banner_carousel_item_thumbn.field_hcarousel_item_thumb_image
+field_name: field_hcarousel_item_thumb_image
+entity_type: block_content
+bundle: hero_banner_carousel_item_thumbn
+label: Image
+description: "Image sizes as per view mode are as follow,<br>\r\n- Images & Video slideshow\r\n-- Thumbnail slider: width 280 (2x width 560)<br>\r\n<b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

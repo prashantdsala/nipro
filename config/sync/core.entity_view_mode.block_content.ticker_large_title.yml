@@ -1,0 +1,16 @@
+uuid: a2f36908-6bd9-4412-ac48-fdd56ecef000
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_ticker
+_core:
+  default_config_hash: vG8STOdGUvWRXD-7WOFr8XJA-fAezCDsv0aZjy8b6iE
+id: block_content.ticker_large_title
+label: 'Ticker - Large title'
+description: null
+targetEntityType: block_content
+cache: true

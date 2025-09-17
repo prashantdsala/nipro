@@ -1,0 +1,16 @@
+uuid: f43f4912-1a7b-4925-9e42-54ebf93bc1d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: TUBLIyKuRc_N2D8zdWYHQ9NRA5BIyiJl1YdWXkjlvow
+id: block_content.button_secondary
+label: 'Button Secondary'
+description: null
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,13 @@
+uuid: 55b8217f-f84d-4896-bb7b-03a6b732b60c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_features
+_core:
+  default_config_hash: BgA7t0nzYDnOP1J0M2XqShmfOoMHW0eyGXuuQig2b6w
+id: features
+label: Features
+revision: false
+description: 'Contains feature description.'

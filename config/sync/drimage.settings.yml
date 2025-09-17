@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: AM4bOXPw0fm_XZPnlPjk8TYukYxBQXiolcgiDsJoRl8
+threshold: 200
+ratio_distortion: 60
+upscale: 320
+downscale: 2840
+multiplier: 1
+lazy_offset: 200
+core_webp: false
+fallback_style: ''
+cache_max_age: 86400
+enable_webp_support: true

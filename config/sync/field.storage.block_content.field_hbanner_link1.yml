@@ -1,0 +1,24 @@
+uuid: 9f978392-5033-4a5e-803d-deb69f6a7da5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: YmRbkWJR3bvwokZ3So8NkOzouTX9slUOC6XX3zn-ozc
+id: block_content.field_hbanner_link1
+field_name: field_hbanner_link1
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

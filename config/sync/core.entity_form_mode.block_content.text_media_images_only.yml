@@ -1,0 +1,16 @@
+uuid: a02c7b65-2a9b-4dac-81eb-2c2d865c9c5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: trtMmli2VB2VceT0B1jUunAGaqUPUW3ouYpMHzRXVBE
+id: block_content.text_media_images_only
+label: 'Text & Media - Images only'
+description: null
+targetEntityType: block_content
+cache: true

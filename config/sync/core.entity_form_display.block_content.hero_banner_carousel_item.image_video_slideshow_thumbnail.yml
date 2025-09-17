@@ -1,0 +1,50 @@
+uuid: 00b1e6aa-f5d3-4c26-b8c7-ebe670319cc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item
+    - core.entity_form_mode.block_content.image_video_slideshow_thumbnail
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_desc
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_headline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_image
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link1
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link2
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_preheadline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_video
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: Vh50sboV4q3rB5c6RLUZ5wPEjMLr4jnkkHWgGl1o1j0
+id: block_content.hero_banner_carousel_item.image_video_slideshow_thumbnail
+targetEntityType: block_content
+bundle: hero_banner_carousel_item
+mode: image_video_slideshow_thumbnail
+content:
+  field_hcarousel_item_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_hcarousel_item_desc: true
+  field_hcarousel_item_headline: true
+  field_hcarousel_item_link1: true
+  field_hcarousel_item_link2: true
+  field_hcarousel_item_preheadline: true
+  field_hcarousel_item_video: true
+  langcode: true

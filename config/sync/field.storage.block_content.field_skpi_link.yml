@@ -1,0 +1,24 @@
+uuid: 7f85cb3e-79f9-47a1-9485-02a545e139c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: Nqj_lWbXNEydkDvX7DYWkAVmbXL_GTl-hT0ecFRv9fk
+id: block_content.field_skpi_link
+field_name: field_skpi_link
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

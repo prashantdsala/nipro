@@ -1,0 +1,15 @@
+uuid: e85ed458-20cc-439a-b11a-4699334b23ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+_core:
+  default_config_hash: RljfDqi1Lvxdei2sYetN-XmynOdeIPeGwtm-UgJqVCc
+id: footer-bottom-menu
+label: 'Footer bottom menu'
+description: ''
+locked: false

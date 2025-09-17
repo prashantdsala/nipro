@@ -1,0 +1,26 @@
+uuid: cfcfff15-4e8a-4a0c-9452-33dd1cbda646
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - simplenews
+    - system
+_core:
+  default_config_hash: 2jKCo5x8dIhhPDC55IP1k6drkgcSR2nxbyG4zgII98g
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'subscribe to newsletters'
+  - 'use text format restricted_html'
+  - 'view media'

@@ -1,0 +1,15 @@
+uuid: bc9b7190-c78b-44b1-96d7-954f49e3e558
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+_core:
+  default_config_hash: x00zSlcRL-l9F15OHyF5YP16GTHO-jmyNJmdCVw_Z-w
+id: sub-menu-2
+label: 'Sub menu 2'
+description: 'Sub-menu link with icon and description'
+locked: false

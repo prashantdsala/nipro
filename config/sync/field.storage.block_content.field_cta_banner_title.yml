@@ -1,0 +1,26 @@
+uuid: 36aea232-0b7d-41bf-ae5f-38c1519034ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: BOdl4v0dZob5keRPaZgLOHliZRrtyAv8r6GXZVVKM8Q
+id: block_content.field_cta_banner_title
+field_name: field_cta_banner_title
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 2fa5d705-4f43-445a-9c3b-c0a6d31a0f16
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - field.storage.block_content.field_hbanner_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: a-eojzP2jVOG0SORG6eeZMtwlIBf9VvvUsBRIPp_R_k
+id: block_content.hero_banner.field_hbanner_description
+field_name: field_hbanner_description
+entity_type: block_content
+bundle: hero_banner
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

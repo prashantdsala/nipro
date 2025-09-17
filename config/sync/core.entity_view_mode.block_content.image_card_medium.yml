@@ -1,0 +1,16 @@
+uuid: 78ce8e94-61ac-47ee-9770-9987c127d6c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: a2WLX2bYFjUMBn-8mvluszyuy1p8AROAPyvbdAjmEo4
+id: block_content.image_card_medium
+label: 'Image Card - Medium'
+description: null
+targetEntityType: block_content
+cache: true

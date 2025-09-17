@@ -1,0 +1,13 @@
+uuid: 5db3b61c-8026-40f1-abf4-ef115656f400
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: Xl15qJeMHENIw7xyB3xei-ModMmlEJgvzDjV9YAVz2w
+id: pricing_card_carousel
+label: 'Pricing card carousel'
+revision: false
+description: 'Contains pricing card.'

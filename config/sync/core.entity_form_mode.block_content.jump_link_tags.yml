@@ -1,0 +1,16 @@
+uuid: 16c50175-b302-411a-a50d-236df30a471c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_features
+_core:
+  default_config_hash: nLRusXKoCn_Do9b9OQpfiebJMXrbSKRuOl8b87ISxNQ
+id: block_content.jump_link_tags
+label: 'Jump link tags'
+description: null
+targetEntityType: block_content
+cache: true

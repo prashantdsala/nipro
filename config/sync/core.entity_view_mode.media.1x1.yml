@@ -1,0 +1,13 @@
+uuid: 3d46d219-271b-422e-8b90-53e6a59a956f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: IK6p3omSx7LSx74K53-OGO4JqAYRSRWwi1xkFEhjVTs
+id: media.1x1
+label: 1x1
+description: ''
+targetEntityType: media
+cache: true

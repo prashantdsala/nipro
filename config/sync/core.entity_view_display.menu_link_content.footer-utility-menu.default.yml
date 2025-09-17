@@ -1,0 +1,21 @@
+uuid: 7bf45387-4227-4c15-b847-ea1c8577b535
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-utility-menu
+_core:
+  default_config_hash: BrfgWIpRBbDzHb7UmiZdWi6Nn5sF8nu1TuZ12klcwtw
+id: menu_link_content.footer-utility-menu.default
+targetEntityType: menu_link_content
+bundle: footer-utility-menu
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

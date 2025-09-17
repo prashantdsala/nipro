@@ -1,0 +1,24 @@
+uuid: 8fa4ffb6-fd59-4498-887b-5d87eede20a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats_kpi
+    - field.storage.block_content.field_skpi_sub_headline
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: ZMXrpp6qTJbwqflw4V-vyNHpOg6aSoas60DvqtWdNpI
+id: block_content.stats_kpi.field_skpi_sub_headline
+field_name: field_skpi_sub_headline
+entity_type: block_content
+bundle: stats_kpi
+label: 'Sub headline'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

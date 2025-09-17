@@ -1,0 +1,13 @@
+uuid: 1b63e6f4-5d6d-45ff-8c6d-ed1c101c8936
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: r0a3I2Ab_dlzC7PY_1yGKv0cUDdCf0pGmQLefOqCt6M
+id: space_button
+label: Button
+revision: false
+description: 'Button component to use on Layout builder.'

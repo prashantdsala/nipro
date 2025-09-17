@@ -1,0 +1,16 @@
+uuid: d3824cdd-5edc-4a67-be77-0c8eb1ab1712
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: P0PUAu8Uajf9HJBp-wEsmWq-10d1kC_M4-7ZO9JYs5k
+id: block_content.stats_kpi_card_text_with_supportive_text
+label: 'Stats/KPI - Card text with supportive text'
+description: null
+targetEntityType: block_content
+cache: true

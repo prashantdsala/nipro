@@ -1,0 +1,50 @@
+uuid: 4e13f9c2-b0f6-4bbe-9986-08237c592700
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item_thumbn
+    - field.field.block_content.hero_banner_carousel_item_thumbn.field_hcarousel_item_thumb_image
+    - responsive_image.styles.scale_280
+  module:
+    - ds
+    - field_formatter_class
+    - media_responsive_thumbnail
+  enforced:
+    module:
+      - space_c_hero_banner
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_item_images_and_video_slideshow_thumbnail
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+    regions:
+      image:
+        - field_hcarousel_item_thumb_image
+_core:
+  default_config_hash: L1DFyiBh-gZtyxr18ll_81pChOhdriLimwPGEEVCYE0
+id: block_content.hero_banner_carousel_item_thumbn.default
+targetEntityType: block_content
+bundle: hero_banner_carousel_item_thumbn
+mode: default
+content:
+  field_hcarousel_item_thumb_image:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: scale_280
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: image
+hidden:
+  langcode: true
+  search_api_excerpt: true

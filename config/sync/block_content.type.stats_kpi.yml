@@ -1,0 +1,13 @@
+uuid: c6e34987-69ee-4a8c-9a99-9c00d5c95ee4
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: OwC8twM3sSduwURxdSqsZynz_tlwLwsIhSaZu1xJjsY
+id: stats_kpi
+label: Stats/KPI
+revision: false
+description: 'KPIs are usually used to evaluate the success in reaching defined targets at various levels.'

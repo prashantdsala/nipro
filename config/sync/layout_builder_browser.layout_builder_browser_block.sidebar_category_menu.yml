@@ -1,0 +1,13 @@
+uuid: 202bbd29-8221-4ab8-b132-9a61d3579398
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9g5AWbof9-coKNcVh0_5DC1FotbbrHUxEygRaCkjtxs
+id: sidebar_category_menu
+block_id: 'system_menu_block:sidebar-category-menu'
+category: menus
+label: 'Sidebar category menu'
+image_path: /themes/contrib/space/images/lbb/sidebar_category_menu.svg
+image_alt: ''
+weight: -7

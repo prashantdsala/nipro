@@ -1,0 +1,648 @@
+uuid: b3722812-d826-4b7c-84cd-b69360dc2c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card_carousel
+    - core.entity_view_mode.block_content.image_card_horizontal
+    - field.field.block_content.image_card_carousel.field_image_card
+  module:
+    - ds
+    - field_formatter_class
+    - layout_builder
+    - ui_patterns_field_formatters
+  enforced:
+    module:
+      - space_c_image_card
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: SkzbZduBHrZ7jzEED1INxG5-lPmNGIAGJKEze6M76dc
+id: block_content.image_card_carousel.image_card_horizontal
+targetEntityType: block_content
+bundle: image_card_carousel
+mode: image_card_horizontal
+content:
+  field_image_card:
+    type: pattern_wrapper_entity_reference_formatter
+    label: hidden
+    settings:
+      view_mode: image_card_horizontal
+      pattern: imagecard_carousel
+      pattern_mapping:
+        'field_wrapper:items':
+          destination: items_horizontal
+          weight: 0
+          plugin: field_wrapper
+          source: items
+      pattern_settings:
+        simple404:
+          alignment_type: left
+        textimage404:
+          image_type: large_image
+        accordion_item:
+          alignment: right
+          border: '1'
+          icon_collapsed: plusCircle
+          icon_expanded: minusCircle
+        avatar:
+          image_style: ''
+          corner_style: ''
+          icon: 0
+        badge:
+          size: small
+          icon: xcross
+          type: text-only
+        block_banner_info:
+          title_font_size: size-30
+          title_color: text-text-heading
+        block_footer_text:
+          title_font_size: size-96
+          title_color: text-text-heading
+          content_font_size: ''
+          content_color: ''
+          extra_classes: ''
+        block_navigation_header_sub_menu:
+          extra_classes: ''
+        breadcrumb:
+          breadcrumb_style_options: ''
+        button:
+          button_state: ''
+          button_type: only_icon
+          size: small
+          icon: ''
+          icon_alignment: right
+          button_corners: ''
+          classes: ''
+          expanded: 0
+        card_carousel:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        pricingcard_carousel:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        pricingfeaturedcard_carousel:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        imagecard_carousel:
+          carousel_layout: horizontal-card-carousel
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '2'
+          slides_on_tablet: '2'
+          slides_on_mobile: '1'
+          slide_padding_right: 5rem
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        quicklinkcard_carousel:
+          carousel_layout: small-quicklink-card-carousel
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        featuredcard_carousel:
+          carousel_layout: small-card-carousel
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        iconcard_carousel:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        peoplecard_carousel:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        iconcard:
+          alignment: left
+          card_layout: withouticon
+          extra_classes: ''
+          full_box_link: 0
+        quicklinkcard:
+          card_layout: withoutbackground
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        featuredcard:
+          card_layout: horizontal
+          card_size: large
+          extra_classes: ''
+        pricingcard:
+          background: light
+          card_layout: withicon
+          extra_classes: ''
+        pricingfeaturedcard:
+          background: light
+          extra_classes: ''
+        peoplecard:
+          card_layout: testimony-with-avatar
+          card_size: medium
+          card_corner: ''
+          extra_classes: ''
+          full_box_link: 0
+        videocard:
+          alignment: vertical
+          card_layout: withcontainer
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        imagecard:
+          alignment: vertical
+          card_layout: withcontainer
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        testimonycard:
+          card_layout: large-avatar
+          alignment: center
+          extra_classes: ''
+          full_box_link: 0
+        image_with_asymmetric_text:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        images_and_video_with_description:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        image_fullwidth_left:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        image_with_title_description:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        image_with_title_cta:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        image_fullwidth_center:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        images_and_video_slideshow_main:
+          autoplay: '1'
+        images_and_video_slideshow_thumbnail:
+          autoplay: '1'
+        text_only:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        code_snippet:
+          background: ''
+        contact_menu_link:
+          target: ''
+        container:
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+        cta_banner:
+          cta_banner_type: type_1
+          cta_type: button
+          width: boxed-width
+          alignment: left-align
+          image_type: large-image
+        dropdown:
+          dropdown_list_type: ''
+          list_heading: ''
+          dropdown_button_type: ''
+        email_form:
+          icon: '1'
+        footer:
+          colour: white
+          type: type-1
+        grid:
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+        primaryheader:
+          position: ''
+          hamburger_type: ''
+        secondaryheader:
+          secondary_header_position: left
+        headline:
+          tag_name: div
+          font: display2XL-semibold
+          spacing_bottom: default
+          url:
+            input: ''
+        image_link:
+          target: self
+        image_atom:
+          image_url: ''
+          background_style: ''
+          corners: ''
+          style: ''
+          extra_classes: ''
+        link:
+          target: ''
+          icon: ''
+          icon_size: ''
+          icon_position: right
+          extra_classes: ''
+          custom_style: 0
+        logo_grid:
+          layout_type: columns-4
+          background_color: ''
+          autoplay: 0
+        mega_menu_primary:
+          custom_wrapper_classes: ''
+        menu_item:
+          icon_type: icon_false
+          menu_size: menu_small
+          target: ''
+        modal:
+          modal_layout: stacked_left_aligned
+          icon_position: topleft
+          text_center: 0
+          enable_disclaimer: 0
+          sign_in: 0
+          plan: 0
+        navigation:
+          font_size: ''
+          text_color: on-white-background
+          wrap_nav: 0
+        notification:
+          size: ''
+          align: ''
+          background: ''
+          layout: ''
+          icon_visibility: '1'
+        paragraph:
+          size: primary
+          text_alignment: left
+        progress:
+          layout_type: ''
+        progress_base:
+          icon_type: ''
+          extra_classes: ''
+        section_heading:
+          alignment: left
+        section:
+          columns_width_1: equal
+          columns_width_2: equal
+          columns_width_3: equal
+          columns_width_4: equal
+          columns_width_5: equal
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          display_header_region: 0
+          equal_height: 0
+        category_list:
+          category_style: simple_style
+          custom_wrapper_classes: ''
+        sidebar_menu:
+          category_style: border_style
+          custom_wrapper_classes: ''
+        slider:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          counter: '1'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+        social_button:
+          social_button_type: google
+        space_section:
+          alignment: left
+        stats_kpi:
+          alignment: left
+          layout_type: default
+          extra_classes: ''
+        2column_with_sidebar:
+          layout_width: boxed_width
+        3column_with_sidebar:
+          layout_width: boxed_width
+        3column_large_text_with_card:
+          layout_width: boxed_width
+        3column_with_links:
+          layout_width: boxed_width
+        4column_with_footer:
+          layout_width: boxed_width
+        4column_slim_with_footer:
+          layout_width: boxed_width
+        4column_large_text_with_card_on_footer:
+          layout_width: boxed_width
+        4column_with_large_text:
+          layout_width: boxed_width
+        branched_navigation:
+          layout_width: boxed_width
+        branched_navigation_with_card:
+          layout_width: boxed_width
+        tabs:
+          tab_item_size: default_size
+          tab_item_type: underlined
+        table:
+          color: dark
+          strip: 0
+        team_section_simple_1:
+          background_color: bg-default
+        team_section_simple_2:
+          background_color: bg-default
+        team_section_simple_3:
+          background_color: bg-default
+        team_section_image_card_1:
+          background_color: bg-default
+        team_section_image_card_2:
+          background_color: bg-default
+        team_section_image_card_3:
+          background_color: bg-default
+        testimonial_cards:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        testimonial_carousel_large_avatar:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        testimonial_carousel_simple_avatar:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        testimonial_carousel_avatar_center:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        testimonial_carousel_company_logo_and_avatar:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        testimonial_carousel_login_logo_and_avatar:
+          slides_type: slide
+          slide_focus: none
+          slides_per_view: '1'
+          slides_on_tablet: '1'
+          slides_on_mobile: '1'
+          slide_padding_right: '0'
+          slide_padding_left: '0'
+          arrows: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+          counter: 0
+        text_media:
+          alignment: default
+          layout_type: default-layout
+          extra_classes: ''
+        item_images_and_colour_blocked_background:
+          autoplay: 0
+        social_media_navigation:
+          wrap_nav: 0
+      pattern_variant: ''
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

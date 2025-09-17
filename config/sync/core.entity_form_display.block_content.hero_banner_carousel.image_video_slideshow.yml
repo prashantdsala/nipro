@@ -1,0 +1,65 @@
+uuid: ae9d9303-0f89-403e-935f-b6d1f7279637
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel
+    - core.entity_form_mode.block_content.image_video_slideshow
+    - core.entity_form_mode.block_content.image_video_slideshow_thumbnail
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_bgimage
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_headline
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_link
+    - field.field.block_content.hero_banner_carousel.field_hero_banner_carousel_item
+    - field.field.block_content.hero_banner_carousel.field_hero_banner_carousel_thumb
+  module:
+    - inline_entity_form
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 1iBhQog_84od6NR0HXoS5RYrK0BkDG7M90Vx7q1KFA8
+id: block_content.hero_banner_carousel.image_video_slideshow
+targetEntityType: block_content
+bundle: hero_banner_carousel
+mode: image_video_slideshow
+content:
+  field_hero_banner_carousel_item:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: image_video_slideshow_main
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_hero_banner_carousel_thumb:
+    type: inline_entity_form_complex
+    weight: 1
+    region: content
+    settings:
+      form_mode: image_video_slideshow_thumbnail
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  field_hcarousel_bgimage: true
+  field_hcarousel_headline: true
+  field_hcarousel_link: true
+  info: true
+  langcode: true

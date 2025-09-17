@@ -1,0 +1,16 @@
+uuid: a495f183-a009-4c87-91ce-f4d5aee17e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.badge
+  enforced:
+    module:
+      - space_c_badge
+_core:
+  default_config_hash: a8_wQOvE0vlu8wZxaVQxH3PpTpyVSwXh6oUZpzSwn-s
+id: block_content.badge
+target_entity_type_id: block_content
+target_bundle: badge
+default_langcode: site_default
+language_alterable: false

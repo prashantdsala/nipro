@@ -1,0 +1,16 @@
+uuid: 206b1fb5-be11-4a95-a7ca-0df92e6de00d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: 3ywsD9XNZ7o41riqB5XbDoMI-FgiV9qGJm9VoCoQzJs
+id: icon_card
+block_id: 'inline_block:card_icon'
+category: blocks
+label: 'Icon Card'
+image_path: /themes/contrib/space/images/lbb/icon_card.svg
+image_alt: ''
+weight: -18

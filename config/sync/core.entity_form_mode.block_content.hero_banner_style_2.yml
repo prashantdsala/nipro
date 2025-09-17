@@ -1,0 +1,16 @@
+uuid: ebe7e783-3ba1-4404-9304-62d6fee7ca37
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 8Wnw_W9K9jXer_Tm9U2oPVBuuqdvPbmjSNe0AyvhPQw
+id: block_content.hero_banner_style_2
+label: 'Hero banner - Style 2'
+description: null
+targetEntityType: block_content
+cache: true

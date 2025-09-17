@@ -1,0 +1,13 @@
+uuid: 34f7ddd9-6514-4610-9cd8-461d6795b011
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MG1_AjT4FDqnnxeALR2zuTYtlWaqfveh3QaZct1kEFc
+id: sub_menu_3
+block_id: 'system_menu_block:sub-menu-3'
+category: menus
+label: 'Sub menu 3'
+image_path: /themes/contrib/space/images/lbb/sub_menu.svg
+image_alt: ''
+weight: -17

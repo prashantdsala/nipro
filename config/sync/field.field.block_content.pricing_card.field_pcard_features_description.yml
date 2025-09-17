@@ -1,0 +1,24 @@
+uuid: f89b15ed-87c3-42d1-9f62-39d4673491e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card
+    - field.storage.block_content.field_pcard_features_description
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: 2jOX6_3HQESYxXahhLuSHxKBlszfdC0qzxqm4rT0TMU
+id: block_content.pricing_card.field_pcard_features_description
+field_name: field_pcard_features_description
+entity_type: block_content
+bundle: pricing_card
+label: 'Features description'
+description: 'Description of the features list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

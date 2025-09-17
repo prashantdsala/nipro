@@ -1,0 +1,16 @@
+uuid: 760d12af-f9fd-4b0e-ac4a-a1c5367acfb3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: GIo2sXdGsZ8bj_Ct_bTUk4r3GZ9apISD0xdiH9mGMz8
+id: block_content.stats_kpi_small_featured_icon
+label: 'Stats/KPI - Small featured icon'
+description: null
+targetEntityType: block_content
+cache: true

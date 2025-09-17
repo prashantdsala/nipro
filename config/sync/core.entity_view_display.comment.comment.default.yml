@@ -1,0 +1,29 @@
+uuid: 67e257bc-39b2-4273-8156-07908d2ae3d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.comment_body
+  module:
+    - text
+_core:
+  default_config_hash: mSWqkq85Ey19v_iSLGoPFMQvXAjXL1EwkHCl8_xrDcI
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

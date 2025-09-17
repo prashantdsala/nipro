@@ -1,0 +1,24 @@
+uuid: 1907e23e-ef0d-4a94-94ba-1ff040c7cf3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats_kpi
+    - field.storage.block_content.field_skpi_icon_name
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: r-At6uaMHcfMP4tTyLgnuXnpdASRewmv6YHTX3mGk5s
+id: block_content.stats_kpi.field_skpi_icon_name
+field_name: field_skpi_icon_name
+entity_type: block_content
+bundle: stats_kpi
+label: 'Icon name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

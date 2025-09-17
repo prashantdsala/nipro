@@ -1,0 +1,16 @@
+uuid: e8ecc456-ef9b-4ee1-95b2-be7baaede58f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: wb6vOdSPxiHs_HjpE_a7X8wxbq9dAeyqTR2ZEJuTYqk
+id: block_content.image_full_width_left_aligned
+label: 'Image full width left aligned'
+description: null
+targetEntityType: block_content
+cache: true

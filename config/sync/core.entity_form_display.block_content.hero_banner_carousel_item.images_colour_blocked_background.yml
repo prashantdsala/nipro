@@ -1,0 +1,55 @@
+uuid: 25850629-d8ed-4eee-b788-23b15717d864
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item
+    - core.entity_form_mode.block_content.images_colour_blocked_background
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_desc
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_headline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_image
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link1
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link2
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_preheadline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_video
+  module:
+    - media_library
+    - media_library_edit
+    - space_layout_settings
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 3TCe1Mcb4H6TdpAtF7GI0X0-ENMGhn6EucfLrMXZwxc
+id: block_content.hero_banner_carousel_item.images_colour_blocked_background
+targetEntityType: block_content
+bundle: hero_banner_carousel_item
+mode: images_colour_blocked_background
+content:
+  field_hcarousel_item_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 384 (2x width 768)<br>  <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: 0
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_hcarousel_item_desc: true
+  field_hcarousel_item_headline: true
+  field_hcarousel_item_link1: true
+  field_hcarousel_item_link2: true
+  field_hcarousel_item_preheadline: true
+  field_hcarousel_item_video: true
+  langcode: true

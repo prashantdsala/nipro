@@ -1,0 +1,74 @@
+uuid: b076c092-b0b8-490b-addb-fc553c7cb89c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon
+    - core.entity_form_mode.block_content.icon_card_with_icon
+    - field.field.block_content.card_icon.field_icon_description
+    - field.field.block_content.card_icon.field_icon_headline
+    - field.field.block_content.card_icon.field_icon_link
+    - field.field.block_content.card_icon.field_icon_name
+  module:
+    - link
+    - text
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: Ez68RsEXx9DyP-vASOGjZhLh6EkElGwpPpHxm8ybsFM
+id: block_content.card_icon.icon_card_with_icon
+targetEntityType: block_content
+bundle: card_icon
+mode: icon_card_with_icon
+content:
+  field_card_icon:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_headline:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_icon_name:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

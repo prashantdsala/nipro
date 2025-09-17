@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: TYIGILZk-iY-1_HYOydPH78BASvUb52-sFI8h7GzgF4
+first_day: 0
+country:
+  default: null
+timezone:
+  default: UTC
+  user:
+    configurable: true
+    default: 0
+    warn: false

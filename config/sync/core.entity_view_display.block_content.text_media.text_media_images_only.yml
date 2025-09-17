@@ -1,0 +1,89 @@
+uuid: 6da90ccb-cf0b-439d-8d11-0fbced24c4ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+    - core.entity_view_mode.block_content.text_media_images_only
+    - field.field.block_content.text_media.field_text_media_col_alignment
+    - field.field.block_content.text_media.field_text_media_description
+    - field.field.block_content.text_media.field_text_media_features
+    - field.field.block_content.text_media.field_text_media_headline
+    - field.field.block_content.text_media.field_text_media_image
+    - field.field.block_content.text_media.field_text_media_image_2
+    - field.field.block_content.text_media.field_text_media_link1
+    - field.field.block_content.text_media.field_text_media_link2
+    - field.field.block_content.text_media.field_text_media_out_of_box
+    - field.field.block_content.text_media.field_text_media_stats_kpi
+    - responsive_image.styles.scale_592
+  module:
+    - ds
+    - field_formatter_class
+    - layout_builder
+    - media_responsive_thumbnail
+  enforced:
+    module:
+      - space_c_text_media
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_text_media
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+          settings:
+            column_width: column_50-50
+            layout_type: withimages
+            extra_classes: ''
+    regions:
+      image:
+        - field_text_media_image
+      image2:
+        - field_text_media_image_2
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: yYGEYV8sT8op-SFnkllE2lCvDYoomNTXSJgbjXixWBw
+id: block_content.text_media.text_media_images_only
+targetEntityType: block_content
+bundle: text_media
+mode: text_media_images_only
+content:
+  field_text_media_image:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: scale_592
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: image
+  field_text_media_image_2:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: scale_592
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: image2
+hidden:
+  field_text_media_col_alignment: true
+  field_text_media_description: true
+  field_text_media_features: true
+  field_text_media_headline: true
+  field_text_media_link1: true
+  field_text_media_link2: true
+  field_text_media_out_of_box: true
+  field_text_media_stats_kpi: true
+  langcode: true
+  search_api_excerpt: true

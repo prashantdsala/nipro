@@ -1,0 +1,63 @@
+uuid: 54265379-dc88-4721-bb82-859987102f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.badge
+    - field.field.block_content.badge.field_badge_headline
+  module:
+    - ds
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
+  enforced:
+    module:
+      - space_c_badge
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  layout_library:
+    enable: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts: {  }
+      restricted_categories: {  }
+      blacklisted_blocks: {  }
+      whitelisted_blocks: {  }
+  ds:
+    layout:
+      id: pattern_badge
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+          settings:
+            size: large
+            icon: xcross
+            type: text-only
+    regions:
+      text:
+        - field_badge_headline
+_core:
+  default_config_hash: jhb0UC6zbV3kvS9mHChsGrxs_SDv6i7bWWzkaMNk7tc
+id: block_content.badge.default
+targetEntityType: block_content
+bundle: badge
+mode: default
+content:
+  field_badge_headline:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: text
+hidden:
+  langcode: true
+  search_api_excerpt: true

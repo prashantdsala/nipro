@@ -1,0 +1,67 @@
+uuid: 4c1b0ce6-d1ef-4556-bc90-c1782ae1086f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item
+    - core.entity_view_mode.block_content.image_video_slideshow_thumbnail
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_desc
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_headline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_image
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link1
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link2
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_preheadline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_video
+    - responsive_image.styles.scale_280
+  module:
+    - ds
+    - field_formatter_class
+    - layout_builder
+    - media_responsive_thumbnail
+  enforced:
+    module:
+      - space_c_hero_banner
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_item_images_and_video_slideshow_thumbnail
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+    regions:
+      image:
+        - field_hcarousel_item_image
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: wsdm9Gw1TBVvDWhAK0BbcU4Tz9kkkKxbA__tqfej4VI
+id: block_content.hero_banner_carousel_item.image_video_slideshow_thumbnail
+targetEntityType: block_content
+bundle: hero_banner_carousel_item
+mode: image_video_slideshow_thumbnail
+content:
+  field_hcarousel_item_image:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: scale_280
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 3
+    region: image
+hidden:
+  field_hcarousel_item_desc: true
+  field_hcarousel_item_headline: true
+  field_hcarousel_item_link1: true
+  field_hcarousel_item_link2: true
+  field_hcarousel_item_preheadline: true
+  field_hcarousel_item_video: true
+  langcode: true
+  search_api_excerpt: true

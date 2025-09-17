@@ -1,0 +1,16 @@
+uuid: ab8002e9-39dd-4313-990a-cd61e063c9cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: JvVeqMLlR47sJkfaZJNA9FDj8EVwAFyWTtq44yw-adE
+id: block_content.pricing_card
+target_entity_type_id: block_content
+target_bundle: pricing_card
+default_langcode: site_default
+language_alterable: false

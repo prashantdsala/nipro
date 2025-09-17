@@ -1,0 +1,24 @@
+uuid: 6ebbe99c-0890-41d5-8cc0-2c2234535636
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - field.storage.block_content.field_hbanner_subheadline
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: _Om30p1n4zgY2WOh5SIv1HTFskoFDpJwJXozs8uwZtw
+id: block_content.hero_banner.field_hbanner_subheadline
+field_name: field_hbanner_subheadline
+entity_type: block_content
+bundle: hero_banner
+label: 'Sub Headline'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

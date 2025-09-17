@@ -1,0 +1,16 @@
+uuid: 4b137bb5-4659-4114-b349-e125812570c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: 0mZO33uDc7ZloAdW9L2Az_u0h5NVF31yd5HGccDqrEo
+id: block_content.pricing_card_without_icon
+label: 'Pricing card - without icon'
+description: null
+targetEntityType: block_content
+cache: true

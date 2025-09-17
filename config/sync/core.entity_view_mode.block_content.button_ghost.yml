@@ -1,0 +1,16 @@
+uuid: 44b2d86b-89ad-4b6d-aac0-3ce65b448443
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: fdSC2dg0IzBjjRRaBVb6SJcM66HZXGzRIpcDARAN0bM
+id: block_content.button_ghost
+label: 'Button Ghost'
+description: null
+targetEntityType: block_content
+cache: true

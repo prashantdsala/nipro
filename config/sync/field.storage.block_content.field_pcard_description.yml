@@ -1,0 +1,24 @@
+uuid: f715a9a2-3899-4854-ab3b-17f479b94a0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: 0aqzq9BWezmYlUtURPKDubjI7HEFPlJKjaYIEdyP0hA
+id: block_content.field_pcard_description
+field_name: field_pcard_description
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

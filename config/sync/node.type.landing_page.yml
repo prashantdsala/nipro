@@ -1,0 +1,31 @@
+uuid: f21b653e-bb3f-4b78-a548-02af15bbbb88
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_revision_delete
+    - node_type_class
+  enforced:
+    module:
+      - space_c_landing_page
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  node_type_class:
+    classes: ''
+  node_revision_delete:
+    minimum_age_to_delete: 2
+    minimum_revisions_to_keep: 2
+    when_to_delete: 1
+_core:
+  default_config_hash: HkPKVFuX7BYdkNX9CeZQybcrt93NgZK46RowItGKqDg
+name: 'Landing page'
+type: landing_page
+description: 'A special page with its own one-off layout and content.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

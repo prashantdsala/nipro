@@ -1,0 +1,10 @@
+uuid: 1f8b82e6-57fa-4a39-ab97-e8940612a1bf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1WUcKvCYQNjUqfP0ZKcdDXSh0MCEGtfBc_3uW_lDkis
+name: 'Restricted HTML'
+format: restricted_html
+weight: 1
+filters: {  }

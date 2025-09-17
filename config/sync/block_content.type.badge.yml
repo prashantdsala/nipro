@@ -1,0 +1,13 @@
+uuid: 21381744-9b33-4f0c-83c1-1e01830c3ecf
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_badge
+_core:
+  default_config_hash: 3ovMMtjflGR8npsjd571MeMX0MEZRUq5v_W6qztF8OA
+id: badge
+label: Badge
+revision: false
+description: 'Badge labels with different types like only text, text with icon , only icon.'

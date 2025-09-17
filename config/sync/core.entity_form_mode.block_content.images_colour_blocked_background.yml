@@ -1,0 +1,16 @@
+uuid: 722c1b05-2427-4240-a566-55aabcda48b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: D4_wVjckz_WNUwaU3DGewHwQVHRIfDrDKqmMrfpIg-I
+id: block_content.images_colour_blocked_background
+label: 'Images and colour blocked background'
+description: null
+targetEntityType: block_content
+cache: true

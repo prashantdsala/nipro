@@ -1,0 +1,16 @@
+uuid: 4332d58d-c73c-4fed-92f6-89292b9a334f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.features
+  enforced:
+    module:
+      - space_c_features
+_core:
+  default_config_hash: Z7O-uuyZ3kD_7MUpvJLuf_9WVsayHMDsPyKw5BQpanU
+id: block_content.features
+target_entity_type_id: block_content
+target_bundle: features
+default_langcode: site_default
+language_alterable: false

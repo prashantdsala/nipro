@@ -1,0 +1,34 @@
+uuid: a8be25f2-d721-40b7-a797-112cb952629a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - block_content.type.ticker
+    - field.storage.block_content.field_hbanner_ticker
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: qSvk85ygAAXchRIauq9--u0SUqaaVIOQovLTXRRvNZg
+id: block_content.hero_banner.field_hbanner_ticker
+field_name: field_hbanner_ticker
+entity_type: block_content
+bundle: hero_banner
+label: Ticker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      ticker: ticker
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

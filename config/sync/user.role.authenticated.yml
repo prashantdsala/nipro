@@ -1,0 +1,28 @@
+uuid: 91f40642-fb61-4769-86b6-937c0977406c
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - simplenews
+    - system
+_core:
+  default_config_hash: CreE4sFna7Tq4-xWJt2AdRI_0GncB7pVpkdoW3uaqDc
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'subscribe to newsletters'
+  - 'use text format basic_html'
+  - 'view media'

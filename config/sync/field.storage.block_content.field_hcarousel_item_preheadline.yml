@@ -1,0 +1,24 @@
+uuid: 640ef11b-b497-4937-9ded-bfb8d8553caf
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: e2OwFNi8sKi71LQb-ojA_Gpps5Fkq-CvXlf_wB1v5FA
+id: block_content.field_hcarousel_item_preheadline
+field_name: field_hcarousel_item_preheadline
+entity_type: block_content
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

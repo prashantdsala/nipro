@@ -1,0 +1,16 @@
+uuid: 45b9d7ec-0cb0-493e-922d-2b9ea100d15f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: OIns-4dRT9sAYQh0keglngum_NjBUOkHM-k9wfuvE1A
+id: block_content.image_card
+target_entity_type_id: block_content
+target_bundle: image_card
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,14 @@
+uuid: e46aa84a-c3aa-4c2a-8de9-6d3b0dc1fa88
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: c4YbEwfETo8bzPdORrbkVDR74ShAESrJGf8dxBvNidM
+name: 'Card Tags'
+vid: card_tags
+description: ''
+weight: 0
+new_revision: false

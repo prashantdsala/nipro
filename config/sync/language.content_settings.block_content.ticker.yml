@@ -1,0 +1,16 @@
+uuid: 4733cac4-40dc-4be0-8236-0366ede185d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ticker
+  enforced:
+    module:
+      - space_c_ticker
+_core:
+  default_config_hash: uT-7MQl1Kmyhufzdp63yZRnDBOX0Tae6fpCej5WhfKU
+id: block_content.ticker
+target_entity_type_id: block_content
+target_bundle: ticker
+default_langcode: site_default
+language_alterable: false

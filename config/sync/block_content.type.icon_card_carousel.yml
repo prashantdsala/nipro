@@ -1,0 +1,13 @@
+uuid: 9261f861-cff6-4405-91fe-ca0d0ec96486
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: 0dc4egMqalyP5P4teDx5C4FBuOFtpKwTl6tgrwGbgrU
+id: icon_card_carousel
+label: 'Icon card carousel'
+revision: false
+description: 'Contains icon card.'

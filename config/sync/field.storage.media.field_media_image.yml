@@ -1,0 +1,32 @@
+uuid: 2543fe13-f36c-49c7-8f37-d5c6e0c6d3b9
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - media
+_core:
+  default_config_hash: YD3KsgMtnsKeUv4kB39zCWXjSG_cdiAAJbiv1ZTa-_o
+id: media.field_media_image
+field_name: field_media_image
+entity_type: media
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

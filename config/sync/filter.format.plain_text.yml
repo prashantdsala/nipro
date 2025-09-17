@@ -1,0 +1,10 @@
+uuid: d154c50b-266c-4d8a-8cdb-e371f25fbed3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JLMwODO0epnA_H-jFlH9ezVfa5YBJniRv3MmLqYNl_Q
+name: 'Plain text'
+format: plain_text
+weight: 10
+filters: {  }

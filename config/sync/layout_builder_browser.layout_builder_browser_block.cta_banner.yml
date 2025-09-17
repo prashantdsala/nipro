@@ -1,0 +1,16 @@
+uuid: ca97d37b-0daa-4835-bb14-b9e628e62bdf
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: zOTCoXJM5b32pHbYQytDKJU91ODDkf8W-_FrWbLy1qw
+id: cta_banner
+block_id: 'inline_block:cta_banner'
+category: blocks
+label: 'CTA banner'
+image_path: /themes/contrib/space/images/lbb/cta_banner.svg
+image_alt: ''
+weight: -3

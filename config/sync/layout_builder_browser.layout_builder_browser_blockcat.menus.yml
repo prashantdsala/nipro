@@ -1,0 +1,12 @@
+uuid: 5da6cb73-f54e-419b-81d5-a044c431de30
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 54tfhBOvDd1BBcKyNN0NC6Bx0ksOfUWGX59PUja6vUY
+id: menus
+label: 'Select a Menu'
+weight: null
+opened: true
+image_path: null
+image_alt: null

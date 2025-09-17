@@ -1,0 +1,34 @@
+uuid: 88544354-2ca9-46f6-bc04-91a427368d8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.badge
+    - block_content.type.pricing_card
+    - field.storage.block_content.field_pcard_badge
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: T4WszAmYVXHBdU6oh9W9mcBwhmwA0LqSTcVLTkgyIsQ
+id: block_content.pricing_card.field_pcard_badge
+field_name: field_pcard_badge
+entity_type: block_content
+bundle: pricing_card
+label: Badge
+description: 'For example: Popular, Latest, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      badge: badge
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

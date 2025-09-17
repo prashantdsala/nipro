@@ -1,0 +1,21 @@
+uuid: c161e38c-65d9-4b70-9a98-6f88a7dee1d7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: Z4PPkvRjgc8FXRk3CYxfwj98ySNs49njMCFUJHbe8v0
+name: scale_592w_2x
+label: 'scale_592w 2x'
+effects:
+  77428c2a-0213-4ad6-a85f-c46e3f37dc81:
+    uuid: 77428c2a-0213-4ad6-a85f-c46e3f37dc81
+    id: image_scale
+    weight: 1
+    data:
+      width: 1184
+      height: null
+      upscale: false
+pipeline: __default__

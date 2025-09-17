@@ -1,0 +1,76 @@
+uuid: b90952d3-da75-4a09-b34e-3faab4c49405
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel
+    - core.entity_form_mode.block_content.images_colour_blocked_background
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_bgimage
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_headline
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_link
+    - field.field.block_content.hero_banner_carousel.field_hero_banner_carousel_item
+    - field.field.block_content.hero_banner_carousel.field_hero_banner_carousel_thumb
+  module:
+    - inline_entity_form
+    - link
+    - media_library
+    - media_library_edit
+    - space_layout_settings
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: Q8r6jFOj9J7fX5m_14OsPTJTNxRISiDvTPOoGQTMcmA
+id: block_content.hero_banner_carousel.images_colour_blocked_background
+targetEntityType: block_content
+bundle: hero_banner_carousel
+mode: images_colour_blocked_background
+content:
+  field_hcarousel_bgimage:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 1440 (2x width 2880)<br> <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: 0
+  field_hcarousel_headline:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hcarousel_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hero_banner_carousel_item:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: images_colour_blocked_background
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  field_hero_banner_carousel_thumb: true
+  info: true
+  langcode: true

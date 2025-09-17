@@ -1,0 +1,34 @@
+uuid: b205bc49-3400-4674-bab2-a639427958f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card
+    - block_content.type.pricing_card_carousel
+    - field.storage.block_content.field_pricing_card
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: bc9u1iuP8owrq0bK2f_Lm9SUY-HDO7V1mA7vlUPXkHY
+id: block_content.pricing_card_carousel.field_pricing_card
+field_name: field_pricing_card
+entity_type: block_content
+bundle: pricing_card_carousel
+label: 'Pricing card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      pricing_card: pricing_card
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: 975a19df-14ca-4104-877c-28d6609b3093
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.sub-menu-6.field_menu_description
+    - system.menu.sub-menu-6
+  module:
+    - text
+_core:
+  default_config_hash: _POE8pQIWXEQmbw5vttI3MSZeI6EOhfGfJxyUHog3z0
+id: menu_link_content.sub-menu-6.default
+targetEntityType: menu_link_content
+bundle: sub-menu-6
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_menu_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

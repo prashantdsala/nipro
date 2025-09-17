@@ -1,0 +1,16 @@
+uuid: 5a726eed-40f1-4037-9a5a-9d202d7564ec
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: keOpt_IXFQ47q19EVib7O7hvyHB-JeoS3UPq5j63vwI
+id: stats_kpi
+block_id: 'inline_block:stats_kpi'
+category: blocks
+label: Stats/KPI
+image_path: /themes/contrib/space/images/lbb/kpi.svg
+image_alt: ''
+weight: 2

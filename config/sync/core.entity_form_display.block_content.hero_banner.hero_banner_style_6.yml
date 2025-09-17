@@ -1,0 +1,83 @@
+uuid: 20469292-1992-4983-8dfb-dd27500a9542
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - core.entity_form_mode.block_content.hero_banner_style_6
+    - field.field.block_content.hero_banner.field_hbanner_bg_image
+    - field.field.block_content.hero_banner.field_hbanner_description
+    - field.field.block_content.hero_banner.field_hbanner_headline
+    - field.field.block_content.hero_banner.field_hbanner_image1
+    - field.field.block_content.hero_banner.field_hbanner_image2
+    - field.field.block_content.hero_banner.field_hbanner_link1
+    - field.field.block_content.hero_banner.field_hbanner_link2
+    - field.field.block_content.hero_banner.field_hbanner_subheadline
+    - field.field.block_content.hero_banner.field_hbanner_subscription
+    - field.field.block_content.hero_banner.field_hbanner_ticker
+  module:
+    - link
+    - media_library
+    - media_library_edit
+    - space_layout_settings
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: AMt9KhlaF1nKZA-WIRKWF9SGZuW0R3yLX5g3bDkgsyk
+id: block_content.hero_banner.hero_banner_style_6
+targetEntityType: block_content
+bundle: hero_banner
+mode: hero_banner_style_6
+content:
+  field_hbanner_headline:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hbanner_image1:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 384 (2x width 768)<br>  <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: 0
+  field_hbanner_link1:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hbanner_link2:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hbanner_subheadline:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_hbanner_bg_image: true
+  field_hbanner_description: true
+  field_hbanner_image2: true
+  field_hbanner_subscription: true
+  field_hbanner_ticker: true
+  info: true
+  langcode: true

@@ -1,0 +1,13 @@
+uuid: bb160031-07d0-4e2f-a450-af9a3bafbb3f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vXmb5mVMbWK_pK7Yl5UxGEsM-auy-9MD7SNDC5N-RU0
+id: sub_header_footer_menu
+block_id: 'system_menu_block:sub-header---footer-menu'
+category: menus
+label: 'Sub header - Footer menu'
+image_path: /themes/contrib/space/images/lbb/sub_menu.svg
+image_alt: ''
+weight: -12

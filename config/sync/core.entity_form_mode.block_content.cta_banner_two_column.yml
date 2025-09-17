@@ -1,0 +1,16 @@
+uuid: 2e095024-eaef-4d07-8cc9-e77719203b4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: Q9AsYQDIv14vHyz9w1K25hLSzhwCO63y1EmIJ173dtI
+id: block_content.cta_banner_two_column
+label: 'CTA banner - Two column'
+description: null
+targetEntityType: block_content
+cache: true

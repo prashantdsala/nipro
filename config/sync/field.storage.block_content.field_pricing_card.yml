@@ -1,0 +1,24 @@
+uuid: 8c10bf8f-8daf-4f22-9493-b07fd08ba994
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: _k9DtSIQgcftItPziRGD_uqwgHPbAialXwZQauXiLfU
+id: block_content.field_pricing_card
+field_name: field_pricing_card
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

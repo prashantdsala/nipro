@@ -1,0 +1,13 @@
+uuid: ce629607-6092-4fa7-89b5-f435407b8454
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: rnVbZ4uwSzjfbQNOQkAgnkt7FdLZCeHM5SdxjtBJU-Y
+id: pricing_card
+label: 'Pricing Card'
+revision: false
+description: 'A price card provides a way to apply common pricing for a group of sellable items without repeating the same pricing definition in each.'

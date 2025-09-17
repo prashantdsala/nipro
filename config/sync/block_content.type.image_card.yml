@@ -1,0 +1,13 @@
+uuid: 50ceffa6-11bd-4fa9-a38b-24e8c315995c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: yR6S04dlmcBrlbUDec5OBQGCbEUh1jiC2sUeKs6kpHs
+id: image_card
+label: 'Image card'
+revision: false
+description: 'Image card can be used as a link to various important pages or content area.'

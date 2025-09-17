@@ -1,0 +1,35 @@
+uuid: a3bf37a6-9378-44af-bdd2-12525d49d6f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+  enforced:
+    module:
+      - space_c_tab_title
+_core:
+  default_config_hash: t-HTg4ojgZXrn7t-3i8jnawkKADDFhd6eoLPQb1OzDM
+id: block_content.field_tab_title_alignment
+field_name: field_tab_title_alignment
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: center_align
+      label: Center
+    -
+      value: left_align
+      label: Left
+    -
+      value: right_align
+      label: Right
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,16 @@
+uuid: b447c5e1-de21-4833-ad93-f39b22b541c7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: Vq-NUuLPv1zvrgWK-5Y_SalevlBTxrKYG3TX6hBV4ZM
+id: image_card
+block_id: 'inline_block:image_card'
+category: blocks
+label: 'Image card'
+image_path: /themes/contrib/space/images/lbb/image_card.svg
+image_alt: ''
+weight: -16

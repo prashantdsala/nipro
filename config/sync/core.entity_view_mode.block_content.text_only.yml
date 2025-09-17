@@ -1,0 +1,16 @@
+uuid: 10d2668f-b629-4a44-a90c-1ce611b3c6ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: sefbLZAn2hFaKL3UE3VU1JNgpncswbHzQQtXUfn9Aes
+id: block_content.text_only
+label: 'Text only'
+description: null
+targetEntityType: block_content
+cache: true

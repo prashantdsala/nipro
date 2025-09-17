@@ -1,0 +1,34 @@
+uuid: e1c15c60-f4e7-4262-8f91-f146ab4e2885
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - block_content.type.image_card_carousel
+    - field.storage.block_content.field_image_card
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: DaYL49tnONcTotKBjkOlEfATvcDv2RsFmGVQZZeQRsU
+id: block_content.image_card_carousel.field_image_card
+field_name: field_image_card
+entity_type: block_content
+bundle: image_card_carousel
+label: 'Image card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      image_card: image_card
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

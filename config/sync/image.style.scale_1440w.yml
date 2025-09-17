@@ -1,0 +1,21 @@
+uuid: c4a971af-6eb1-406b-bd15-a89f0c56f834
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: NHXPnWq8kv3UDPQuXa2vIQCC70Vjnlz3Bx1d2Zaruhg
+name: scale_1440w
+label: scale_1440w
+effects:
+  8ca7d5f3-1703-47f8-901e-f71d493adf6b:
+    uuid: 8ca7d5f3-1703-47f8-901e-f71d493adf6b
+    id: image_scale
+    weight: 2
+    data:
+      width: 1440
+      height: null
+      upscale: false
+pipeline: __default__

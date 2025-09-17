@@ -1,0 +1,48 @@
+uuid: 06a036cd-0aa0-4e29-9f0c-b5fed6d5f780
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel
+    - core.entity_form_mode.block_content.image_full_width_center_aligned
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_bgimage
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_headline
+    - field.field.block_content.hero_banner_carousel.field_hcarousel_link
+    - field.field.block_content.hero_banner_carousel.field_hero_banner_carousel_item
+    - field.field.block_content.hero_banner_carousel.field_hero_banner_carousel_thumb
+  module:
+    - inline_entity_form
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: Szfbnko28ShswALbBlu6uxy6Q-b_xubNORGdT4tgG2A
+id: block_content.hero_banner_carousel.image_full_width_center_aligned
+targetEntityType: block_content
+bundle: hero_banner_carousel
+mode: image_full_width_center_aligned
+content:
+  field_hero_banner_carousel_item:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: image_full_width_center_aligned
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  field_hcarousel_bgimage: true
+  field_hcarousel_headline: true
+  field_hcarousel_link: true
+  field_hero_banner_carousel_thumb: true
+  info: true
+  langcode: true

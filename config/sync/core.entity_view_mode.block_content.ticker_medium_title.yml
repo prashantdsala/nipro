@@ -1,0 +1,16 @@
+uuid: 31fd23e3-a8f9-435e-b3a7-792a75a9a364
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_ticker
+_core:
+  default_config_hash: 5wzte6fTlpw1Ig75z8Uxo0WK7whGyb3hbse_lqlScxw
+id: block_content.ticker_medium_title
+label: 'Ticker - Medium title'
+description: null
+targetEntityType: block_content
+cache: true

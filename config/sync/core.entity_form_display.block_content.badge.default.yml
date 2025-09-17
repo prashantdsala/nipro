@@ -1,0 +1,41 @@
+uuid: 862e4b17-7596-415d-869c-aba246ac44a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.badge
+    - field.field.block_content.badge.field_badge_headline
+  enforced:
+    module:
+      - space_c_badge
+_core:
+  default_config_hash: BSddclxSqgF4z8Q_l6EdQE3VyZbZMs-YoSuQVcF5L7s
+id: block_content.badge.default
+targetEntityType: block_content
+bundle: badge
+mode: default
+content:
+  field_badge_headline:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,34 @@
+uuid: 3c1e9d9d-5c3e-4a54-acc9-9b12097d7a46
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_link
+    - field.storage.block_content.field_image_image_link
+    - media.type.image
+  enforced:
+    module:
+      - space_c_image_link
+_core:
+  default_config_hash: EJpDHLm-BHjQhKCofabjfx1zuHB5hGBXkRGhjrnW4Cc
+id: block_content.image_link.field_image_image_link
+field_name: field_image_image_link
+entity_type: block_content
+bundle: image_link
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

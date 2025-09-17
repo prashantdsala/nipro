@@ -1,0 +1,28 @@
+uuid: 4ab9b949-fa90-41f0-9d42-62fb98633390
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - field.storage.block_content.field_hover_on_image
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: SOcmA6RW7_SZn2Ks5tAWEd1ae_cn_U-qkJRVz7s_6Bc
+id: block_content.image_card.field_hover_on_image
+field_name: field_hover_on_image
+entity_type: block_content
+bundle: image_card
+label: 'Hover on Image'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

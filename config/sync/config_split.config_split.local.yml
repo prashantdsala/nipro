@@ -1,0 +1,21 @@
+uuid: 51312dac-3977-4df6-b3fb-a3d046bbeb70
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: 5R450EhJbWiKPC_N4lOkWD_iYaLUdG5Ko3IR0-OHF9E
+id: local
+label: Local
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/envs/local
+module:
+  devel: 0
+  menu_export: 0
+  twig_vardumper: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

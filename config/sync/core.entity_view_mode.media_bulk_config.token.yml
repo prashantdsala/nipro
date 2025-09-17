@@ -1,0 +1,13 @@
+uuid: 38e0a672-b29b-463d-aea7-dd29198f565c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_bulk_upload
+_core:
+  default_config_hash: Aqw5OzFUCflDFRu45jTGpwDbxZyoRxOjQThJQuGTPPs
+id: media_bulk_config.token
+label: Token
+description: ''
+targetEntityType: media_bulk_config
+cache: true

@@ -1,0 +1,27 @@
+uuid: 7600128a-545d-4bc7-887d-75e964b05758
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ticker
+    - field.storage.block_content.field_ticker_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_ticker
+_core:
+  default_config_hash: DG0xT-4MAmesfVW9Bh16XNlyTXSLobI9Rzf4hZQFgjI
+id: block_content.ticker.field_ticker_description
+field_name: field_ticker_description
+entity_type: block_content
+bundle: ticker
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

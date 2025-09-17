@@ -1,0 +1,28 @@
+uuid: 84b696ee-3d84-4dfd-9e09-909395dad2be
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.space_button
+    - field.storage.block_content.field_button_link
+  module:
+    - link
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: cbKVYBpVKFV2FR0JB8a231ltejUQ8wAGdvQViOxcDzs
+id: block_content.space_button.field_button_link
+field_name: field_button_link
+entity_type: block_content
+bundle: space_button
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

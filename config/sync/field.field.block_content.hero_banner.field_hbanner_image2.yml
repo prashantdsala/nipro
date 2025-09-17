@@ -1,0 +1,34 @@
+uuid: 99c559fe-86b0-43fe-9a9e-045ca790c436
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - field.storage.block_content.field_hbanner_image2
+    - media.type.image
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: cLrdfxxDtWGWg21e4m8YlpPZeThC3IGTtXo3re0dO5I
+id: block_content.hero_banner.field_hbanner_image2
+field_name: field_hbanner_image2
+entity_type: block_content
+bundle: hero_banner
+label: 'Image 2'
+description: "Image sizes as per view mode are as follow,<br>\r\n- Style 10: width 280 (2x width 560)<br>\r\n<b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

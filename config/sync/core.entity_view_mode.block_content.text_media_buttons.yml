@@ -1,0 +1,16 @@
+uuid: f0a07a1a-2009-41c2-bfee-f6a581e635e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: wMhha_OFcQ_AiC7AS8wzj62m0r4u2q29Ft3KiGFj3T0
+id: block_content.text_media_buttons
+label: 'Text & Media - Buttons'
+description: null
+targetEntityType: block_content
+cache: true

@@ -1,0 +1,34 @@
+uuid: 9e93fa69-d517-4e4a-bcc9-7bb83a3e48c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon
+    - block_content.type.icon_card_carousel
+    - field.storage.block_content.field_icon_card
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: QLh1ntBG92yjZFMYiTXGEXI05Lbe2MQFJPvJb4sJXzs
+id: block_content.icon_card_carousel.field_icon_card
+field_name: field_icon_card
+entity_type: block_content
+bundle: icon_card_carousel
+label: 'Icon card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      card_icon: card_icon
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

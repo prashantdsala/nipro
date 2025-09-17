@@ -1,0 +1,16 @@
+uuid: 3a1329f5-55b9-494b-b5a4-d78b2138e843
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: qj172WVa1iacuQTPThoyS-9n-sD59R78Zbl68QWiB6M
+id: block_content.stats_kpi_left_aligned_text
+label: 'Stats/KPI - Left aligned text'
+description: null
+targetEntityType: block_content
+cache: true

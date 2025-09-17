@@ -1,0 +1,16 @@
+uuid: 05954ac7-128c-4a65-a834-6107c1df00ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.16x9
+    - core.entity_view_mode.media.embedded
+  module:
+    - editor
+    - media
+_core:
+  default_config_hash: bwbosXCOD8_MoTxPlHU_0yoRyWb87krhhrfZmxFxeMs
+name: 'Rich text'
+format: rich_text
+weight: 1
+filters: {  }

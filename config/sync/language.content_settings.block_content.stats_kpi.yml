@@ -1,0 +1,16 @@
+uuid: 27b2166e-161c-4c44-ae9f-09586f3e091e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats_kpi
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: ecNqmM6KyGet6kwFasqRVXrpPZrAgIxHpsxjLVmZoyM
+id: block_content.stats_kpi
+target_entity_type_id: block_content
+target_bundle: stats_kpi
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,34 @@
+uuid: 39bb49cd-8dbe-44a8-9233-c895f2d28a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - field.storage.block_content.field_image_card_image
+    - media.type.image
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: E8nVLEBnNqRQ2heA-Y8NXk3jZXQwY_NEJwmQkVsAMMc
+id: block_content.image_card.field_image_card_image
+field_name: field_image_card_image
+entity_type: block_content
+bundle: image_card
+label: Image
+description: "Image sizes as per card type and size are as follows,<br>\r\n- Horizontal:<br>\r\n-- Small/Medium: width 280 (2x width 560)<br>\r\n-- Large: width 592 (2x width 1184)<br>\r\n- Vertical:<br>\r\n-- Small: width 248 (2x width 496)<br>\r\n-- Medium: width 352 (2x width 704)<br>\r\n-- Large: width 560 (2x width 1120)<br>\r\n<b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

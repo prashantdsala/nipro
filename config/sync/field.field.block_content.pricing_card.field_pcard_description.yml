@@ -1,0 +1,27 @@
+uuid: 6e79908e-e8e8-4324-9154-94f5ca8b0573
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card
+    - field.storage.block_content.field_pcard_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: pEMErj4mawmeHWC0hOfWSyLDGsLHfdmPcOHkC8fUCtI
+id: block_content.pricing_card.field_pcard_description
+field_name: field_pcard_description
+entity_type: block_content
+bundle: pricing_card
+label: Description
+description: 'For example: Our most popular plan.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

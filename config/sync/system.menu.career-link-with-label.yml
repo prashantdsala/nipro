@@ -1,0 +1,15 @@
+uuid: b85c2b66-37ec-4439-b093-3b6b7541504e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+_core:
+  default_config_hash: ZGE-NdsC70xNtTsBMwu3AiTFZqve3ADJOtiGT9ikejE
+id: career-link-with-label
+label: 'Career link with label'
+description: ''
+locked: false

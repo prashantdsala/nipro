@@ -1,0 +1,13 @@
+uuid: 2d41121d-5181-4158-9c20-d152f6e1184a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: SXNcs_ipryJPw_dsF0oDhRqqVhFeOm4W3YgSPbMlh8o
+id: media.16x9
+label: 16x9
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,16 @@
+uuid: e63a1cac-1d9e-419f-b2ef-a8a05e3b7041
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: 7K0DJ6PPP_qjn4_4A07XMV0V86GoaPPelwKC89UmMLc
+id: pricing_card
+block_id: 'inline_block:pricing_card'
+category: blocks
+label: 'Pricing Card'
+image_path: /themes/contrib/space/images/lbb/pricing_card.svg
+image_alt: ''
+weight: -10

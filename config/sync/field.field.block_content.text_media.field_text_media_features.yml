@@ -1,0 +1,34 @@
+uuid: 262f756c-6bac-4481-aaf9-dca8c970257e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.features
+    - block_content.type.text_media
+    - field.storage.block_content.field_text_media_features
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: mGO42_y-bCyhMmhhcDBjhTfDuoU8IUbf-10eobV74-o
+id: block_content.text_media.field_text_media_features
+field_name: field_text_media_features
+entity_type: block_content
+bundle: text_media
+label: Features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      features: features
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

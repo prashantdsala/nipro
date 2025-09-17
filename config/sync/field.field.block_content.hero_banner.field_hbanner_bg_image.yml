@@ -1,0 +1,34 @@
+uuid: b685021d-701f-42d5-9f8c-972a66ce131e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - field.storage.block_content.field_hbanner_bg_image
+    - media.type.image
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: duAtvvLpKfAbrAxgav3Dnb7SY2lZDYwoKDCqscawrLM
+id: block_content.hero_banner.field_hbanner_bg_image
+field_name: field_hbanner_bg_image
+entity_type: block_content
+bundle: hero_banner
+label: 'Bg Image'
+description: "Image sizes as per view mode are as follow,<br>\r\n- Style 1: width 1440 (2x width 2880)<br>\r\n- Style 2: width 1440 (2x width 2880)<br>\r\n<b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

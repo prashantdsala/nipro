@@ -1,0 +1,97 @@
+uuid: 41beef24-3288-4540-820d-eea8af00f8d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+    - core.entity_form_mode.block_content.text_media_checklist
+    - field.field.block_content.text_media.field_text_media_col_alignment
+    - field.field.block_content.text_media.field_text_media_description
+    - field.field.block_content.text_media.field_text_media_features
+    - field.field.block_content.text_media.field_text_media_headline
+    - field.field.block_content.text_media.field_text_media_image
+    - field.field.block_content.text_media.field_text_media_image_2
+    - field.field.block_content.text_media.field_text_media_link1
+    - field.field.block_content.text_media.field_text_media_link2
+    - field.field.block_content.text_media.field_text_media_out_of_box
+    - field.field.block_content.text_media.field_text_media_stats_kpi
+  module:
+    - inline_entity_form
+    - media_library
+    - media_library_edit
+    - space_layout_settings
+    - text
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: 5O0HbFAKJyhO4lE7GrWGUO1Tv7N73rNFYlF34Fo2_Kk
+id: block_content.text_media.text_media_checklist
+targetEntityType: block_content
+bundle: text_media
+mode: text_media_checklist
+content:
+  field_text_media_col_alignment:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_text_media_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_media_features:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_text_media_headline:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_media_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 592 (2x width 1184)<br> <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: '0'
+  field_text_media_out_of_box:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  field_text_media_image_2: true
+  field_text_media_link1: true
+  field_text_media_link2: true
+  field_text_media_stats_kpi: true
+  info: true
+  langcode: true

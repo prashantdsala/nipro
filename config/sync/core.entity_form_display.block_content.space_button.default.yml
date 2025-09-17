@@ -1,0 +1,37 @@
+uuid: 4e4de617-273e-4373-bef3-47b2ae1b779d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.space_button
+    - field.field.block_content.space_button.field_button_link
+  module:
+    - link
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: WmPDF7SGgKu_YCFHRFUaFUQ0IBxM1Od3MqNqt6Ol_zw
+id: block_content.space_button.default
+targetEntityType: block_content
+bundle: space_button
+mode: default
+content:
+  field_button_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

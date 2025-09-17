@@ -1,0 +1,22 @@
+uuid: 28936fba-165f-4b6b-b036-7c149e01973c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nipro
+_core:
+  default_config_hash: wAkDY_tZSV12iGQPNRwMEG7WmZj556wL5dqa8WZX7gQ
+id: nipro_tabs
+theme: nipro
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: db9ae7f8-82c4-4ce9-95a0-b9deeb7e45e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_trail_by_path
+third_party_settings:
+  menu_trail_by_path:
+    trail_source: ''
+_core:
+  default_config_hash: gDs0wr6hfd9egb-Jt0tS9THUyZ0IvrAmoOY0TT92vSo
+id: sidebar-category-menu
+label: 'Sidebar category menu'
+description: ''
+locked: false

@@ -1,0 +1,27 @@
+uuid: 9ba02c6b-dabc-4a6b-87e8-0b1837b03dca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - field.storage.block_content.field_image_card_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: ukJACgsP9OE3aW1zL1mZbUH1aTUUqvjppVnYuO1ISSM
+id: block_content.image_card.field_image_card_description
+field_name: field_image_card_description
+entity_type: block_content
+bundle: image_card
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

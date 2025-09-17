@@ -1,0 +1,27 @@
+uuid: c56a4174-df1e-4c96-b181-a7f038834684
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_banner
+    - field.storage.block_content.field_cta_banner_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: JNg1-v8beBPwJXe5BxW-iUxsWT8Pc16OtJQGpU8-UV8
+id: block_content.cta_banner.field_cta_banner_description
+field_name: field_cta_banner_description
+entity_type: block_content
+bundle: cta_banner
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

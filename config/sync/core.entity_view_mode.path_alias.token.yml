@@ -1,0 +1,13 @@
+uuid: 212ae827-2712-472d-a225-eae5f8940412
+langcode: en
+status: true
+dependencies:
+  module:
+    - path_alias
+_core:
+  default_config_hash: Wyxo7lPhXQuq5NVoaQovoZ6Nhg9HUi3dQJcl_fZIt34
+id: path_alias.token
+label: Token
+description: ''
+targetEntityType: path_alias
+cache: true

@@ -1,0 +1,90 @@
+uuid: 50c67365-33f3-4bb2-9835-97782fa8f324
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item
+    - core.entity_form_mode.block_content.image_video_slideshow
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_desc
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_headline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_image
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link1
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_link2
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_preheadline
+    - field.field.block_content.hero_banner_carousel_item.field_hcarousel_item_video
+  module:
+    - link
+    - media_library
+    - media_library_edit
+    - text
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: W1wfFM86eSFBB3rtR4_0N4mOKYAuUfPxLOEVnQWsmTQ
+id: block_content.hero_banner_carousel_item.image_video_slideshow
+targetEntityType: block_content
+bundle: hero_banner_carousel_item
+mode: image_video_slideshow
+content:
+  field_hcarousel_item_desc:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hcarousel_item_headline:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hcarousel_item_image:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_hcarousel_item_link1:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hcarousel_item_link2:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hcarousel_item_preheadline:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hcarousel_item_video:
+    type: media_library_widget
+    weight: 26
+    region: content
+    settings:
+      media_types:
+        - video
+        - remote_video
+    third_party_settings:
+      media_library_edit:
+        show_edit: 0
+hidden:
+  info: true
+  langcode: true

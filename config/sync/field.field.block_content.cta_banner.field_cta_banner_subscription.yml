@@ -1,0 +1,30 @@
+uuid: f4d0122f-06f4-4511-b68f-866e7d58c9b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_banner
+    - field.storage.block_content.field_cta_banner_subscription
+  module:
+    - block_field
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: AKeS4JPJcyhQ9Zjwax7DgoSnpotEn6uVOhS5wMF1XBs
+id: block_content.cta_banner.field_cta_banner_subscription
+field_name: field_cta_banner_subscription
+entity_type: block_content
+bundle: cta_banner
+label: Subscription
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      simplenews_subscription_block: simplenews_subscription_block
+field_type: block_field

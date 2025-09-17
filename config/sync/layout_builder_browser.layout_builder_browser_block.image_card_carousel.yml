@@ -1,0 +1,16 @@
+uuid: 61de8787-e734-4d04-b26b-72ead0b8cb33
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: IE0aXTE4_3UpR9WVwiH8cZPbrsfmvHI0JCVvzJFT38Y
+id: image_card_carousel
+block_id: 'inline_block:image_card_carousel'
+category: blocks
+label: 'Image card carousel'
+image_path: /themes/contrib/space/images/lbb/image_card_carousel.svg
+image_alt: ''
+weight: -15

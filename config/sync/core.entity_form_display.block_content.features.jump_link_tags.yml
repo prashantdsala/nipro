@@ -1,0 +1,39 @@
+uuid: 9bafb3b8-66e6-4559-8a58-f8268e1a4944
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.features
+    - core.entity_form_mode.block_content.jump_link_tags
+    - field.field.block_content.features.field_features_description
+    - field.field.block_content.features.field_features_icon_name
+  enforced:
+    module:
+      - space_c_features
+_core:
+  default_config_hash: '-Juu8LnVUNbm_XAnBrKEtinA6EQuF12wF-9oAWJMX6I'
+id: block_content.features.jump_link_tags
+targetEntityType: block_content
+bundle: features
+mode: jump_link_tags
+content:
+  field_features_description:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_features_icon_name: true
+  langcode: true
+  moderation_state: true

@@ -1,0 +1,34 @@
+uuid: 41e5c9ba-0e28-42c2-9444-6d10c25e4721
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel
+    - block_content.type.hero_banner_carousel_item
+    - field.storage.block_content.field_hero_banner_carousel_item
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: pfQwBo415Q_rhW1DsxrIpYWz30tQH8MzSgPnxPeZnNU
+id: block_content.hero_banner_carousel.field_hero_banner_carousel_item
+field_name: field_hero_banner_carousel_item
+entity_type: block_content
+bundle: hero_banner_carousel
+label: 'Hero Banner Carousel Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      hero_banner_carousel_item: hero_banner_carousel_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,16 @@
+uuid: 5416a330-f41b-4188-87bc-e262ee112d81
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: TsRqIa9Xm1xwXrlWNdqrfOk0ZTVsGxxEkaEOu1oC-8k
+id: block_content.image_card_horizontal
+label: 'Image Card - Horizontal'
+description: null
+targetEntityType: block_content
+cache: true

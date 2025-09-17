@@ -1,0 +1,26 @@
+uuid: 0b5bd359-3b45-4782-88c9-cd5128da26ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: gaYZrMUiI7wCpSz27-j9xZOAgreuPeb4mgPhXy8U3Hk
+id: block_content.field_pc_icon_name
+field_name: field_pc_icon_name
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

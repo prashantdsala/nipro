@@ -1,0 +1,16 @@
+uuid: 6b948062-1c3f-4bd0-b439-f39106559bc5
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_button
+_core:
+  default_config_hash: 0kg-bpHJHTxIQShotANVkGqmLY13jUGUHfX78Xk0lQg
+id: button_block
+block_id: 'inline_block:space_button'
+category: blocks
+label: Button
+image_path: /themes/contrib/space/images/lbb/button.svg
+image_alt: ''
+weight: 9

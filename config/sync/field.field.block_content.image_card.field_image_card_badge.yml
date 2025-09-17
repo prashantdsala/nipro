@@ -1,0 +1,34 @@
+uuid: 9be9bae6-bde5-4a0b-a9bf-52c01c5eae30
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card
+    - field.storage.block_content.field_image_card_badge
+    - taxonomy.vocabulary.card_tags
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: 4w7eRkQ_Ng_ZRnHwSCabRnlRN_g3PajGPvPK02q-9gQ
+id: block_content.image_card.field_image_card_badge
+field_name: field_image_card_badge
+entity_type: block_content
+bundle: image_card
+label: 'Card badge'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      card_tags: card_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

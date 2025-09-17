@@ -1,0 +1,12 @@
+uuid: 2dd6bb9c-2f7a-44b1-a111-3d853554230f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5v_iU7cQfWwT9LmUlVyh9Wh329Ih5i8BDrCv-J80luk
+id: forms
+label: 'Select a Form'
+weight: null
+opened: true
+image_path: null
+image_alt: null

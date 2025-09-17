@@ -1,0 +1,27 @@
+uuid: 7bfdb15f-3586-4a66-a155-5138ac4a0ea3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - space_c_landing_page
+_core:
+  default_config_hash: yCu56qAsQCZeX3kodXJvHkHC1YiaKcKBzIGU_q-NuOY
+id: landing_page
+label: 'Landing page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  357097ed-305b-4a11-9bc7-6b80f1688cd2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 357097ed-305b-4a11-9bc7-6b80f1688cd2
+    context_mapping:
+      node: node
+    bundles:
+      landing_page: landing_page
+selection_logic: and
+weight: -5
+relationships: {  }

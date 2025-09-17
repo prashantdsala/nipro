@@ -1,0 +1,16 @@
+uuid: 18fb8871-24a1-47f3-98e8-d57ab8ca69b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: ukLMauSFQBKgScjDlMg6XWJI3vqhXmLN8hS2IRbGfP4
+id: block_content.image_with_title_cta
+label: 'Image with title and cta'
+description: null
+targetEntityType: block_content
+cache: true

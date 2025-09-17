@@ -1,0 +1,16 @@
+uuid: efbd02b2-8a0c-46ee-a09e-3e177bb9662c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 3JmZVBJKAtTHdUNtVAb5BIiaCqQ8DlRjzKEssnQn4DE
+id: hero_banner_carousel
+block_id: 'inline_block:hero_banner_carousel'
+category: blocks
+label: 'Hero Banner Carousel'
+image_path: /themes/contrib/space/images/lbb/hero_banner_carousel.svg
+image_alt: ''
+weight: -1

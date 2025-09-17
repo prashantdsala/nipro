@@ -1,0 +1,13 @@
+uuid: 5d589d13-dca5-4f68-8752-c4cb6f92cc3b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: Y2ZehMJO6XnwaYNo6GRUIFP7PDhw6nKVx4ODZdu7Y58
+id: image_card_carousel
+label: 'Image card carousel'
+revision: false
+description: 'Contains image card.'

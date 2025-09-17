@@ -1,0 +1,18 @@
+uuid: 3844bc3f-77c1-4c39-a5ba-429b367f60a2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Zw8-4l7gBULBBh2i2a1CDOeCWDCSwIh-XUJ4RB6cs0c
+id: drimage
+label: drimage
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: null
+folder: ''
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

@@ -1,0 +1,18 @@
+uuid: 894ecb01-c1fb-43a4-975b-0f3dc632bdf8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ayQhIvr1_jV0AHaIxdQvi7Eqv4SGn4aceXD1G97AtVA
+id: images
+label: Images
+media_types:
+  image: image
+  audio: 0
+  document: 0
+  remote_video: 0
+  video: 0
+form_mode: media_browser
+upload_location: null
+show_alt: null
+show_title: null

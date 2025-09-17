@@ -1,0 +1,330 @@
+uuid: 472f303d-1b46-4450-849b-abdf625def52
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ticker
+    - core.entity_view_mode.block_content.ticker_medium_title
+    - field.field.block_content.ticker.field_ticker_description
+    - field.field.block_content.ticker.field_ticker_headline
+    - field.field.block_content.ticker.field_ticker_link
+  module:
+    - ds
+    - field_formatter_class
+    - layout_builder
+    - layout_library
+    - text
+    - ui_patterns_field_formatters
+  enforced:
+    module:
+      - space_c_ticker
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  layout_library:
+    enable: false
+  ds:
+    layout:
+      id: pattern_block_banner_info
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+          settings:
+            title_font_size: size-30
+            title_color: text-text-heading
+    regions:
+      title:
+        - field_ticker_headline
+      content:
+        - field_ticker_description
+      link:
+        - field_ticker_link
+_core:
+  default_config_hash: Am85hq_FjkYTadRS1GEMiddbG9_AkVmtZuhhifftQgI
+id: block_content.ticker.ticker_medium_title
+targetEntityType: block_content
+bundle: ticker
+mode: ticker_medium_title
+content:
+  field_ticker_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_ticker_headline:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: title
+  field_ticker_link:
+    type: pattern_formatter
+    label: hidden
+    settings:
+      pattern: link
+      pattern_mapping:
+        'field_properties:uri':
+          destination: url
+          weight: 0
+          plugin: field_properties
+          source: uri
+        'field_properties:title':
+          destination: content
+          weight: 1
+          plugin: field_properties
+          source: title
+      pattern_settings:
+        simple404:
+          alignment_type: left
+        textimage404:
+          image_type: large_image
+        accordion_item:
+          alignment: right
+          border: '1'
+          icon_collapsed: plusCircle
+          icon_expanded: minusCircle
+        avatar:
+          image_url: ''
+          image_style: ''
+          corner_style: ''
+          icon: 0
+        badge:
+          size: small
+          icon: xcross
+          type: text-only
+        banner:
+          position: center_center
+          position_token: center_center
+        block_banner_info:
+          title_font_size: size-30
+          title_color: text-text-heading
+        block_footer_text:
+          title_font_size: size-96
+          title_color: text-text-heading
+          content_font_size: ''
+          content_color: ''
+        button:
+          button_state: ''
+          button_type: only_icon
+          size: small
+          icon: ''
+          icon_alignment: right
+          classes: ''
+          expanded: 0
+        iconcard:
+          alignment: left
+          layout: withouticon
+          extra_classes: ''
+          full_box_link: 0
+        quicklinkcard:
+          layout: withoutbackground
+          cardsize: large
+          extra_classes: ''
+          full_box_link: 0
+        featuredcard:
+          layout: horizontal
+          cardsize: large
+          extra_classes: ''
+        pricingcard:
+          background: light
+          layout: withicon
+          extra_classes: ''
+        peoplecard:
+          alignment: vertical
+          layout: testimony_with_avatar
+          cardsize: medium
+          extra_classes: ''
+          full_box_link: 0
+        videocard:
+          alignment: vertical
+        imagecard:
+          alignment: withcontainer
+          cardsize: ''
+        testimonycard:
+          alignment: center
+          extra_classes: ''
+          full_box_link: 0
+        company_logo_with_avatar:
+          extra_classes: ''
+          full_box_link: 0
+        people-with-avatar:
+          layout: people-with-avatar
+          cardsize: medium
+          extra_classes: ''
+          full_box_link: 0
+        project_card:
+          alignment: left
+          color: ''
+        our_blog_card:
+          alignment: left
+          color: ''
+        contact_menu_link:
+          target: ''
+          icon: ''
+        container:
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+        cta_banner:
+          cta_banner_type: type_1
+          cta_type: button
+          width: boxed-width
+          alignment: left-align
+          image_type: large-image
+        dropdown:
+          dropdown_list_type: ''
+          list_heading: ''
+          dropdown_button_type: ''
+        email_form:
+          icon: '1'
+        footer_end_logo_block:
+          position_fixed: '1'
+        grid:
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+        primaryheader:
+          position: ''
+          hamburger_type: ''
+        secondaryheader:
+          position: ''
+        headline:
+          tag_name: div
+          spacing_bottom: default
+          url:
+            input: ''
+        image_link:
+          target: self
+        image_atom:
+          image_url: ''
+          background_style: ''
+          corners: ''
+          style: ''
+          extra_classes: ''
+        job_item:
+          id:
+            input: ''
+          url:
+            input: ''
+        keyfact_item_with_icon:
+          imageiconurl: ''
+        link:
+          target: blank
+          icon: arrowUpRight
+          icon_size: ''
+          icon_position: right
+          extra_classes: ''
+          custom_style: 0
+        logo_grid:
+          layout: grid4
+        menu_item:
+          icon: checkCircle
+          target: ''
+        navigation:
+          font_size: text-base
+          color: text-text-body
+          wrap_nav: 0
+        notification:
+          size: ''
+          align: ''
+          background: ''
+          layout: ''
+        paragraph:
+          size: primary
+          text_alignment: left
+        section_heading:
+          alignment: left
+        section:
+          columns_width_1: equal
+          columns_width_2: equal
+          columns_width_3: equal
+          columns_width_4: equal
+          columns_width_5: equal
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          display_header_region: 0
+          equal_height: 0
+        slider:
+          bullet_spacing: none
+          pagination_spacing: none
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          autoplay: 0
+        social_button:
+          social_button_type: google
+        space_section:
+          alignment: left
+        table:
+          color: dark
+          strip: 0
+        testimonial_carousel:
+          carousel_layout: small-testimonial-carousel
+          autoplay: 0
+        simple_testimonial_carousel:
+          cardsize: medium
+          autoplay: 0
+        testimony_small_avatar_carousel:
+          alignment: center
+          autoplay: 0
+        testimonial:
+          icon_color: primary
+          image_classes: ''
+        video_card:
+          url:
+            input: ''
+          title: ''
+          extra_classes: ''
+        blog_listing:
+          autoplay: 0
+        project_listing:
+          autoplay: 0
+        social_media_navigation:
+          wrap_nav: 0
+        team_section_image_card_3:
+          autoplay: 0
+        testimony_large_avatar_carousel:
+          autoplay: 0
+        company_logo_with_avatar_carousel:
+          autoplay: 0
+        testimonial_slider:
+          autoplay: 0
+      pattern_variant: ''
+      variants_token: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 2
+    region: link
+hidden:
+  langcode: true
+  search_api_excerpt: true

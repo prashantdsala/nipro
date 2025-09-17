@@ -1,0 +1,13 @@
+uuid: 76d782df-a4f5-4372-8a10-0f2e8dd331bb
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_tab_title
+_core:
+  default_config_hash: iBo_IMxD4qIsHnQHHH-QLpSwSVV3a-VE2Pbk_EaAyK4
+id: tab_title
+label: 'Tab Title'
+revision: false
+description: ''

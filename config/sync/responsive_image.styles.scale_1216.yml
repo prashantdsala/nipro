@@ -1,0 +1,51 @@
+uuid: fdfe30a5-9a47-426d-91cf-fd8ed7078d83
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scale_1216w
+    - image.style.scale_1216w_2x
+    - image.style.scale_343w
+    - image.style.scale_343w_2x
+  theme:
+    - space
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: jeVdDXj-F_UOO-dvT_kCkvJ-rL975Y1sUbaid9OSWiI
+id: scale_1216
+label: 'Scale 1216'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_1216w
+    breakpoint_id: space.large
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_1216w_2x
+    breakpoint_id: space.large
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_1216w
+    breakpoint_id: space.medium
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_1216w_2x
+    breakpoint_id: space.medium
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_343w
+    breakpoint_id: space.small
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_343w_2x
+    breakpoint_id: space.small
+    multiplier: 2x
+breakpoint_group: space
+fallback_image_style: scale_1216w

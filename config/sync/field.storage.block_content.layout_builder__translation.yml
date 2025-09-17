@@ -1,0 +1,21 @@
+uuid: 69036a8a-a34f-4aae-bfc3-21395fdffe9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - layout_builder_st
+_core:
+  default_config_hash: hykgdnK_RjFagJCtWuZHCAg8aWrJ9LHpwb8hm7h9_HI
+id: block_content.layout_builder__translation
+field_name: layout_builder__translation
+entity_type: block_content
+type: layout_translation
+settings: {  }
+module: layout_builder_st
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

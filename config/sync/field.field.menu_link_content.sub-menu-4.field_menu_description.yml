@@ -1,0 +1,22 @@
+uuid: 864d1a1b-f461-401b-ace2-fbc96291ca0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_menu_description
+    - system.menu.sub-menu-4
+_core:
+  default_config_hash: 9pDg9HCf8EKaP3hbrpIyVHuEKGB_LpLhEaFgjBnfWE4
+id: menu_link_content.sub-menu-4.field_menu_description
+field_name: field_menu_description
+entity_type: menu_link_content
+bundle: sub-menu-4
+label: 'Menu description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: string

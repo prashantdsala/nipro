@@ -1,0 +1,28 @@
+uuid: e9194895-ca83-42ed-a780-3428ff591b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ticker
+    - field.storage.block_content.field_ticker_link
+  module:
+    - link
+  enforced:
+    module:
+      - space_c_ticker
+_core:
+  default_config_hash: ZROzEM2mvRv5nmkFDE3V_gVCyLEhOpiv2N3jGz1W_FI
+id: block_content.ticker.field_ticker_link
+field_name: field_ticker_link
+entity_type: block_content
+bundle: ticker
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

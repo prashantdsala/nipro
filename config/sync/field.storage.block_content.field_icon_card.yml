@@ -1,0 +1,24 @@
+uuid: 4cad4116-2658-4b1a-8f1f-63800559e70e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: 78LIBTaEzFq-irsD3HzhHqDYUr5oQmddeW5y0uRWSZE
+id: block_content.field_icon_card
+field_name: field_icon_card
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

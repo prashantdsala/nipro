@@ -1,0 +1,23 @@
+uuid: b67cef5b-0bcf-4696-9d8b-9746f2ab565b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+_core:
+  default_config_hash: NeMOCMuz_bx_xrve7weuTPG1AweT4Zd1q6hd1e46rJs
+id: menu_link_content.field_contact
+field_name: field_contact
+entity_type: menu_link_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

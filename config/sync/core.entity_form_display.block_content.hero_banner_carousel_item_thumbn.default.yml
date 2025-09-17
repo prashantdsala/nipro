@@ -1,0 +1,42 @@
+uuid: 88d71324-66ac-4343-8a3c-a3f2bf9e7457
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item_thumbn
+    - field.field.block_content.hero_banner_carousel_item_thumbn.field_hcarousel_item_thumb_image
+  module:
+    - media_library
+    - media_library_edit
+    - space_layout_settings
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 3afaiKmjrpfhxaWusSnsjdRvIZOLKG3htY248PMrpJI
+id: block_content.hero_banner_carousel_item_thumbn.default
+targetEntityType: block_content
+bundle: hero_banner_carousel_item_thumbn
+mode: default
+content:
+  field_hcarousel_item_thumb_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      space_layout_settings:
+        image_help_text: 'Width 280 (2x width 560)<br> <b>Note</b>: For 2x devices image size should be in double compared to the design provided.<br>'
+      media_library_edit:
+        show_edit: 0
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,13 @@
+uuid: 67b807eb-7651-4332-8608-19a0eb14f529
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: '-Hjk_biMJMbiJBG6Agr4b6PV3NsfaLyFxqbt4qLNGFE'
+id: node.full_top
+label: 'Full Top'
+description: ''
+targetEntityType: node
+cache: true

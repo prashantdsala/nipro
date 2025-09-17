@@ -1,0 +1,24 @@
+uuid: 7526ba6e-5db2-42e4-ab20-7cd5d0a5ad61
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: epXbuZkVOYWRqQOXLlqZdm_K5do4IH6-6Rsb9z9GlLw
+id: block_content.field_image_card_link
+field_name: field_image_card_link
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

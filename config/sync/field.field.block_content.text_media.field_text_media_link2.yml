@@ -1,0 +1,28 @@
+uuid: f17da484-3e6f-4c3f-8e7c-c59d501604ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+    - field.storage.block_content.field_text_media_link2
+  module:
+    - link
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: Lypiokus1UmL8MDNIdiSr2KgjaA_-lT6doXuv3Jgzh4
+id: block_content.text_media.field_text_media_link2
+field_name: field_text_media_link2
+entity_type: block_content
+bundle: text_media
+label: 'Link 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

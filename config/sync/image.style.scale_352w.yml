@@ -1,0 +1,21 @@
+uuid: 895d0d27-46de-44d8-9a04-b16eec9b3610
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: w7ILFbLwUjz_fTCdcZAMbOi8oIGYAl_JWwqBz0qMDAI
+name: scale_352w
+label: scale_352w
+effects:
+  9ed744ea-e067-4101-9a98-e676eb446bfe:
+    uuid: 9ed744ea-e067-4101-9a98-e676eb446bfe
+    id: image_scale
+    weight: 1
+    data:
+      width: 352
+      height: null
+      upscale: false
+pipeline: __default__

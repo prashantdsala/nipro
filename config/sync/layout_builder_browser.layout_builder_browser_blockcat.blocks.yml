@@ -1,0 +1,12 @@
+uuid: 61aed215-c4f7-4a91-bfd3-c138e38b582a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9eJyzzTEqPfqL_Kpvvj8eLKDlclCvXmehjLyrRxlHDQ
+id: blocks
+label: 'Select a Block'
+weight: null
+opened: true
+image_path: null
+image_alt: null

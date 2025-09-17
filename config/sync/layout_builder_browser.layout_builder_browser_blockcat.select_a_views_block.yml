@@ -1,0 +1,12 @@
+uuid: cb18c833-a29f-4e7d-afc5-33e37f8a0e77
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 52QPShW4h_HYXPAgQ0dRN38GxZ4ef-eIAAaNSZGmA5U
+id: select_a_views_block
+label: 'Select a View'
+weight: null
+opened: true
+image_path: null
+image_alt: null

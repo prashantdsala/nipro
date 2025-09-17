@@ -1,0 +1,16 @@
+uuid: 5f5f1654-67e7-410d-bb3c-edc8823d6eef
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: sWG_WsbNxZYCZ154eo0dNpmYHk36Cjd9r8wJrthZ11w
+id: block_content.image_video_slideshow_thumbnail
+label: 'Image & Video slideshow - Thumbnail'
+description: null
+targetEntityType: block_content
+cache: true

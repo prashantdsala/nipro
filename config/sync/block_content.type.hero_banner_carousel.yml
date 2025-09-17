@@ -1,0 +1,13 @@
+uuid: c6b883ab-f95e-48f7-852f-93b2ab3d0f73
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: '-lYDXJJmSvCZoQTfnv3_QFOr2kFin9EOdBjN3gDE4Bc'
+id: hero_banner_carousel
+label: 'Hero Banner Carousel'
+revision: false
+description: 'Hero Banner Carousel contains hero banner carousel items.'

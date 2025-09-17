@@ -1,0 +1,25 @@
+uuid: e0db7f9d-f48f-4e50-811a-f7937b604fa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 96k3ujh_WtUEsJNXmmSGYCk_Xpmeja0crE83f4wRTko
+id: block_content.field_hbanner_image1
+field_name: field_hbanner_image1
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

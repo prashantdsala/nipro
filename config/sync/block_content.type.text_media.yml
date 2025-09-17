@@ -1,0 +1,13 @@
+uuid: 757058a1-99a0-434b-bc74-65686e38a8b3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: h9ZNlyfqltQXAiOppZhCj7mR3n07Eyaq_pgOTXaGFU0
+id: text_media
+label: 'Text & Media'
+revision: false
+description: 'Text & Media contain Media with title and description.'

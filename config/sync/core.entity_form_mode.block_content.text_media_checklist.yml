@@ -1,0 +1,16 @@
+uuid: 38f8bb3f-e911-4103-a532-9d4347f3e9cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: Hj0DsQES5EaUNqC0flpY7PRQAMxGYUQ0x3OV5w0NzMo
+id: block_content.text_media_checklist
+label: 'Text & Media - Checklist'
+description: null
+targetEntityType: block_content
+cache: true

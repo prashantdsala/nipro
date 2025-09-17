@@ -1,0 +1,24 @@
+uuid: 8f557f92-caf3-4c73-9173-055f1428e4f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: DXPC8vWTGTN1lNLNZN2AXJWqUyxYSElDPHhiuqCoioE
+id: block_content.field_text_media_link1
+field_name: field_text_media_link1
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

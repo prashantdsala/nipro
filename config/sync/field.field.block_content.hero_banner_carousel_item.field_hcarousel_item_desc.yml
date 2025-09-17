@@ -1,0 +1,27 @@
+uuid: 4d379553-b1ee-4cbd-b75c-57d3f6357c14
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner_carousel_item
+    - field.storage.block_content.field_hcarousel_item_desc
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: mC-t7Ih8hf3umU4ufYWR0Kjh6u6XtAKBeuZD3YQpj5g
+id: block_content.hero_banner_carousel_item.field_hcarousel_item_desc
+field_name: field_hcarousel_item_desc
+entity_type: block_content
+bundle: hero_banner_carousel_item
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

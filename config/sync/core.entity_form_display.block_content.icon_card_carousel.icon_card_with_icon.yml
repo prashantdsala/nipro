@@ -1,0 +1,40 @@
+uuid: 66b619a1-3fa3-4ebd-b3e4-58dcec1f2a1e
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_content.type.icon_card_carousel
+    - core.entity_form_mode.block_content.icon_card_with_icon
+    - field.field.block_content.icon_card_carousel.field_icon_card
+  module:
+    - inline_entity_form
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: YXkECrAdtNTc1I0pdP_TgVZB2wuiRwsgwbq6XdrPKcA
+id: block_content.icon_card_carousel.icon_card_with_icon
+targetEntityType: block_content
+bundle: icon_card_carousel
+mode: icon_card_with_icon
+content:
+  field_icon_card:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

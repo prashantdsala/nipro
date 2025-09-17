@@ -1,0 +1,39 @@
+uuid: 3a1d27e8-a2e3-4c90-8181-7690f563ae41
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card_carousel
+    - field.field.block_content.pricing_card_carousel.field_pricing_card
+  module:
+    - inline_entity_form
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: 8TlGAKucsCOg7c-hMj78hnjYckdJ_I6Wo_fggpVf9r4
+id: block_content.pricing_card_carousel.default
+targetEntityType: block_content
+bundle: pricing_card_carousel
+mode: default
+content:
+  field_pricing_card:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

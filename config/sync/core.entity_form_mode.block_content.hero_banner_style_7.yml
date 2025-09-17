@@ -1,0 +1,16 @@
+uuid: b116dd32-50a4-4814-aa80-e0098acdace2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: 1Q9N8fyOVAKRIT2qZAYFkUZLypsBdO9xXKIYO7r31nw
+id: block_content.hero_banner_style_7
+label: 'Hero banner - Style 7'
+description: null
+targetEntityType: block_content
+cache: true

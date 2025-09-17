@@ -1,0 +1,27 @@
+uuid: 018c2345-c79b-4e36-98a3-9d6793f3a362
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats_kpi
+    - field.storage.block_content.field_skpi_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_stats_kpi
+_core:
+  default_config_hash: HgMuijFCCxvw2a291wS52xWMoLrX9ilS0MqLBweMO6w
+id: block_content.stats_kpi.field_skpi_description
+field_name: field_skpi_description
+entity_type: block_content
+bundle: stats_kpi
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

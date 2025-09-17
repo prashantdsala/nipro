@@ -1,0 +1,16 @@
+uuid: 54ea08e3-bf22-4dbc-9650-8d0e339bb115
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: kA_eOJqt6bT31lHa933Dl9wCM7nMBkRyDADLvT62t4I
+id: block_content.cta_banner_with_image
+label: 'CTA banner - With image'
+description: null
+targetEntityType: block_content
+cache: true

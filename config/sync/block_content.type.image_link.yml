@@ -1,0 +1,13 @@
+uuid: 1106aeb8-28f1-49e2-8453-c34289ea3c94
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_link
+_core:
+  default_config_hash: rVLETU1iQCEWrYG7pChIVllpdsCaFhD1qH8tjc977eA
+id: image_link
+label: 'Image & Link'
+revision: false
+description: 'Block contains Image and Link fields'

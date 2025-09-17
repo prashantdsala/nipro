@@ -1,0 +1,28 @@
+uuid: 2438737b-1655-4a6d-9f58-3e4df10e5d98
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_media
+    - field.storage.block_content.field_text_media_col_alignment
+  module:
+    - options
+  enforced:
+    module:
+      - space_c_text_media
+_core:
+  default_config_hash: Km3o9Q3_1vmq2iQjfWyo8o5-JVK7rv5hecO4WCGT5FI
+id: block_content.text_media.field_text_media_col_alignment
+field_name: field_text_media_col_alignment
+entity_type: block_content
+bundle: text_media
+label: 'Column Alignment'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,16 @@
+uuid: b371d224-600d-47fc-83e5-5c47995ee7c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: NgefJWSQcjYg2POn0JL0116FXOilBK05bezdzO2bEZ0
+id: block_content.card_icon
+target_entity_type_id: block_content
+target_bundle: card_icon
+default_langcode: site_default
+language_alterable: false

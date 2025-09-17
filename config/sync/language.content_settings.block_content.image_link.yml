@@ -1,0 +1,16 @@
+uuid: 01c0edb9-140f-4b11-a10c-77403ee4068e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_link
+  enforced:
+    module:
+      - space_c_image_link
+_core:
+  default_config_hash: 8f77LqnK11jFnyoQzoZnAAY0I_750fiDarRQX9Zmblk
+id: block_content.image_link
+target_entity_type_id: block_content
+target_bundle: image_link
+default_langcode: site_default
+language_alterable: false

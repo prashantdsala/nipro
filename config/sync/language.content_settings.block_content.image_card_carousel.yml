@@ -1,0 +1,16 @@
+uuid: 5156ab66-7c60-42b3-a102-2b0ab1584df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_card_carousel
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: rNcCQ4HVVGWdWmsN4MtbLQOBfevX7nr4pAuVzfm3qLQ
+id: block_content.image_card_carousel
+target_entity_type_id: block_content
+target_bundle: image_card_carousel
+default_langcode: site_default
+language_alterable: false

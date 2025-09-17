@@ -1,0 +1,21 @@
+uuid: f3760210-a683-4793-b7a8-db7ca98b69c7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - space_c_image_styles
+_core:
+  default_config_hash: ZELTIvKALfrfKtklY5wpsGLZlG1fUVpFk7CPJcHW4mI
+name: scale_1024w_2x
+label: 'scale_1024w 2x'
+effects:
+  e3dc71f1-83fb-412e-8f79-68c1cc001ee2:
+    uuid: e3dc71f1-83fb-412e-8f79-68c1cc001ee2
+    id: image_scale
+    weight: 1
+    data:
+      width: 2048
+      height: null
+      upscale: false
+pipeline: __default__

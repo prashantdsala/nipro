@@ -1,0 +1,24 @@
+uuid: 732e2e86-7fc9-411b-86d9-5920a4853294
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pricing_card
+    - field.storage.block_content.field_pcard_price
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: atMt8y_lP3itH1f880tNxIaSTWoMhhS8DQyJozminN4
+id: block_content.pricing_card.field_pcard_price
+field_name: field_pcard_price
+entity_type: block_content
+bundle: pricing_card
+label: Price
+description: 'For example: $, ₹, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

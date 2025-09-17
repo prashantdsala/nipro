@@ -1,0 +1,884 @@
+uuid: ffb92bd6-a18e-4a8b-9e48-a80efc206310
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - core.entity_view_mode.block_content.hero_banner_style_5
+    - field.field.block_content.hero_banner.field_hbanner_bg_image
+    - field.field.block_content.hero_banner.field_hbanner_description
+    - field.field.block_content.hero_banner.field_hbanner_headline
+    - field.field.block_content.hero_banner.field_hbanner_image1
+    - field.field.block_content.hero_banner.field_hbanner_image2
+    - field.field.block_content.hero_banner.field_hbanner_link1
+    - field.field.block_content.hero_banner.field_hbanner_link2
+    - field.field.block_content.hero_banner.field_hbanner_subheadline
+    - field.field.block_content.hero_banner.field_hbanner_subscription
+    - field.field.block_content.hero_banner.field_hbanner_ticker
+    - responsive_image.styles.scale_592
+  module:
+    - ds
+    - field_formatter_class
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
+    - media_responsive_thumbnail
+    - ui_patterns_field_formatters
+  enforced:
+    module:
+      - space_c_hero_banner
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  layout_library:
+    enable: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts: {  }
+      restricted_categories: {  }
+      blacklisted_blocks: {  }
+      whitelisted_blocks: {  }
+  ds:
+    layout:
+      id: pattern_hero_banner_style_5
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        pattern:
+          field_templates: only_content
+    regions:
+      headline:
+        - field_hbanner_headline
+      sub_headline:
+        - field_hbanner_subheadline
+      button_1:
+        - field_hbanner_link1
+      button_2:
+        - field_hbanner_link2
+      image_1:
+        - field_hbanner_image1
+_core:
+  default_config_hash: n_E5Y3Jrer-5gvufHcP4y9EO0G7EaoXRWz9D6x7Sgww
+id: block_content.hero_banner.hero_banner_style_5
+targetEntityType: block_content
+bundle: hero_banner
+mode: hero_banner_style_5
+content:
+  field_hbanner_headline:
+    type: pattern_formatter
+    label: hidden
+    settings:
+      pattern: headline
+      pattern_mapping:
+        'field_properties:value':
+          destination: headline
+          weight: 0
+          plugin: field_properties
+          source: value
+      pattern_settings:
+        simple404:
+          alignment_type: left
+        textimage404:
+          image_type: large_image
+        accordion_item:
+          alignment: right
+          border: '1'
+          icon_collapsed: plusCircle
+          icon_expanded: minusCircle
+        avatar:
+          image_style: ''
+          corner_style: ''
+          icon: 0
+        badge:
+          size: small
+          icon: xcross
+          type: text-only
+        banner:
+          position: center_center
+          position_token: center_center
+        block_banner_info:
+          title_font_size: size-30
+          title_color: text-text-heading
+        block_footer_text:
+          title_font_size: size-96
+          title_color: text-text-heading
+          content_font_size: ''
+          content_color: ''
+        button:
+          button_state: ''
+          button_type: only_icon
+          size: small
+          icon: ''
+          icon_alignment: right
+          classes: ''
+          expanded: 0
+        pricingcard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        pricingfeaturedcard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        imagecard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        quicklinkcard_carousel:
+          carousel_layout: small-quicklink-card-carousel
+          autoplay: 0
+        featuredcard_carousel:
+          carousel_layout: small-card-carousel
+          autoplay: 0
+        iconcard:
+          alignment: left
+          card_layout: withouticon
+          extra_classes: ''
+          full_box_link: 0
+        quicklinkcard:
+          card_layout: withoutbackground
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        featuredcard:
+          card_layout: horizontal
+          card_size: large
+          extra_classes: ''
+        pricingcard:
+          background: light
+          card_layout: withicon
+          extra_classes: ''
+        pricingfeaturedcard:
+          background: light
+          extra_classes: ''
+        peoplecard:
+          card_layout: testimony-with-avatar
+          card_size: medium
+          card_corner: ''
+          extra_classes: ''
+          full_box_link: 0
+        videocard:
+          alignment: vertical
+          card_layout: withcontainer
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        imagecard:
+          alignment: vertical
+          card_layout: withcontainer
+          card_size: large
+          extra_classes: ''
+          full_box_link: 0
+        testimonycard:
+          card_layout: large-avatar
+          alignment: center
+          extra_classes: ''
+          full_box_link: 0
+        project_card:
+          alignment: left
+          color: ''
+        our_blog_card:
+          alignment: left
+          color: ''
+        contact_menu_link:
+          target: ''
+          icon: ''
+        container:
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+        cta_banner:
+          cta_banner_type: type_1
+          cta_type: button
+          width: boxed-width
+          alignment: left-align
+          image_type: large-image
+        dropdown:
+          dropdown_list_type: ''
+          list_heading: ''
+          dropdown_button_type: ''
+        email_form:
+          icon: '1'
+        footer_end_logo_block:
+          position_fixed: '1'
+        footer:
+          colour: white
+          type: type-1
+        grid:
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+        primaryheader:
+          position: ''
+          hamburger_type: ''
+        secondaryheader:
+          position: ''
+        headline:
+          tag_name: h3
+          font: display2XL-bold
+          spacing_bottom: default
+          url:
+            input: ''
+        image_link:
+          target: self
+        image_atom:
+          image_url: ''
+          background_style: ''
+          corners: ''
+          style: ''
+          extra_classes: ''
+        job_item:
+          id:
+            input: ''
+          url:
+            input: ''
+        keyfact_item_with_icon:
+          imageiconurl: ''
+        link:
+          target: ''
+          icon: ''
+          icon_size: ''
+          icon_position: right
+          extra_classes: ''
+          custom_style: 0
+        logo_grid:
+          layout: columns-4
+        menu_item:
+          icon: checkCircle
+          target: ''
+        navigation:
+          font_size: text-base
+          color: text-text-body
+          wrap_nav: 0
+        notification:
+          size: ''
+          align: ''
+          background: ''
+          layout: ''
+        paragraph:
+          size: primary
+          text_alignment: left
+        section_heading:
+          alignment: left
+        section:
+          columns_width_1: equal
+          columns_width_2: equal
+          columns_width_3: equal
+          columns_width_4: equal
+          columns_width_5: equal
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          display_header_region: 0
+          equal_height: 0
+        slider:
+          slides_type: slide
+          arrows: '1'
+          counter: '1'
+          arrows_color: primary-dark-arrows
+          pagination_style: no-pagination
+          pagination_color: primary-light-background
+          pagination_alignment: center-align-pagination
+          autoplay: 0
+        social_button:
+          social_button_type: google
+        space_section:
+          alignment: left
+        stats_kpi:
+          alignment: left
+          layout_type: default
+          extra_classes: ''
+        table:
+          color: dark
+          strip: 0
+        testimonial_cards:
+          carousel_layout: small-testimonial-carousel
+        testimonial:
+          icon_color: primary
+          image_classes: ''
+        text_media:
+          alignment: default
+          layout_type: default-layout
+          extra_classes: ''
+        video_card:
+          url:
+            input: ''
+          title: ''
+          extra_classes: ''
+        blog_listing:
+          autoplay: 0
+        iconcard_carousel:
+          autoplay: 0
+        project_listing:
+          autoplay: 0
+        social_media_navigation:
+          wrap_nav: 0
+        testimonial_slider:
+          autoplay: 0
+      pattern_variant: h3
+      variants_token: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: headline
+  field_hbanner_image1:
+    type: media_responsive_thumbnail
+    label: hidden
+    settings:
+      responsive_image_style: scale_592
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 4
+    region: image_1
+  field_hbanner_link1:
+    type: pattern_formatter
+    label: hidden
+    settings:
+      pattern: button
+      pattern_mapping:
+        'field_properties:uri':
+          destination: url
+          weight: 0
+          plugin: field_properties
+          source: uri
+        'field_properties:title':
+          destination: text
+          weight: 1
+          plugin: field_properties
+          source: title
+      pattern_settings:
+        simple404:
+          alignment_type: left
+        textimage404:
+          image_type: large_image
+        accordion_item:
+          alignment: right
+          border: '1'
+          icon_collapsed: plusCircle
+          icon_expanded: minusCircle
+        avatar:
+          image_url: ''
+          image_style: ''
+          corner_style: ''
+          icon: 0
+        badge:
+          size: small
+          icon: xcross
+          type: text-only
+        banner:
+          position: center_center
+          position_token: center_center
+        block_banner_info:
+          title_font_size: size-30
+          title_color: text-text-heading
+        block_footer_text:
+          title_font_size: size-96
+          title_color: text-text-heading
+          content_font_size: ''
+          content_color: ''
+        button:
+          button_state: ''
+          button_type: only_text
+          size: medium
+          icon: ''
+          icon_alignment: right
+          classes: ''
+          expanded: 0
+        iconcard:
+          alignment: left
+          layout: withouticon
+          extra_classes: ''
+          full_box_link: 0
+        quicklinkcard:
+          layout: withoutbackground
+          cardsize: large
+          extra_classes: ''
+          full_box_link: 0
+        featuredcard:
+          layout: horizontal
+          cardsize: large
+          extra_classes: ''
+        pricingcard:
+          background: light
+          layout: withicon
+          extra_classes: ''
+        peoplecard:
+          alignment: vertical
+          layout: testimony_with_avatar
+          cardsize: medium
+          extra_classes: ''
+          full_box_link: 0
+        videocard:
+          alignment: vertical
+        imagecard:
+          alignment: withcontainer
+          cardsize: ''
+        testimonycard:
+          alignment: center
+          extra_classes: ''
+          full_box_link: 0
+        company_logo_with_avatar:
+          extra_classes: ''
+          full_box_link: 0
+        people-with-avatar:
+          layout: people-with-avatar
+          cardsize: medium
+          extra_classes: ''
+          full_box_link: 0
+        project_card:
+          alignment: left
+          color: ''
+        our_blog_card:
+          alignment: left
+          color: ''
+        contact_menu_link:
+          target: ''
+          icon: ''
+        container:
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+        cta_banner:
+          cta_banner_type: type_1
+          cta_type: button
+          width: boxed-width
+          alignment: left-align
+          image_type: large-image
+        dropdown:
+          dropdown_list_type: ''
+          list_heading: ''
+          dropdown_button_type: ''
+        email_form:
+          icon: '1'
+        footer_end_logo_block:
+          position_fixed: '1'
+        grid:
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+        primaryheader:
+          position: ''
+          hamburger_type: ''
+        secondaryheader:
+          position: ''
+        headline:
+          tag_name: div
+          spacing_bottom: default
+          url:
+            input: ''
+        image_link:
+          target: self
+        image_atom:
+          image_url: ''
+          background_style: ''
+          corners: ''
+          style: ''
+          extra_classes: ''
+        job_item:
+          id:
+            input: ''
+          url:
+            input: ''
+        keyfact_item_with_icon:
+          imageiconurl: ''
+        link:
+          target: ''
+          icon: ''
+          icon_size: ''
+          icon_position: right
+          extra_classes: ''
+          custom_style: 0
+        logo_grid:
+          layout: grid4
+        menu_item:
+          icon: checkCircle
+          target: ''
+        navigation:
+          font_size: text-base
+          color: text-text-body
+          wrap_nav: 0
+        notification:
+          size: ''
+          align: ''
+          background: ''
+          layout: ''
+        paragraph:
+          size: primary
+          text_alignment: left
+        section_heading:
+          alignment: left
+        section:
+          columns_width_1: equal
+          columns_width_2: equal
+          columns_width_3: equal
+          columns_width_4: equal
+          columns_width_5: equal
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          display_header_region: 0
+          equal_height: 0
+        slider:
+          bullet_spacing: none
+          pagination_spacing: none
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          autoplay: 0
+        social_button:
+          social_button_type: google
+        space_section:
+          alignment: left
+        table:
+          color: dark
+          strip: 0
+        testimonial_carousel:
+          carousel_layout: small-testimonial-carousel
+          autoplay: 0
+        simple_testimonial_carousel:
+          cardsize: medium
+          autoplay: 0
+        testimony_small_avatar_carousel:
+          alignment: center
+          autoplay: 0
+        testimonial:
+          icon_color: primary
+          image_classes: ''
+        video_card:
+          url:
+            input: ''
+          title: ''
+          extra_classes: ''
+        blog_listing:
+          autoplay: 0
+        project_listing:
+          autoplay: 0
+        social_media_navigation:
+          wrap_nav: 0
+        team_section_image_card_3:
+          autoplay: 0
+        testimony_large_avatar_carousel:
+          autoplay: 0
+        company_logo_with_avatar_carousel:
+          autoplay: 0
+        testimonial_slider:
+          autoplay: 0
+      pattern_variant: secondary
+      variants_token: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 2
+    region: button_1
+  field_hbanner_link2:
+    type: pattern_formatter
+    label: hidden
+    settings:
+      pattern: button
+      pattern_mapping:
+        'field_properties:uri':
+          destination: url
+          weight: 0
+          plugin: field_properties
+          source: uri
+        'field_properties:title':
+          destination: text
+          weight: 1
+          plugin: field_properties
+          source: title
+      pattern_settings:
+        simple404:
+          alignment_type: left
+        textimage404:
+          image_type: large_image
+        accordion_item:
+          alignment: right
+          border: '1'
+          icon_collapsed: plusCircle
+          icon_expanded: minusCircle
+        avatar:
+          image_url: ''
+          image_style: ''
+          corner_style: ''
+          icon: 0
+        badge:
+          size: small
+          icon: xcross
+          type: text-only
+        banner:
+          position: center_center
+          position_token: center_center
+        block_banner_info:
+          title_font_size: size-30
+          title_color: text-text-heading
+        block_footer_text:
+          title_font_size: size-96
+          title_color: text-text-heading
+          content_font_size: ''
+          content_color: ''
+        button:
+          button_state: ''
+          button_type: only_text
+          size: medium
+          icon: ''
+          icon_alignment: right
+          classes: ''
+          expanded: 0
+        iconcard:
+          alignment: left
+          layout: withouticon
+          extra_classes: ''
+          full_box_link: 0
+        quicklinkcard:
+          layout: withoutbackground
+          cardsize: large
+          extra_classes: ''
+          full_box_link: 0
+        featuredcard:
+          layout: horizontal
+          cardsize: large
+          extra_classes: ''
+        pricingcard:
+          background: light
+          layout: withicon
+          extra_classes: ''
+        peoplecard:
+          alignment: vertical
+          layout: testimony_with_avatar
+          cardsize: medium
+          extra_classes: ''
+          full_box_link: 0
+        videocard:
+          alignment: vertical
+        imagecard:
+          alignment: withcontainer
+          cardsize: ''
+        testimonycard:
+          alignment: center
+          extra_classes: ''
+          full_box_link: 0
+        company_logo_with_avatar:
+          extra_classes: ''
+          full_box_link: 0
+        people-with-avatar:
+          layout: people-with-avatar
+          cardsize: medium
+          extra_classes: ''
+          full_box_link: 0
+        project_card:
+          alignment: left
+          color: ''
+        our_blog_card:
+          alignment: left
+          color: ''
+        contact_menu_link:
+          target: ''
+          icon: ''
+        container:
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+        cta_banner:
+          cta_banner_type: type_1
+          cta_type: button
+          width: boxed-width
+          alignment: left-align
+          image_type: large-image
+        dropdown:
+          dropdown_list_type: ''
+          list_heading: ''
+          dropdown_button_type: ''
+        email_form:
+          icon: '1'
+        footer_end_logo_block:
+          position_fixed: '1'
+        grid:
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+        primaryheader:
+          position: ''
+          hamburger_type: ''
+        secondaryheader:
+          position: ''
+        headline:
+          tag_name: div
+          spacing_bottom: default
+          url:
+            input: ''
+        image_link:
+          target: self
+        image_atom:
+          image_url: ''
+          background_style: ''
+          corners: ''
+          style: ''
+          extra_classes: ''
+        job_item:
+          id:
+            input: ''
+          url:
+            input: ''
+        keyfact_item_with_icon:
+          imageiconurl: ''
+        link:
+          target: ''
+          icon: ''
+          icon_size: ''
+          icon_position: right
+          extra_classes: ''
+          custom_style: 0
+        logo_grid:
+          layout: grid4
+        menu_item:
+          icon: checkCircle
+          target: ''
+        navigation:
+          font_size: text-base
+          color: text-text-body
+          wrap_nav: 0
+        notification:
+          size: ''
+          align: ''
+          background: ''
+          layout: ''
+        paragraph:
+          size: primary
+          text_alignment: left
+        section_heading:
+          alignment: left
+        section:
+          columns_width_1: equal
+          columns_width_2: equal
+          columns_width_3: equal
+          columns_width_4: equal
+          columns_width_5: equal
+          gutter: default
+          columns: '1'
+          alignment: items-start
+          justify_item: justify-items-start
+          extraclasses: ''
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          display_header_region: 0
+          equal_height: 0
+        slider:
+          bullet_spacing: none
+          pagination_spacing: none
+          width: default
+          bg:
+            colorwidget: ''
+          padding_x: small
+          padding_top: default
+          padding_bottom: ''
+          classes: ''
+          autoplay: 0
+        social_button:
+          social_button_type: google
+        space_section:
+          alignment: left
+        table:
+          color: dark
+          strip: 0
+        testimonial_carousel:
+          carousel_layout: small-testimonial-carousel
+          autoplay: 0
+        simple_testimonial_carousel:
+          cardsize: medium
+          autoplay: 0
+        testimony_small_avatar_carousel:
+          alignment: center
+          autoplay: 0
+        testimonial:
+          icon_color: primary
+          image_classes: ''
+        video_card:
+          url:
+            input: ''
+          title: ''
+          extra_classes: ''
+        blog_listing:
+          autoplay: 0
+        project_listing:
+          autoplay: 0
+        social_media_navigation:
+          wrap_nav: 0
+        team_section_image_card_3:
+          autoplay: 0
+        testimony_large_avatar_carousel:
+          autoplay: 0
+        company_logo_with_avatar_carousel:
+          autoplay: 0
+        testimonial_slider:
+          autoplay: 0
+      pattern_variant: primary
+      variants_token: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 3
+    region: button_2
+  field_hbanner_subheadline:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: sub_headline
+hidden:
+  field_hbanner_bg_image: true
+  field_hbanner_description: true
+  field_hbanner_image2: true
+  field_hbanner_subscription: true
+  field_hbanner_ticker: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: 90cb307f-38a5-4f09-a04e-c99e9bd7a901
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - taxonomy
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: aDPPIPbq87GZUjarPxT63RKQg8QkvbVJjkDj-3Vr8Dw
+id: block_content.field_image_card_badge
+field_name: field_image_card_badge
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

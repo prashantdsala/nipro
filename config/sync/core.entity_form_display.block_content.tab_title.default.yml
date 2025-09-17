@@ -1,0 +1,44 @@
+uuid: 7968e1c2-ff99-4b34-a78e-b755c67e7d0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab_title
+    - field.field.block_content.tab_title.field_tab_icon_name
+    - field.field.block_content.tab_title.field_tab_title
+    - field.field.block_content.tab_title.field_tab_title_alignment
+  enforced:
+    module:
+      - space_c_tab_title
+_core:
+  default_config_hash: EH1E5Pd9hGfOoYd5uk3D4qLBs3dRPMv1_cdpsR_c92g
+id: block_content.tab_title.default
+targetEntityType: block_content
+bundle: tab_title
+mode: default
+content:
+  field_tab_icon_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tab_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tab_title_alignment:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

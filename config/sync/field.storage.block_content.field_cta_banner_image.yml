@@ -1,0 +1,25 @@
+uuid: 186a3fd7-c1ed-4b6b-8333-0027b27094b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+  enforced:
+    module:
+      - space_c_cta_banner
+_core:
+  default_config_hash: iVKm8vSalAqiPFQXHGg_bzfCd7zWkwW9bRgn9N5apHw
+id: block_content.field_cta_banner_image
+field_name: field_cta_banner_image
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,16 @@
+uuid: 67e78e96-ee6c-4a39-9f94-7c854a56e5b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+  enforced:
+    module:
+      - space_c_hero_banner
+_core:
+  default_config_hash: k-uJd8LK3d0AfVme8sIw0RP0k0UYEOMpPU4Z74qfzEI
+id: block_content.image_with_title_description
+label: 'Image with title and description'
+description: null
+targetEntityType: block_content
+cache: true

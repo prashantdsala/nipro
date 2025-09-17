@@ -1,0 +1,13 @@
+uuid: b74b75fd-2108-4507-ac98-e62f634b3cbe
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: C1xLFZzDtPXoqUp6wviaESQ_8yRel_NWw-wg4OiCEV8
+id: sidebar_links_list_menu
+block_id: 'system_menu_block:sidebar-links-list-menu'
+category: menus
+label: 'Sidebar links list menu'
+image_path: /themes/contrib/space/images/lbb/sidebar_links_list_menu.svg
+image_alt: ''
+weight: -8

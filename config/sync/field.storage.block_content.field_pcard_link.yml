@@ -1,0 +1,24 @@
+uuid: 15576945-c9d5-4662-b157-d3899d187fed
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+  enforced:
+    module:
+      - space_c_pricing_card
+_core:
+  default_config_hash: w29RfNqvTY2VVLbE2y0TEZYl6cF8vyXyBu1n_j03a_Y
+id: block_content.field_pcard_link
+field_name: field_pcard_link
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

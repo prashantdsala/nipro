@@ -1,0 +1,16 @@
+uuid: 93c5e22b-c9cc-4769-9656-b6c60677f7e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  enforced:
+    module:
+      - space_c_image_card
+_core:
+  default_config_hash: dPxzbpVx5fYT6nafj7DomL8Ri7OVGu7YsQ2M97adEKU
+id: user.avatar_label_group
+label: 'Avatar Label Group'
+description: null
+targetEntityType: user
+cache: true

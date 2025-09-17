@@ -1,0 +1,27 @@
+uuid: a669374c-39df-4ecc-a017-e43d48f9aefe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_icon
+    - field.storage.block_content.field_icon_description
+  module:
+    - text
+  enforced:
+    module:
+      - space_c_icon_card
+_core:
+  default_config_hash: Zux6W9UyBFx32swewMybyMSavr_cZJW3iiMJDjI3s0g
+id: block_content.card_icon.field_icon_description
+field_name: field_icon_description
+entity_type: block_content
+bundle: card_icon
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
